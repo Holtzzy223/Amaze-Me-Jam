@@ -2,15 +2,15 @@
 // You can write your code in this editor
 if(keyboard_check(vk_left))
 {
-	image_angle+=5;
+	image_angle+=3;
 }
 if(keyboard_check(vk_right))
 {
-	image_angle-=5;
+	image_angle-=3;
 }
 if(keyboard_check(vk_up))
 {
-	motion_add(image_angle,0.01);
+	motion_add(image_angle,0.025);
 	//part_emitter_stream()
 	//part_emitter_burst(thruster_system,thruster_emitter,thruster_particle,30+random(60));
 	
