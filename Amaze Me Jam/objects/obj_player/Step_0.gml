@@ -2,11 +2,11 @@
 // You can write your code in this editor
 if(keyboard_check(vk_left))
 {
-	image_angle+=3;
+	image_angle+=5;
 }
 if(keyboard_check(vk_right))
 {
-	image_angle-=3;
+	image_angle-=5;
 }
 if(keyboard_check(vk_up))
 {
@@ -20,6 +20,6 @@ if(keyboard_check_pressed(vk_space))
 	var bullet = instance_create_depth(x+lengthdir_x(sprite_width,image_angle),y+lengthdir_y(sprite_height,image_angle),depth+1,obj_player_bullet);
 	with(bullet)
 	{
-		motion_set(obj_player.image_angle,5);
+		motion_set(obj_player.image_angle,7);
 	}
 }
