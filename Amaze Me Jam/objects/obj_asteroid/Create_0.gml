@@ -10,15 +10,15 @@ rotation_dir = choose(-1,1);
 switch(image_index)
 {
 	case 0:
-		hp = 10
+		hp = 7;
 	break;
 	case 1:
-		hp = 7
-	break;
-	case 2:
 		hp = 5;
 	break;
-	case 3:
+	case 2:
 		hp = 3;
+	break;
+	case 3:
+		hp = 2;
 	break;
 }

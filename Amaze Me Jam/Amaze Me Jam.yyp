@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},"order":2,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
+    {"id":{"name":"manager_asteroids","path":"objects/manager_asteroids/manager_asteroids.yy",},"order":3,},
     {"id":{"name":"spr_ship","path":"sprites/spr_ship/spr_ship.yy",},"order":0,},
     {"id":{"name":"obj_asteroid","path":"objects/obj_asteroid/obj_asteroid.yy",},"order":1,},
     {"id":{"name":"spr_asteroids","path":"sprites/spr_asteroids/spr_asteroids.yy",},"order":1,},
