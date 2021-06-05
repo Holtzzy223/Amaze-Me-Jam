@@ -1,4 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 image_angle = obj_player.image_angle;
-image_blend = choose(c_yellow,c_white,c_fuchsia,c_lime,c_teal);
+add = 0.3;
+uni_add = shader_get_uniform(sh_bloom, "add");
+uni_time = shader_get_uniform(sh_bloom, "time");

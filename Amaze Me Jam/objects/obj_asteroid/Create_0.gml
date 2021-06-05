@@ -22,3 +22,6 @@ switch(image_index)
 		hp = 2;
 	break;
 }
+add = 0.4;
+uni_add = shader_get_uniform(sh_bloom, "add");
+uni_time = shader_get_uniform(sh_bloom, "time");
