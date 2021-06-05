@@ -1,29 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-image_speed = 0;
-sprite_index = choose(spr_asteroid_large,spr_asteroid_med,spr_asteroid_small,spr_asteroid_tiny);
-direction = random(360);
-image_angle = random(360);
-
-motion_set(image_angle,1);
-rotation_dir = choose(-1,1);
-switch(sprite_index)
-{
-	case spr_asteroid_large:
-		hp = 7;
-	break;
-	case spr_asteroid_med:
-		hp = 5;
-	break;
-	case spr_asteroid_small:
-		hp = 3;
-	break;
-	case spr_asteroid_tiny:
-		hp = 2;
-	break;
-	default: 
-		hp = 5;
-}
 _uniUV         = shader_get_uniform(shdrRainbow, "u_uv");
 _uniTime       = shader_get_uniform(shdrRainbow, "u_time");
 _uniSpeed      = shader_get_uniform(shdrRainbow, "u_speed");
