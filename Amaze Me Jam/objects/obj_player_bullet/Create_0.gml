@@ -10,8 +10,8 @@ _uniBrightness = shader_get_uniform(shdrRainbow, "u_brightness");
 _uniMix        = shader_get_uniform(shdrRainbow, "u_mix");
 
 _time  = 0;
-_speed = 1.0;
-_section = 0.5;
-_saturation = 0.7;
-_brightness = 0.8;
-_mix = 0.5;
+_speed = .50;
+_section = 0.8;
+_saturation = 1;
+_brightness = 1;
+_mix = 0.9;

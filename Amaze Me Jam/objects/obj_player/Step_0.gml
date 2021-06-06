@@ -12,7 +12,7 @@ if(!dead)
 	}
 	if(keyboard_check(vk_up))
 	{
-		var thrust = 0.025;
+		var thrust = 0.1;
 		speed = clamp(speed,0,5);
 		motion_add(image_angle,thrust);
 		
@@ -53,3 +53,4 @@ if(dead)
 	image_alpha -= 0.01;
 	image_angle +=5;
 }
+_time += speed / room_speed;
