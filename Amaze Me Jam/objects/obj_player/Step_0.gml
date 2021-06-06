@@ -4,15 +4,18 @@ if(!dead)
 {
 	if(keyboard_check(vk_left))
 	{
-		image_angle +=3;
+		image_angle +=5;
 	}
 	if(keyboard_check(vk_right))
 	{
-		image_angle-=3;
+		image_angle-=5;
 	}
 	if(keyboard_check(vk_up))
 	{
-		motion_add(image_angle,0.025);
+		var thrust = 0.025;
+		speed = clamp(speed,0,5);
+		motion_add(image_angle,thrust);
+		
 		if (speed > 0.25)
 	    {
 			
