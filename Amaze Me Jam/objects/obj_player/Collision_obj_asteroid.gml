@@ -1,14 +1,17 @@
 /// @description Insert description here
 // You can write your code in this editor
-motion_set(-direction+random_range(-5,5),1);
-
-if(!dead)
+if(!invincible)
 {
-	repeat(25)
+	motion_set(-direction+random_range(-5,5),1);
+	
+	if(!dead)
 	{
-		
-		instance_create_depth(x,y,depth,obj_debris);
+		repeat(25)
+		{
+			
+			instance_create_depth(x,y,depth,obj_debris);
+		}
+		dead = true;
 	}
-	dead = true;
+	alarm_set(0,120);
 }
-alarm_set(0,120);

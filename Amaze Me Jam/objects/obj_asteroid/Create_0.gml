@@ -10,20 +10,21 @@ rotation_dir = choose(-1,1);
 switch(sprite_index)
 {
 	case spr_asteroid_large:
-		hp = 7;
-	break;
-	case spr_asteroid_med:
 		hp = 5;
 	break;
-	case spr_asteroid_small:
+	case spr_asteroid_med:
 		hp = 3;
 	break;
-	case spr_asteroid_tiny:
+	case spr_asteroid_small:
 		hp = 2;
+	break;
+	case spr_asteroid_tiny:
+		hp = 1;
 	break;
 	default: 
 		hp = 5;
 }
+//Shader Stuffz
 _uniUV         = shader_get_uniform(shdrRainbow, "u_uv");
 _uniTime       = shader_get_uniform(shdrRainbow, "u_time");
 _uniSpeed      = shader_get_uniform(shdrRainbow, "u_speed");
@@ -34,7 +35,7 @@ _uniMix        = shader_get_uniform(shdrRainbow, "u_mix");
 
 _time  = 0;
 _speed = 1.0;
-_section = 0.5;
-_saturation = 0.7;
+_section = 0.25;
+_saturation = 0.9;
 _brightness = 0.8;
 _mix = 0.5;

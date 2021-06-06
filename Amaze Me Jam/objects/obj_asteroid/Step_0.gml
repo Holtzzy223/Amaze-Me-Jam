@@ -9,7 +9,7 @@ if(hp <=0)
 	{
 		case spr_asteroid_large:
 			sprite_index = spr_asteroid_med;
-			var child = instance_create_depth(x+choose(sprite_width,-sprite_width),y,depth,obj_asteroid);
+			var child = instance_create_depth(x+choose(sprite_width/2,-sprite_width/2),y,depth,obj_asteroid);
 			child.sprite_index = spr_asteroid_med;
 			hp =5;
 			repeat(10)
@@ -19,7 +19,7 @@ if(hp <=0)
 		break;
 		case spr_asteroid_med:
 			sprite_index = spr_asteroid_small;
-			var child = instance_create_depth(x+choose(sprite_width,-sprite_width),y,depth,obj_asteroid);
+			var child = instance_create_depth(x+choose(sprite_width/2,-sprite_width/2),y,depth,obj_asteroid);
 			child.sprite_index = spr_asteroid_small;
 			repeat(10)
 			{
@@ -29,7 +29,7 @@ if(hp <=0)
 		break;
 		case spr_asteroid_small:
 			sprite_index = spr_asteroid_tiny;
-			var child = instance_create_depth(x+choose(sprite_width,-sprite_width),y,depth,obj_asteroid);
+			var child = instance_create_depth(x+choose(sprite_width/2,-sprite_width/2),y,depth,obj_asteroid);
 			var child_second = instance_create_depth(x,y,depth,obj_asteroid);
 			child.sprite_index = spr_asteroid_tiny;
 			child_second.sprite_index = spr_asteroid_tiny;
@@ -48,4 +48,20 @@ if(hp <=0)
 		break;
 	}
 	
+}
+if(instance_place(x,y,obj_asteroid))
+{
+	speed = 0;
+	if(sprite_index != spr_asteroid_tiny)
+	{
+		hp-=0.005;
+	}
+	image_blend = random_range(c_yellow,c_red);
+	deflection_dir = -(direction+image_angle);
+	motion_set(deflection_dir,1);
+
+}
+if(place_meeting(x,y,obj_shield))
+{
+	hp = 0;
 }

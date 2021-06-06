@@ -2,8 +2,5 @@
 // You can write your code in this edito
 spawn_count = random_range(3,6);
 
-for(i = 0; i <spawn_count;i++)
-{
-	
-	instance_create_depth(random_range(0,room_width),random_range(0,room_height),depth,obj_asteroid);
-}
+
+alarm_set(0,2);
