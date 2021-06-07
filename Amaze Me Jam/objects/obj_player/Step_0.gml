@@ -26,7 +26,7 @@ if(!dead)
 	}
 	if(keyboard_check_pressed(vk_space))
 	{
-		var bullet = instance_create_depth(x+lengthdir_x(sprite_width,image_angle),y+lengthdir_y(sprite_height,image_angle),depth+1,obj_player_bullet);
+		var bullet = instance_create_depth(x+lengthdir_x(sprite_width/2,image_angle),y,depth+1,obj_player_bullet);
 		with(bullet)
 		{
 			if(obj_player.speed >=1)

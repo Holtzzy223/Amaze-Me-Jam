@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.4,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,8 +10,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_bgm1.wav",
-  "duration": 288.005,
+  "soundFile": "snd_bgm1.mp3",
+  "duration": 287.9005,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
