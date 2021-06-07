@@ -19,3 +19,19 @@ function spawn_object_at_camera_bounds(object_to_spawn,spawn_count,pad)
 		instance_create_layer(xx,yy,"Instances",object_to_spawn);
 	}
 }
+
+function spawn_projectile(_projectile,_direction,_speed,_faction,_sound)
+{
+	audio_sound_pitch(_sound,random_range(0.6,1.1));
+	audio_play_sound(_sound,1,false);
+	var _creator = id;
+	var inst = instance_create_layer(x,y,"Instances",_projectile);
+	
+		with(inst)
+		{
+			direction = _direction;
+			speed = _speed;
+			faction = _faction;
+			creator = _creator;
+		}
+}

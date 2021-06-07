@@ -26,24 +26,17 @@ if(!dead)
 	}
 	if(keyboard_check_pressed(vk_space))
 	{
-		var bullet = instance_create_depth(x+lengthdir_x(sprite_width/2,image_angle),y,depth+1,obj_player_bullet);
-		with(bullet)
+		if(obj_player.speed >=1)
 		{
-			if(obj_player.speed >=1)
-			{
-				motion_set(obj_player.image_angle,4*obj_player.speed);
-				
-			}
-			else
-			{
-				motion_set(obj_player.image_angle,4);
-			}
+			bullet_speed=5+obj_player.speed;		
 		}
-		//if(!audio_is_playing(snd_pewpew))
+		else
 		{
-			audio_sound_pitch(snd_pewpew,random_range(0.6,1.1));
-			audio_play_sound(snd_pewpew,1,false);
+			bullet_speed = 5;
 		}
+		spawn_projectile(obj_player_bullet,image_angle,bullet_speed,faction,snd_pewpew);
+
+
 		
 	}
 }
@@ -54,3 +47,4 @@ if(dead)
 	image_angle +=5;
 }
 _time += speed / room_speed;
+

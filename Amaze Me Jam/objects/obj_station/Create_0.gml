@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+event_inherited();
 rotation_dir= choose(-1,1);
 //Shader Stuffz
 _uniUV         = shader_get_uniform(shdrRainbow, "u_uv");
@@ -11,8 +12,8 @@ _uniBrightness = shader_get_uniform(shdrRainbow, "u_brightness");
 _uniMix        = shader_get_uniform(shdrRainbow, "u_mix");
 
 _time  = 0;
-_speed = 0.5;
+_speed = 1.0;
 _section = 0.86;
 _saturation = 0.7;
 _brightness = 0.8;
-_mix = 0.53;
+_mix = 0.65;

@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_hunter_seeker",
+    "path": "sprites/spr_hunter_seeker/spr_hunter_seeker.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

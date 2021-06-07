@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_mag_mine",
+    "path": "sprites/spr_mag_mine/spr_mag_mine.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_pirate_brute",
+    "path": "sprites/spr_pirate_brute/spr_pirate_brute.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
