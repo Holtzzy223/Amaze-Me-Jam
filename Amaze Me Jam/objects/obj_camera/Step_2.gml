@@ -5,7 +5,7 @@
 parallax_layer(parallax_layer_far,0.9,0.9);
 parallax_layer(parallax_layer_mid,0.8,0.8);
 parallax_layer(parallax_layer_close,0.75,0.75);
-parallax_layer(parallax_layer_overlay,0.7,0.7);
+parallax_layer(parallax_layer_overlay,0.65,0.65);
 camera_set_view_pos(view_camera[0],global.cam_x,global.cam_y);
 if (!surface_exists(view_surf))
 {

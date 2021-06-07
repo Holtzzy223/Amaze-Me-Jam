@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Rocks",
+    "path": "folders/Sprites/Rocks.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_asteroid_med",
