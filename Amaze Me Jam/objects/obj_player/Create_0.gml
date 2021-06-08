@@ -31,6 +31,9 @@ _saturation = 0.6;
 _brightness = 0.8;
 _mix = 0.8;
 
+
+value = 0.0;
+bloom_handler = shader_get_uniform(sh_bloom,"intensity");
 //Local funcs
 
 

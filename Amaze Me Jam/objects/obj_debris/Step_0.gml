@@ -5,3 +5,4 @@ if(image_alpha<=0)
 {
 	instance_destroy(id);
 }
+image_blend = wave(c_white,c_blue,1,0);
