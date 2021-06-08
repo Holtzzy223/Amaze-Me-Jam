@@ -7,11 +7,14 @@ event_inherited();
 thruster_system = part_system_create();
 thruster_emitter = part_emitter_create(thruster_system);
 thruster_particle =part_type_create();
-
+//player stuffs
 shield = noone;
 invincible = false;
 dead = false;
+hp = 10;
 bullet_speed = 5;
+flash = false;
+
 //Shader Stuffz
 _uniUV         = shader_get_uniform(shdrRainbow, "u_uv");
 _uniTime       = shader_get_uniform(shdrRainbow, "u_time");
@@ -27,3 +30,35 @@ _section = 0.66;
 _saturation = 0.6;
 _brightness = 0.8;
 _mix = 0.8;
+
+//Local funcs
+
+
+function damage_player(_damage)
+{
+	if(!invincible)
+	{
+		hp -=_damage;
+		
+		//Dead Check
+		if(hp <=0)
+		{
+			repeat(25)
+			{
+				instance_create_layer(x,y,layer,obj_debris);
+			}
+			dead = true;
+			alarm_set(0,120);
+		}
+		else
+		{
+			invincible = true;
+			//flash
+			flash = true;
+			alarm_set(1,60)
+			//bounce
+			motion_set(-direction+random_range(-5,5),1);
+		}
+		
+	}
+}

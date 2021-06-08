@@ -48,3 +48,8 @@ if(dead)
 }
 _time += speed / room_speed;
 
+if(flash)
+{
+	image_blend = c_white;
+	image_alpha = wave(0.5,1,0.5,.25);
+}

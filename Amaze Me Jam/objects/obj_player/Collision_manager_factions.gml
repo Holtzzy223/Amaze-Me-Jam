@@ -1,19 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
 if(other.faction == faction) exit;
-if(!invincible)
-{
-	motion_set(-direction+random_range(-5,5),1);
-	
-	if(!dead)
-	{
-		//replace with particle system
-		repeat(25)
-		{
-			
-			instance_create_depth(x,y,depth,obj_debris);
-		}
-		dead = true;
-	}
-	alarm_set(0,120);
-}
+
+if(other.faction ==FACTION.ENEMY) damage_player(1);

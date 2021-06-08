@@ -7,7 +7,10 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "manager_faction_ally",
+    "path": "objects/manager_faction_ally/manager_faction_ally.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,

@@ -12,4 +12,4 @@ shader_set_uniform_f(_uniSection, _section);
 shader_set_uniform_f(_uniMix, _mix);
 draw_self();
 shader_reset();
-//draw_text(bbox_left,bbox_top,speed);
+draw_text(bbox_left-6,bbox_top-6,hp);
