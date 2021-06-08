@@ -4,11 +4,11 @@ if(!dead)
 {
 	if(keyboard_check(vk_left))
 	{
-		image_angle +=7;
+		image_angle =lerp(image_angle,image_angle+input_magnitude,0.1);;
 	}
 	if(keyboard_check(vk_right))
 	{
-		image_angle-=7;
+		image_angle=lerp(image_angle,image_angle-input_magnitude,0.1);;
 	}
 	if(keyboard_check(vk_up))
 	{
@@ -19,7 +19,7 @@ if(!dead)
 		if (speed > 0.25)
 	    {
 			
-			effect_create_below(ef_spark, x, y, 0, c_yellow);
+			effect_create_below(ef_spark, x-lengthdir_x(sprite_width/2,image_angle), y-lengthdir_y(sprite_height/2,image_angle), 0, c_yellow);
 	    }
 		
 		
@@ -56,5 +56,5 @@ if(image_alpha <= 0)
 	room_restart();
 }
 
-value = wave(0,speed/4,3,0.25);
+value = wave(0,speed/6,3,0.25);
 //_time += speed / room_speed;

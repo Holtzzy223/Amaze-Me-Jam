@@ -14,7 +14,7 @@ dead = false;
 hp = 10;
 bullet_speed = 12;
 flash = false;
-
+input_magnitude = 65;
 //Shader Stuffz
 _uniUV         = shader_get_uniform(shdrRainbow, "u_uv");
 _uniTime       = shader_get_uniform(shdrRainbow, "u_time");

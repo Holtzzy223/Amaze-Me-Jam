@@ -18,3 +18,7 @@ _section = 0.86;
 _saturation = 0.7;
 _brightness = 0.8;
 _mix = 0.65;
+
+
+value = 0.0;
+bloom_handler = shader_get_uniform(sh_bloom,"intensity");

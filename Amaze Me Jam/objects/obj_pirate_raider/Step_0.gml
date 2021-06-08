@@ -16,8 +16,13 @@ if(!dead)
 			bullet_timer--;
 			if(bullet_timer <=0)
 			{
-				spawn_projectile(obj_player_bullet,direction,10,faction,snd_pewpew);
+				spawn_projectile(obj_player_bullet,direction,12,faction,snd_pewpew);
 				bullet_timer = 60;
+			}
+			if(point_distance(x,y,_target.x,_target.y)<_range/4)
+			{
+				speed -= 0.5;
+				speed = clamp(speed,0,15);
 			}
 		}
 		else
