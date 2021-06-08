@@ -3,7 +3,7 @@
 function parallax_layer(layer_id,move_factor_x,move_factor_y)
 {
 	layer_x(layer_id,global.cam_x*move_factor_x);
-	layer_y(layer_id,global.cam_y*move_factor_y)
+	layer_y(layer_id,global.cam_y*move_factor_y);
 }
 
 
