@@ -12,7 +12,7 @@ shield = noone;
 invincible = false;
 dead = false;
 hp = 10;
-bullet_speed = 5;
+bullet_speed = 10;
 flash = false;
 
 //Shader Stuffz

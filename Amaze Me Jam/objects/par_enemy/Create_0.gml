@@ -4,14 +4,14 @@
 // Inherit the parent event
 event_inherited();
 
-speed = 1;
+speed = 5;
 direction =  random(360);
 
 image_angle = direction;
 
 hp = 1;
 dead = false;
-bullet_speed = 4;
+bullet_speed = 10;
 invincible = false;
 flash = false;
 function damage_enemy(_damage)

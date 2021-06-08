@@ -5,3 +5,6 @@
 event_inherited();
 
 hp = 3;
+bullet_timer = 60;
+_range = 750;
+_target = obj_player;

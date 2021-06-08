@@ -4,16 +4,16 @@ if(!dead)
 {
 	if(keyboard_check(vk_left))
 	{
-		image_angle +=5;
+		image_angle +=7;
 	}
 	if(keyboard_check(vk_right))
 	{
-		image_angle-=5;
+		image_angle-=7;
 	}
 	if(keyboard_check(vk_up))
 	{
-		var thrust = 0.1;
-		speed = clamp(speed,0,5);
+		var thrust = 0.3;
+		speed = clamp(speed,0,17);
 		motion_add(image_angle,thrust);
 		
 		if (speed > 0.25)
@@ -28,11 +28,11 @@ if(!dead)
 	{
 		if(obj_player.speed >=1)
 		{
-			bullet_speed=5+obj_player.speed;		
+			bullet_speed =15+obj_player.speed;		
 		}
 		else
 		{
-			bullet_speed = 5;
+			bullet_speed = 15;
 		}
 		spawn_projectile(obj_player_bullet,image_angle,bullet_speed,faction,snd_pewpew);
 
