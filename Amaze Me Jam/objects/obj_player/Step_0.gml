@@ -56,5 +56,5 @@ if(image_alpha <= 0)
 	room_restart();
 }
 
-value = wave(0,speed,3,0.25);
+value = wave(0,speed/4,3,0.25);
 //_time += speed / room_speed;

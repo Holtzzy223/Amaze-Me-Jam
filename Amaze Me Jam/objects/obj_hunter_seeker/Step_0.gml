@@ -6,7 +6,7 @@ if(!dead)
 {
 	if(instance_exists(_target))
 	{
-		if(target_in_range(_target,_range*2))speed += 0.03;
+		if(target_in_range(_target,_range*3))speed += 0.03;
 		if(target_in_range(_target,_range))
 		{
 			var _angle = point_direction(x,y,_target.x,_target.y);
@@ -14,7 +14,7 @@ if(!dead)
 			image_angle = lerp(image_angle,_angle,0.1); 
 			direction = image_angle;
 			
-			speed = clamp(speed,0,13);
+			speed = clamp(speed,0,15);
 			bullet_timer--;
 			if(bullet_timer <=0)
 			{
@@ -24,7 +24,7 @@ if(!dead)
 		}
 		else
 		{
-			alarm_set(1,60);
+			alarm_set(1,90);
 		}
 	}
 }

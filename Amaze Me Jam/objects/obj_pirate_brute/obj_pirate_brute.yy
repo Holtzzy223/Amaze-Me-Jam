@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_pirate_brute",
-    "path": "sprites/spr_pirate_brute/spr_pirate_brute.yy",
+    "name": "spr_pirate_brute20",
+    "path": "sprites/spr_pirate_brute20/spr_pirate_brute20.yy",
   },
   "solid": false,
   "visible": true,

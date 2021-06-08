@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_hunter_seeker",
-    "path": "sprites/spr_hunter_seeker/spr_hunter_seeker.yy",
+    "name": "spr_hunter",
+    "path": "sprites/spr_hunter/spr_hunter.yy",
   },
   "solid": false,
   "visible": true,

@@ -12,7 +12,7 @@ shield = noone;
 invincible = false;
 dead = false;
 hp = 10;
-bullet_speed = 10;
+bullet_speed = 12;
 flash = false;
 
 //Shader Stuffz
@@ -60,7 +60,7 @@ function damage_player(_damage)
 			flash = true;
 			alarm_set(1,60)
 			//bounce
-			motion_set(-direction+random_range(-5,5),1);
+			motion_set(-direction+random_range(-5,5),6);
 		}
 		
 	}

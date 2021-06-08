@@ -12,9 +12,10 @@
 //shader_set_uniform_f(_uniMix, _mix);
 //draw_self();
 //shader_reset();
-//draw_text(bbox_left-6,bbox_top-6,hp);
+draw_text(bbox_left-6,bbox_top-6,hp);
 //
-
+if(!dead||!flash)
+{
 shader_set(sh_bloom);
 
 
@@ -23,3 +24,10 @@ shader_set_uniform_f(bloom_handler,value);
 //fauxton_sprite_set(x,y,depth,0,0,0,1,1,1,true);
 draw_self();
 shader_reset();
+}
+if(dead||flash)
+{
+	shader_reset();
+	draw_self();
+	
+}

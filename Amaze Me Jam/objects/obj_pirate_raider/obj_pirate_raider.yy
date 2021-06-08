@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_pirate_raider",
-    "path": "sprites/spr_pirate_raider/spr_pirate_raider.yy",
+    "name": "spr_raider",
+    "path": "sprites/spr_raider/spr_raider.yy",
   },
   "solid": false,
   "visible": true,

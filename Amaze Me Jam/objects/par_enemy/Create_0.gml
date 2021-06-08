@@ -14,6 +14,7 @@ dead = false;
 bullet_speed = 10;
 invincible = false;
 flash = false;
+damage = 1;
 function damage_enemy(_damage)
 {
 	if(!invincible)

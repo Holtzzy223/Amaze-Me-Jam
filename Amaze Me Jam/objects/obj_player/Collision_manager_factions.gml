@@ -6,6 +6,6 @@ if(other.faction ==FACTION.ENEMY)
 {
 	if(!other.dead)
 	{
-		damage_player(1);
+		damage_player(other.damage);
 	}
 }
