@@ -21,9 +21,10 @@ if(!dead)
 			
 			effect_create_below(ef_spark, x-lengthdir_x(sprite_width/2,image_angle), y-lengthdir_y(sprite_height/2,image_angle), 0, c_yellow);
 	    }
-		
-		
+			
 	}
+
+	
 	if(keyboard_check_pressed(vk_space))
 	{
 		if(obj_player.speed >=1)
@@ -42,7 +43,7 @@ if(!dead)
 	if(flash)
 	{
 		image_blend = c_white;
-		image_alpha = wave(0.25,1,0.5,.25);
+		image_alpha = wave(0.0,1,0.5,0);
 	}
 }
 else 

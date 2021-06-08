@@ -7,4 +7,4 @@ image_speed = 0;
 speed = 0;
 _range = 500;
 _target  = obj_player;
-damage = 4;
+damage = 2;
