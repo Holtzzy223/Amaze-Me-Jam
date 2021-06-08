@@ -81,7 +81,7 @@
     {"folderPath":"folders/Sprites/Misc.yy","order":4,"resourceVersion":"1.0","name":"Misc","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Player/Ships.yy","order":3,"resourceVersion":"1.0","name":"Ships","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Player/Projectiles.yy","order":4,"resourceVersion":"1.0","name":"Projectiles","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Sprites/Player/Shields.yy","order":5,"resourceVersion":"1.0","name":"Shields","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Shields.yy","order":5,"resourceVersion":"1.0","name":"Shields","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Game.yy","order":9,"resourceVersion":"1.0","name":"Game","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Allies.yy","order":10,"resourceVersion":"1.0","name":"Allies","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Enemies.yy","order":11,"resourceVersion":"1.0","name":"Enemies","tags":[],"resourceType":"GMFolder",},

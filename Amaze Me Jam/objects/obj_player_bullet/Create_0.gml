@@ -15,3 +15,5 @@ _section = 0.8;
 _saturation = 1;
 _brightness = 1;
 _mix = 0.5;
+
+damage = 2;

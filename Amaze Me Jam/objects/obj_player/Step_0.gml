@@ -39,6 +39,11 @@ if(!dead)
 
 		
 	}
+	if(flash)
+	{
+		image_blend = c_white;
+		image_alpha = wave(0.25,1,0.5,.25);
+	}
 }
 else 
 if(dead)
@@ -46,10 +51,7 @@ if(dead)
 	image_alpha -= 0.01;
 	image_angle +=5;
 }
-_time += speed / room_speed;
 
-if(flash)
-{
-	image_blend = c_white;
-	image_alpha = wave(0.5,1,0.5,.25);
-}
+
+
+_time += speed / room_speed;
