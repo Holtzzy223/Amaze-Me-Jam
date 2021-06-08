@@ -5,14 +5,14 @@
 global.cam_x = 0;
 global.cam_y = 0;
 target = obj_player;
-global.camera_width = 480;
-global.camera_height = 270;
+global.camera_width = 480*3;
+global.camera_height = 270*3;
 
 view_enabled = true;
 view_visible[0] = true;
 application_surface_enable(false);
 
-camera_set_view_size(view_camera[0],global.camera_width+1,global.camera_height+1);
+camera_set_view_size(view_camera[0],global.camera_width+3,global.camera_height+3);
 display_set_gui_size(global.camera_width, global.camera_height);
 view_surf = -1;
 
