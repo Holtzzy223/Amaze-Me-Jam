@@ -24,7 +24,7 @@ if(!dead)
 		}
 		else
 		{
-			alarm_set(1,2);
+			alarm_set(1,60);
 		}
 	}
 }
