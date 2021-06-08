@@ -4,7 +4,7 @@ if(other.faction == faction) exit;
 
 if(other.faction ==FACTION.ENEMY)
 {
-	if(other.!dead)
+	if(!other.dead)
 	{
 		damage_player(1);
 	}
