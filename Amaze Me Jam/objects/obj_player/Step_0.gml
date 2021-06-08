@@ -51,7 +51,10 @@ if(dead)
 	image_alpha -= 0.01;
 	image_angle +=5;
 }
-
+if(image_alpha <= 0)
+{
+	room_restart();
+}
 
 
 _time += speed / room_speed;
