@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"spr_pirate_raider","path":"sprites/spr_pirate_raider/spr_pirate_raider.yy",},"order":3,},
     {"id":{"name":"manager_factions","path":"objects/manager_factions/manager_factions.yy",},"order":14,},
     {"id":{"name":"shd_default","path":"shaders/shd_default/shd_default.yy",},"order":0,},
     {"id":{"name":"manager_faction_enemy","path":"objects/manager_faction_enemy/manager_faction_enemy.yy",},"order":5,},

@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+event_inherited()
 _uniUV         = shader_get_uniform(shdrRainbow, "u_uv");
 _uniTime       = shader_get_uniform(shdrRainbow, "u_time");
 _uniSpeed      = shader_get_uniform(shdrRainbow, "u_speed");
