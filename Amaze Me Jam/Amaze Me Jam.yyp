@@ -37,6 +37,7 @@
     {"id":{"name":"spr_station","path":"sprites/spr_station/spr_station.yy",},"order":1,},
     {"id":{"name":"spr_shield","path":"sprites/spr_shield/spr_shield.yy",},"order":0,},
     {"id":{"name":"sh_bloom","path":"shaders/sh_bloom/sh_bloom.yy",},"order":1,},
+    {"id":{"name":"Enemy_Helpers","path":"scripts/Enemy_Helpers/Enemy_Helpers.yy",},"order":2,},
     {"id":{"name":"spr_starfield2","path":"sprites/spr_starfield2/spr_starfield2.yy",},"order":3,},
     {"id":{"name":"obj_player_bullet","path":"objects/obj_player_bullet/obj_player_bullet.yy",},"order":1,},
     {"id":{"name":"spr_mag_mine","path":"sprites/spr_mag_mine/spr_mag_mine.yy",},"order":1,},

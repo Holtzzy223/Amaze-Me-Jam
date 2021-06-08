@@ -4,4 +4,5 @@
 // Inherit the parent event
 event_inherited();
 
-hp = 4;
+hp = 2;
+bullet_timer = 60;
