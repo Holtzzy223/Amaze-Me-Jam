@@ -3,5 +3,6 @@
 
 alarm_set(0,2);
 alarm_set(1,30);
+alarm_set(2,30);
 
 

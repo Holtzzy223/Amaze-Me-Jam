@@ -13,12 +13,18 @@ if(instance_exists(_target))
 			image_angle = lerp(image_angle,_angle,0.1); 
 			direction = image_angle;
 			
-			speed = clamp(speed,0,15);
+			speed = clamp(speed,0,17);
 		}
 		else
 		{
 			speed =0;
 		}
+}
+if(hp<=0)
+{
+	global.camera_shake = 30;
+	sprite_index = spr_boom;
+	image_speed = 1;
 }
 if(image_index>image_number-1)
 {

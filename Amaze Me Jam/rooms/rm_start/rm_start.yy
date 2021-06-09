@@ -18,7 +18,6 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"manager_game","path":"objects/manager_game/manager_game.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":23000.0,"y":14618.0,"resourceVersion":"1.0","name":"inst_4F32E2BA","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances_controllers","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
-        {"properties":[],"isDnd":false,"objectId":{"name":"obj_station","path":"objects/obj_station/obj_station.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3000.0,"y":3000.0,"resourceVersion":"1.0","name":"inst_1ECE2498","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_magnetic_mine","path":"objects/obj_magnetic_mine/obj_magnetic_mine.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":7296.0,"y":23200.0,"resourceVersion":"1.0","name":"inst_3AC1A528","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_magnetic_mine","path":"objects/obj_magnetic_mine/obj_magnetic_mine.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":7872.0,"y":23712.0,"resourceVersion":"1.0","name":"inst_592D8DE2","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_magnetic_mine","path":"objects/obj_magnetic_mine/obj_magnetic_mine.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":7168.0,"y":23424.0,"resourceVersion":"1.0","name":"inst_231AA97E","tags":[],"resourceType":"GMRInstance",},
@@ -121,7 +120,6 @@
   "creationCodeFile": "",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_1ECE2498","path":"rooms/rm_start/rm_start.yy",},
     {"name":"inst_3AC1A528","path":"rooms/rm_start/rm_start.yy",},
     {"name":"inst_592D8DE2","path":"rooms/rm_start/rm_start.yy",},
     {"name":"inst_231AA97E","path":"rooms/rm_start/rm_start.yy",},

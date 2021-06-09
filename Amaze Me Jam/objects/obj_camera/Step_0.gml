@@ -8,6 +8,16 @@ if(instance_exists(target))
 	global.cam_y = clamp(global.cam_y,0,room_height-global.camera_height);
 }
 
+//shake
+global.cam_x+=random_range(-global.camera_shake,global.camera_shake);
+global.cam_y+=random_range(-global.camera_shake,global.camera_shake);
+if(global.camera_shake>0)
+{
+	global.camera_shake-=0.2;
+}
+global.camera_shake = clamp(global.camera_shake,floor(0),global.camera_shake);
+
+//culling
 instance_deactivate_layer(inst_lay_id);
 var cam, cleft,ctop,camw,camh;
 

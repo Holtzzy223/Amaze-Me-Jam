@@ -14,4 +14,6 @@ value = 0.75;
 bloom_handler = shader_get_uniform(sh_bloom,"intensity");
 //camera cull
 inst_lay_id = layer_get_id("Instances");
-cull_pad = 128;
+cull_pad = 256;
+
+global.camera_shake = 0;

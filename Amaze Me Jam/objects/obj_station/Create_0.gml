@@ -17,3 +17,6 @@ _section = 0.86;
 _saturation = 0.7;
 _brightness = 0.8;
 _mix = 0.65;
+
+target = obj_player;
+range = 125;

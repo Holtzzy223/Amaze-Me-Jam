@@ -11,3 +11,5 @@ shader_set_uniform_f(_uniSection, _section);
 shader_set_uniform_f(_uniMix, _mix);
 draw_self();
 shader_reset();
+
+draw_circle_color(x,y,range,c_blue,c_red,true);

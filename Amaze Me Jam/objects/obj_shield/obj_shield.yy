@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Allies",
-    "path": "folders/Objects/Allies.yy",
+    "name": "Upgrades",
+    "path": "folders/Objects/Upgrades.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_shield",

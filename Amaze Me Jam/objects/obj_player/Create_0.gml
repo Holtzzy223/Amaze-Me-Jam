@@ -32,6 +32,7 @@ function damage_player(_damage)
 		//Dead Check
 		if(hp <=0)
 		{
+			global.camera_shake = 50;
 			repeat(25)
 			{
 				instance_create_layer(x,y,layer,obj_debris);
@@ -43,6 +44,7 @@ function damage_player(_damage)
 		{
 			
 			//flash
+			global.camera_shake = 10;
 			flash = true;
 			alarm_set(1,60)
 			//bounce
