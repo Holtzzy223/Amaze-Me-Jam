@@ -42,6 +42,7 @@
     {"id":{"name":"obj_shield","path":"objects/obj_shield/obj_shield.yy",},"order":4,},
     {"id":{"name":"spr_station","path":"sprites/spr_station/spr_station.yy",},"order":1,},
     {"id":{"name":"spr_shield","path":"sprites/spr_shield/spr_shield.yy",},"order":0,},
+    {"id":{"name":"Optimization","path":"scripts/Optimization/Optimization.yy",},"order":3,},
     {"id":{"name":"spr_cave_ship","path":"sprites/spr_cave_ship/spr_cave_ship.yy",},"order":6,},
     {"id":{"name":"sh_bloom","path":"shaders/sh_bloom/sh_bloom.yy",},"order":1,},
     {"id":{"name":"Battle","path":"scripts/Battle/Battle.yy",},"order":2,},

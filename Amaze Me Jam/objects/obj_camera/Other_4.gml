@@ -21,7 +21,11 @@ view_surf = -1;
 display_scale_factor = 2;
 _display_width =  floor(global.camera_width * display_scale_factor);
 _display_height = floor(global.camera_height * display_scale_factor);
-
+//bounds
+//global.camera_left = ;
+//global.camera_right;
+//global.camera_top =
+//global.camera_bottom;
 
 window_set_size(_display_width,_display_height);
 

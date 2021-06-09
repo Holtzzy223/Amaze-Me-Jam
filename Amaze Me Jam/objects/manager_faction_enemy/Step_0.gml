@@ -1,4 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-event_inherited();
-faction= FACTION.NEUTRAL;
+value+=wave(0.5,1,1,0);
