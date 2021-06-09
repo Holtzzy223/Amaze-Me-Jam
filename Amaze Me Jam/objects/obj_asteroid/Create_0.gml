@@ -43,3 +43,21 @@ _section = 0.25;
 _saturation = 0.9;
 _brightness = 0.8;
 _mix = 0.5;
+
+//lazy copy :(
+
+function damage_enemy(_damage)
+{
+
+		hp -=_damage;
+		
+		//Dead Check
+		if(hp <=0)
+		{
+			repeat(25)
+			{
+				instance_create_layer(x,y,layer,obj_debris);
+			}	
+		
+	}
+}

@@ -1,4 +1,5 @@
-/// @description Insert description here
+/// @description spawn Enemies
+
 // You can write your code in this editor
 enemy_spawn_count = random_range(6,10);
 var spawn = choose(obj_hunter_seeker,obj_pirate_raider,obj_magnetic_mine,obj_pirate_brute);

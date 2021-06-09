@@ -21,8 +21,8 @@
     "path": "texturegroups/Default",
   },
   "swatchColours": null,
-  "gridX": 0,
-  "gridY": 0,
+  "gridX": 3,
+  "gridY": 3,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"9409c377-8867-4b1f-9881-b92a9e031b6a","path":"sprites/spr_satrfield3/spr_satrfield3.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"9409c377-8867-4b1f-9881-b92a9e031b6a","path":"sprites/spr_satrfield3/spr_satrfield3.yy",},"LayerId":{"name":"186a1c59-9134-428e-9c43-3e820ba8a215","path":"sprites/spr_satrfield3/spr_satrfield3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},

@@ -42,7 +42,7 @@ function damage_player(_damage)
 	if(!invincible)
 	{
 		hp -=_damage;
-		
+		invincible = true;
 		//Dead Check
 		if(hp <=0)
 		{
@@ -55,7 +55,7 @@ function damage_player(_damage)
 		}
 		else
 		{
-			invincible = true;
+			
 			//flash
 			flash = true;
 			alarm_set(1,60)

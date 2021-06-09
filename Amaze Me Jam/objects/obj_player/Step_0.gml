@@ -36,10 +36,11 @@ if(!dead)
 			bullet_speed = 15;
 		}
 		spawn_projectile(obj_player_bullet,image_angle,bullet_speed,faction,snd_pewpew);
-
-
+		
 		
 	}
+	//LASERS
+	
 	if(flash)
 	{
 		image_blend = c_white;
@@ -52,10 +53,7 @@ if(dead)
 	image_alpha -= 0.01;
 	image_angle +=5;
 }
-if(image_alpha <= 0)
-{
-	room_restart();
-}
+
 
 value = wave(0,speed/6,3,0.25);
 //_time += speed / room_speed;

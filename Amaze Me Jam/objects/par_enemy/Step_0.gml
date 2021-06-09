@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 _time += 1 / room_speed;
-value = wave(0,speed/4,3,0.25);
+value = wave(0,speed/3,3,0.25);
 if(dead)
 {
 	image_alpha -= 0.01;

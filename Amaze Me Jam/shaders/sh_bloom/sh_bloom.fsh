@@ -3,14 +3,14 @@
 //
 varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
-const float blurSize = 1.0/1024.0;
+const float blurSize = 1.0/2048.0;
 uniform float intensity;
 
 void main()
 {
    vec4 sum = vec4(0);
-   int j;
-   int i;
+   //int j;
+   //int i;
 
    // take nine samples, with the distance blurSize between them
    sum += texture2D(gm_BaseTexture, vec2(v_vTexcoord.x - 4.0*blurSize, v_vTexcoord.y)) * 0.05;

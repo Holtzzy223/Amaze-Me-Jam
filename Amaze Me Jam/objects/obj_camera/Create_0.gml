@@ -6,3 +6,6 @@ parallax_layer_close =  layer_get_id("Parallax_close");
 parallax_layer_overlay =  layer_get_id("Parallax_overlay");
 application_surface_enable(false);
 view_surf = -1;
+
+value = 0.75;
+bloom_handler = shader_get_uniform(sh_bloom,"intensity");
