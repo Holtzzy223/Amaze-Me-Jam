@@ -25,9 +25,9 @@ if(!dead)
 					spawn_projectile(obj_player_bullet,direction,10+speed,faction,snd_pewpew);
 					bullet_timer = 60;
 				}
-				if(point_distance(x,y,_target.x,_target.y)<_chase_range/8)
+				if(point_distance(x,y,_target.x,_target.y)<300)
 				{
-					speed -= 0.065;
+					speed -= 0.1;
 					speed = clamp(speed,0,15);
 				}
 				
