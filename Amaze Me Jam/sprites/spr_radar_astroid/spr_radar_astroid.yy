@@ -7,9 +7,9 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 18,
-  "bbox_right": 32,
-  "bbox_top": 15,
+  "bbox_left": 12,
+  "bbox_right": 35,
+  "bbox_top": 13,
   "bbox_bottom": 35,
   "HTile": false,
   "VTile": false,
@@ -24,12 +24,12 @@
   "gridX": 3,
   "gridY": 3,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"3ed6346d-4b3a-4097-b7a8-eb5c0ea2e6d7","path":"sprites/spr_radar/spr_radar.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3ed6346d-4b3a-4097-b7a8-eb5c0ea2e6d7","path":"sprites/spr_radar/spr_radar.yy",},"LayerId":{"name":"dd02d606-02e2-42fe-a1fb-05dcb85a850b","path":"sprites/spr_radar/spr_radar.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_radar","path":"sprites/spr_radar/spr_radar.yy",},"resourceVersion":"1.0","name":"3ed6346d-4b3a-4097-b7a8-eb5c0ea2e6d7","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"3ed6346d-4b3a-4097-b7a8-eb5c0ea2e6d7","path":"sprites/spr_radar_astroid/spr_radar_astroid.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"3ed6346d-4b3a-4097-b7a8-eb5c0ea2e6d7","path":"sprites/spr_radar_astroid/spr_radar_astroid.yy",},"LayerId":{"name":"dd02d606-02e2-42fe-a1fb-05dcb85a850b","path":"sprites/spr_radar_astroid/spr_radar_astroid.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_radar_astroid","path":"sprites/spr_radar_astroid/spr_radar_astroid.yy",},"resourceVersion":"1.0","name":"3ed6346d-4b3a-4097-b7a8-eb5c0ea2e6d7","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_radar","path":"sprites/spr_radar/spr_radar.yy",},
+    "spriteId": {"name":"spr_radar_astroid","path":"sprites/spr_radar_astroid/spr_radar_astroid.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 6.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"abd1599a-292f-475a-b999-310303e2c480","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3ed6346d-4b3a-4097-b7a8-eb5c0ea2e6d7","path":"sprites/spr_radar/spr_radar.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"bc8bc22d-4f7c-4d97-a520-ea5cb8898fbc","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3ed6346d-4b3a-4097-b7a8-eb5c0ea2e6d7","path":"sprites/spr_radar_astroid/spr_radar_astroid.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 24,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_radar","path":"sprites/spr_radar/spr_radar.yy",},
+    "parent": {"name":"spr_radar_astroid","path":"sprites/spr_radar_astroid/spr_radar_astroid.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_radar",
+    "name": "spr_radar_astroid",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/Misc.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_radar",
+  "name": "spr_radar_astroid",
   "tags": [],
   "resourceType": "GMSprite",
 }

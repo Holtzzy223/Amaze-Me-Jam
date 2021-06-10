@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Misc",
-    "path": "folders/Sprites/Misc.yy",
+    "name": "Projectiles",
+    "path": "folders/Sprites/Player/Projectiles.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_radar",
