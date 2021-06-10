@@ -57,7 +57,7 @@ if(dead)
 {
 	image_alpha -= 0.01;
 	image_angle +=5;
-	part_particles_create(manager_particles.particle_system,x, y,manager_particles.particle_debris_ship,1);	
+	part_particles_create_color(manager_particles.particle_system,x, y,manager_particles.particle_debris_ship,image_blend,1);	
 }
 
 
