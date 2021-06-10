@@ -14,3 +14,15 @@
 //	}
 //
 //}
+function cull_out_of_view(layer_id,_camera,padding)
+{
+	instance_deactivate_layer(layer_id);
+	var cam, cleft,ctop,camw,camh;
+	
+	cam = _camera;
+	cleft = camera_get_view_x(cam);
+	ctop = camera_get_view_y(cam);
+	camh = camera_get_view_height(cam);
+	camw = camera_get_view_width(cam);
+	instance_activate_region(cleft-padding,ctop-padding,camw+padding,camh+padding,true);
+}

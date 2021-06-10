@@ -5,6 +5,6 @@
 event_inherited();
 image_speed = 0;
 speed = 0;
-_range = 500;
+_range = 750;
 _target  = obj_player;
 damage = 2;

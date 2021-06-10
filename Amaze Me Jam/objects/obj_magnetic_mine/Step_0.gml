@@ -7,7 +7,8 @@ if(instance_exists(_target))
 	{
 		if(target_in_range(_target,_range))
 		{
-			speed += 0.06;
+			image_speed = 1;
+			speed += 0.1;
 			var _angle = point_direction(x,y,_target.x,_target.y);
 			_angle = image_angle  - angle_difference(image_angle,_angle);
 			image_angle = lerp(image_angle,_angle,0.1); 
@@ -22,13 +23,15 @@ if(instance_exists(_target))
 }
 if(hp<=0)
 {
-	global.camera_shake = 30;
+	global.camera_shake = 10;
 	sprite_index = spr_boom;
 	image_speed = 1;
 }
-if(image_index>image_number-1)
+if(sprite_index == spr_boom)
 {
-	instance_destroy(id);
+	if(image_index>image_number-1)
+	{
+		instance_destroy(id);
+	}
 }
-
 

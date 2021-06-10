@@ -22,12 +22,4 @@ if(global.camera_shake<0)
 }
 
 //culling
-instance_deactivate_layer(inst_lay_id);
-var cam, cleft,ctop,camw,camh;
-
-cam = view_camera[0];
-cleft = camera_get_view_x(cam);
-ctop = camera_get_view_y(cam);
-camh = camera_get_view_height(cam);
-camw = camera_get_view_width(cam);
-instance_activate_region(cleft-cull_pad,ctop-cull_pad,camw+cull_pad,camh+cull_pad,true);
+cull_out_of_view(inst_lay_id,view_camera[0],cull_pad)

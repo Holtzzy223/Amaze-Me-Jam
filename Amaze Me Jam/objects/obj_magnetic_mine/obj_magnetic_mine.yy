@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_mag_mine",
-    "path": "sprites/spr_mag_mine/spr_mag_mine.yy",
+    "name": "spr_mine_strip8",
+    "path": "sprites/spr_mine_strip8/spr_mine_strip8.yy",
   },
   "solid": false,
   "visible": true,
