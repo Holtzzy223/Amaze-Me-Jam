@@ -15,12 +15,17 @@ if(!dead)
 		var thrust = 0.3;
 		speed = clamp(speed,0,17);
 		motion_add(image_angle,thrust);
-		
-		if (speed > 0.25)
-	    {
-			part_particles_create(manager_particles.particle_system,x-lengthdir_x(sprite_width*0.4,image_angle), y-lengthdir_y(sprite_height/2,image_angle),manager_particles.particle_exhaust_player,1);
-			//effect_create_below(ef_spark, x-lengthdir_x(sprite_width/2,image_angle), y-lengthdir_y(sprite_height/2,image_angle), 0, c_yellow);
-	    }
+		thrust_counter++;
+		if(thrust_counter >= 4)
+		{
+			thrust_counter = 0;
+			if (speed > 0.25)
+			{
+				
+				part_particles_create(manager_particles.particle_system,x-lengthdir_x(sprite_width*0.4,image_angle), y-lengthdir_y(sprite_height/2,image_angle),manager_particles.particle_exhaust_player,1);
+				//effect_create_below(ef_spark, x-lengthdir_x(sprite_width/2,image_angle), y-lengthdir_y(sprite_height/2,image_angle), 0, c_yellow);
+			}
+		}
 			
 	}
 

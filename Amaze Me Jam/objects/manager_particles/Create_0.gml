@@ -17,7 +17,7 @@ particle_system = part_system_create();
 	part_type_orientation(particle_exhaust_player,0,180,0,0,1);
 	part_type_color3(particle_exhaust_player,c_yellow,c_green,c_aqua);
 	part_type_alpha3(particle_exhaust_player,0.8,0.5,0);
-	part_type_life(particle_exhaust_player,3,10);
+	part_type_life(particle_exhaust_player,10,20);
 	
 	#endregion
 	
@@ -29,7 +29,7 @@ particle_system = part_system_create();
 	part_type_orientation(particle_exhaust_enemy_raider,0,180,0,0,1);
 	part_type_color3(particle_exhaust_enemy_raider,c_purple,c_red,c_fuchsia);
 	part_type_alpha3(particle_exhaust_enemy_raider,0.8,0.5,0);
-	part_type_life(particle_exhaust_enemy_raider,3,10);
+	part_type_life(particle_exhaust_enemy_raider,5,10);
 	
 	#endregion
 	#region	Ally Ships

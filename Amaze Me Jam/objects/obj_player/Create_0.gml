@@ -13,6 +13,7 @@ hp = 10;
 bullet_speed = 12;
 flash = false;
 input_magnitude = 65;
+thrust_counter = 0;
 //Shader Stuffz
 
 
