@@ -4,6 +4,7 @@ _time += 1 / room_speed;
 value = wave(0,speed/3,3,0.25);
 if(dead)
 {
+	global.camera_shake = 15;
 	image_alpha -= 0.01;
 	image_angle +=5;
 }

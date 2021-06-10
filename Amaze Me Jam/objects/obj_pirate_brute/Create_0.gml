@@ -10,4 +10,4 @@ _chase_range = 1000;
 
 _shoot_range = 800;
 bullet_timer = 60;
-mine_timer = 300;
+mine_timer = random_range(1200,3600);

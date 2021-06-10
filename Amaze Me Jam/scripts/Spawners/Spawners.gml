@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function spawn_object_at_camera_bounds(object_to_spawn,spawn_count,pad)
+function spawn_object_at_camera_bounds(object_to_spawn,spawn_count,_layer,pad)
 {
 	var xx,yy;
 	
@@ -16,7 +16,7 @@ function spawn_object_at_camera_bounds(object_to_spawn,spawn_count,pad)
 			xx = random_range(0,room_width);
 			yy = random_range(0,room_height);
 		}
-		instance_create_layer(xx,yy,"Instances",object_to_spawn);
+		instance_create_layer(xx,yy,_layer,object_to_spawn);
 	}
 }
 

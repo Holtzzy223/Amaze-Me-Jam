@@ -13,9 +13,13 @@ global.cam_x+=random_range(-global.camera_shake,global.camera_shake);
 global.cam_y+=random_range(-global.camera_shake,global.camera_shake);
 if(global.camera_shake>0)
 {
-	global.camera_shake-=0.2;
+	global.camera_shake-=0.3;
+
 }
-global.camera_shake = clamp(global.camera_shake,floor(0),global.camera_shake);
+if(global.camera_shake<0)
+{
+	global.camera_shake =0;
+}
 
 //culling
 instance_deactivate_layer(inst_lay_id);
