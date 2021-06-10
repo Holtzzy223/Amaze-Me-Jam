@@ -4,6 +4,12 @@
 event_inherited();
 if(!dead)
 {
+
+	if (speed > 4)
+	{
+		part_particles_create(manager_particles.particle_system,x-lengthdir_x(sprite_width*0.4,image_angle), y-lengthdir_y(sprite_height/2,image_angle),manager_particles.particle_exhaust_enemy_raider,1);
+	//effect_create_below(ef_spark, x-lengthdir_x(sprite_width/2,image_angle), y-lengthdir_y(sprite_height/2,image_angle), 0, c_yellow);
+	}
 	if(instance_exists(_target))
 	{
 		if(target_in_range(_target,_range))

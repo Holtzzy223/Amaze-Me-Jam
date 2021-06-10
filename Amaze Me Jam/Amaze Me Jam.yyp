@@ -3,6 +3,7 @@
     {"id":{"name":"spr_pirate_raider","path":"sprites/spr_pirate_raider/spr_pirate_raider.yy",},"order":3,},
     {"id":{"name":"manager_factions","path":"objects/manager_factions/manager_factions.yy",},"order":14,},
     {"id":{"name":"manager_faction_enemy","path":"objects/manager_faction_enemy/manager_faction_enemy.yy",},"order":4,},
+    {"id":{"name":"spr_raider_exhaust","path":"sprites/spr_raider_exhaust/spr_raider_exhaust.yy",},"order":1,},
     {"id":{"name":"spr_hunter_seeker","path":"sprites/spr_hunter_seeker/spr_hunter_seeker.yy",},"order":0,},
     {"id":{"name":"spr_grapple_line","path":"sprites/spr_grapple_line/spr_grapple_line.yy",},"order":3,},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},"order":0,},
