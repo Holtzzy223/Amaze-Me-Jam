@@ -15,9 +15,14 @@ if(flash)
 }
 if(image_alpha<=0)
 {
+	
 	instance_destroy(id);
 }
 if(!dead)
 {
-	part_particles_create(manager_particles.particle_system,x-lengthdir_x(sprite_width*0.4,image_angle), y-lengthdir_y(sprite_height/2,image_angle),manager_particles.particle_exhaust_enemy_raider,1);
+	if(thrust_counter >=4)
+	{
+		thrust_counter = 0 ;
+		part_particles_create(manager_particles.particle_system,x-lengthdir_x(sprite_width*0.4,image_angle), y-lengthdir_y(sprite_height/2,image_angle),manager_particles.particle_exhaust_enemy_raider,1);
+	}
 }

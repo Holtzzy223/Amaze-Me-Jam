@@ -32,10 +32,7 @@ function damage_player(_damage)
 		if(hp <=0)
 		{
 			global.camera_shake = 15;
-			repeat(25)
-			{
-				instance_create_layer(x,y,layer,obj_debris);
-			}
+			part_particles_create(manager_particles.particle_system,x, y,manager_particles.particle_debris_ship,20);
 			dead = true;
 			alarm_set(0,120);
 		}

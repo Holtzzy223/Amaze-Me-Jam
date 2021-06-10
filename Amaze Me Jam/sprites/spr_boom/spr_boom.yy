@@ -125,8 +125,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Misc",
-    "path": "folders/Sprites/Misc.yy",
+    "name": "Particles",
+    "path": "folders/Sprites/Particles.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_boom",

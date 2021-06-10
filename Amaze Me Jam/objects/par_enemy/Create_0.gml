@@ -15,6 +15,7 @@ bullet_speed = 10;
 invincible = false;
 flash = false;
 damage = 1;
+thrust_counter = 0;
 function damage_enemy(_damage)
 {
 	if(!invincible)
@@ -24,10 +25,7 @@ function damage_enemy(_damage)
 		//Dead Check
 		if(hp <=0)
 		{
-			repeat(25)
-			{
-				instance_create_layer(x,y,layer,obj_debris);
-			}
+			part_particles_create(manager_particles.particle_system,x, y,manager_particles.particle_debris_ship,20);
 			dead = true;
 			
 		}

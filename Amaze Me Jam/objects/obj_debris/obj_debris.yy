@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_debris",
-    "path": "sprites/spr_debris/spr_debris.yy",
+    "name": "spr_debris_astroids",
+    "path": "sprites/spr_debris_astroids/spr_debris_astroids.yy",
   },
   "solid": false,
   "visible": true,

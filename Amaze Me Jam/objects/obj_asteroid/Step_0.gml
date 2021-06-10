@@ -13,20 +13,14 @@ if(hp <=0)
 			child.sprite_index = spr_asteroid_med;
 			hp =5;
 			global.camera_shake = 15;
-			repeat(10)
-			{
-				instance_create_depth(x,y,depth,obj_debris);
-			}		
+			part_particles_create(manager_particles.particle_system,x, y,manager_particles.particle_debris_astroid,10);	
 		break;
 		case spr_asteroid_med:
 			sprite_index = spr_asteroid_small;
 			var child = instance_create_depth(x+choose(sprite_width/2,-sprite_width/2),y,depth,obj_asteroid);
 			child.sprite_index = spr_asteroid_small;
 			global.camera_shake = 10;
-			repeat(10)
-			{
-				instance_create_depth(x,y,depth,obj_debris);
-			}
+			part_particles_create(manager_particles.particle_system,x, y,manager_particles.particle_debris_astroid,7);
 			hp = 3;
 		break;
 		case spr_asteroid_small:
@@ -36,19 +30,13 @@ if(hp <=0)
 			child.sprite_index = spr_asteroid_tiny;
 			child_second.sprite_index = spr_asteroid_tiny;
 			global.camera_shake = 5;
-			repeat(15)
-			{
-				instance_create_depth(x,y,depth,obj_debris);
-			}
+			part_particles_create(manager_particles.particle_system,x, y,manager_particles.particle_debris_astroid,5);
 			hp = 2;
 		break;
 		case spr_asteroid_tiny:
 			instance_destroy(id);
 			global.camera_shake = 3;
-			repeat(25)
-			{
-				instance_create_depth(x,y,depth,obj_debris);
-			}
+			part_particles_create(manager_particles.particle_system,x, y,manager_particles.particle_debris_astroid,3);
 		break;
 	}
 	

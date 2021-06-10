@@ -54,10 +54,7 @@ function damage_enemy(_damage)
 		//Dead Check
 		if(hp <=0)
 		{
-			repeat(25)
-			{
-				instance_create_layer(x,y,layer,obj_debris);
-			}	
 		
-	}
+		
+		}
 }
