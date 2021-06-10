@@ -49,7 +49,7 @@ part_type_size(particle_debris_astroid,1,1,-0.05,0);
 part_type_orientation(particle_debris_astroid,0,359,1,0,false);
 part_type_direction(particle_debris_astroid,0,359,0,false);
 part_type_speed(particle_debris_astroid,5,6,-0.02,0);
-part_type_color3(particle_debris_astroid,c_white,c_maroon,c_red);
+part_type_color3(particle_debris_astroid,c_purple,c_maroon,c_red);
 part_type_alpha3(particle_debris_astroid,0.8,0.6,0);
 part_type_life(particle_debris_astroid,120,300);
 
@@ -60,7 +60,7 @@ part_type_size(particle_debris_ship,1,1,-0.05,0);
 part_type_orientation(particle_debris_ship,0,359,1,0,false);
 part_type_direction(particle_debris_ship,0,359,0,false);
 part_type_speed(particle_debris_ship,6,9,-0.05,0);
-part_type_color3(particle_debris_ship,c_white,c_green,c_red);
+part_type_color3(particle_debris_ship,c_red,c_green,c_red);
 part_type_alpha3(particle_debris_ship,0.7,0.5,0);
 part_type_life(particle_debris_ship,120,300);
 
