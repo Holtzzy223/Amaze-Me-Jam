@@ -18,7 +18,7 @@ if(!dead)
 		
 		if (speed > 0.25)
 	    {
-			part_particles_create(manager_particles.particle_system,x-lengthdir_x(sprite_width/2,image_angle), y-lengthdir_y(sprite_height/2,image_angle),manager_particles.particle_exhaust,1);
+			part_particles_create(manager_particles.particle_system,x-lengthdir_x(sprite_width*0.4,image_angle), y-lengthdir_y(sprite_height/2,image_angle),manager_particles.particle_exhaust,1);
 			//effect_create_below(ef_spark, x-lengthdir_x(sprite_width/2,image_angle), y-lengthdir_y(sprite_height/2,image_angle), 0, c_yellow);
 	    }
 			
