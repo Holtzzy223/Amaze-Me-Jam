@@ -1,10 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 _time += 1 / room_speed;
-value = wave(0,speed/3,3,0.25);
+value = wave(0,1+_time,3,0.25);
 if(dead)
 {
-	global.camera_shake = 15;
+	global.camera_shake = 10;
 	image_alpha -= 0.01;
 	image_angle +=5;
 }

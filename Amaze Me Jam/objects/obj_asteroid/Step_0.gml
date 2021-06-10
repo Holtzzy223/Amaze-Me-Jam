@@ -12,7 +12,7 @@ if(hp <=0)
 			var child = instance_create_depth(x+choose(sprite_width/2,-sprite_width/2),y,depth,obj_asteroid);
 			child.sprite_index = spr_asteroid_med;
 			hp =5;
-			global.camera_shake = 25;
+			global.camera_shake = 15;
 			repeat(10)
 			{
 				instance_create_depth(x,y,depth,obj_debris);
@@ -35,7 +35,7 @@ if(hp <=0)
 			var child_second = instance_create_depth(x,y,depth,obj_asteroid);
 			child.sprite_index = spr_asteroid_tiny;
 			child_second.sprite_index = spr_asteroid_tiny;
-			global.camera_shake = 8;
+			global.camera_shake = 5;
 			repeat(15)
 			{
 				instance_create_depth(x,y,depth,obj_debris);
@@ -44,7 +44,7 @@ if(hp <=0)
 		break;
 		case spr_asteroid_tiny:
 			instance_destroy(id);
-			global.camera_shake = 5
+			global.camera_shake = 3;
 			repeat(25)
 			{
 				instance_create_depth(x,y,depth,obj_debris);
