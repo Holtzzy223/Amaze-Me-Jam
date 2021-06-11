@@ -9,7 +9,7 @@ radarX = obj_player.x;
 radarY = obj_player.y;
 
 draw_set_alpha(0.6);
-draw_circle_color(display_get_gui_width()/10,display_get_gui_height()/6,140,c_blue,c_navy,false)
+draw_circle_color(display_get_gui_width()/10,display_get_gui_height()/6,180,c_green,c_blue,false)
 draw_set_alpha(1);
 //draw the wall instance that are in range
 
@@ -21,7 +21,7 @@ with(manager_factions)
 
     d = point_distance(radarX,radarY,x,y);
 
-    if(d <= 2000)  // This is the distance to check for
+    if(d <= 3600)  // This is the distance to check for
 
     {
 
@@ -34,11 +34,11 @@ with(manager_factions)
 		}
 		if(faction ==FACTION.NEUTRAL)
 		{
-			draw_sprite_ext(spr_radar_astroid, 0, display_get_gui_width()/10 + lengthdir_x(d,a),display_get_gui_height()/6 + lengthdir_y(d,a),1,1,image_angle,c_dkgrey,0.8);
+			draw_sprite_ext(spr_radar_astroid, 0, display_get_gui_width()/10 + lengthdir_x(d,a),display_get_gui_height()/6 + lengthdir_y(d,a),1,1,image_angle,c_yellow,0.8);
 		}
 		if(faction ==FACTION.ALLY)
 		{
-			draw_sprite_ext(spr_radar, 0, display_get_gui_width()/10 + lengthdir_x(d,a),display_get_gui_height()/6 + lengthdir_y(d,a),1,1,image_angle,c_green,0.8);
+			draw_sprite_ext(spr_radar, 0, display_get_gui_width()/10 + lengthdir_x(d,a),display_get_gui_height()/6 + lengthdir_y(d,a),1,1,image_angle,c_aqua,0.8);
 		}
     }
 

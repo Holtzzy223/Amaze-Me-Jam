@@ -5,8 +5,8 @@
 global.cam_x = 0;
 global.cam_y = 0;
 target = obj_player;
-global.camera_width = 480*3;
-global.camera_height = 270*3;
+global.camera_width = 640*3;
+global.camera_height = 360*3;
 global.camera_shake = 0;
 view_enabled = true;
 view_visible[0] = true;
