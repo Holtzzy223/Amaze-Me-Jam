@@ -13,7 +13,7 @@ if(!dead)
 			image_angle = lerp(image_angle,_angle,0.1); 
 			direction = image_angle;
 			speed += 0.01;
-			speed = clamp(speed,0,14);
+			speed = clamp(speed,0,12);
 			if(target_in_range(_target,_shoot_range))
 			{
 				

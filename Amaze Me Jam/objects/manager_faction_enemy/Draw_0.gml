@@ -28,4 +28,3 @@ if(dead||flash)
 	draw_self();
 	
 }
-draw_text(bbox_left,bbox_top,hp);

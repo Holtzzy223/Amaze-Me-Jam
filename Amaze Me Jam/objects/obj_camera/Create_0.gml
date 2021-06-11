@@ -10,7 +10,7 @@ view_surf = -1;
 
 show_debug_overlay(true);
 //Bloom
-value = 0.75;
+value = 0.5;
 bloom_handler = shader_get_uniform(sh_bloom,"intensity");
 //camera cull
 inst_lay_id = layer_get_id("Instances");

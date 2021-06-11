@@ -9,12 +9,15 @@ event_inherited();
 shield = noone;
 invincible = false;
 dead = false;
-hp = 10;
+max_hp = 10
+hp = max_hp;
+max_speed = 12;
 bullet_speed = 12;
 flash = false;
 input_magnitude = 65;
 thrust_counter = 0;
-bullet_timer = 15;
+fire_thresh = 25;
+bullet_timer = fire_thresh;
 max_energy = 100;
 energy = max_energy;
 laser_firing = false;

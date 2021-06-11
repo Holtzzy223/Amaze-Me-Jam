@@ -26,7 +26,7 @@ if(!dead)
 			if(point_distance(x,y,_target.x,_target.y)<_range/4)
 			{
 				speed -= 0.065;
-				speed = clamp(speed,0,15);
+				speed = clamp(speed,0,10);
 			}
 		}
 		else

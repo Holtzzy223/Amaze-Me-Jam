@@ -14,7 +14,7 @@ if(instance_exists(_target))
 			image_angle = lerp(image_angle,_angle,0.1); 
 			direction = image_angle;
 			
-			speed = clamp(speed,0,17);
+			speed = clamp(speed,0,11);
 		}
 		else
 		{

@@ -28,7 +28,7 @@ if(!dead)
 				if(point_distance(x,y,_target.x,_target.y)<_chase_range/3)
 				{
 					speed -= 0.065;
-					speed = clamp(speed,0,15);
+					speed = clamp(speed,0,12);
 				}
 				
 			}

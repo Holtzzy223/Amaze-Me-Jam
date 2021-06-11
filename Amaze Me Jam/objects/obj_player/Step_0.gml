@@ -12,8 +12,8 @@ if(!dead)
 	}
 	if(keyboard_check(vk_up))||keyboard_check(ord("W"))
 	{
-		var thrust = 0.3;
-		speed = clamp(speed,0,17);
+		var thrust = 0.25;
+		speed = clamp(speed,0,max_speed);
 		motion_add(image_angle,thrust);
 		thrust_counter++;
 		if(thrust_counter >= 4)
@@ -43,7 +43,7 @@ if(!dead)
 			bullet_speed = 15;
 		}
 		//spawn inital bullet
-		if(bullet_timer >=15)
+		if(bullet_timer >=25)
 		{
 			bullet_timer = 0;
 
@@ -53,7 +53,7 @@ if(!dead)
 	}
 	if(keyboard_check_released(vk_space))
 	{
-		bullet_timer = 15;
+		bullet_timer = fire_thresh;
 	}
 	//LASERS
 	if(!laser_firing&&energy<max_energy)
