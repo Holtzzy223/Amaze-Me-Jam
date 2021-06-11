@@ -24,12 +24,12 @@
   "gridX": 3,
   "gridY": 3,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"a00831a2-02e5-46ae-97be-0e01ace571ce","path":"sprites/spr_hunter_seeker/spr_hunter_seeker.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a00831a2-02e5-46ae-97be-0e01ace571ce","path":"sprites/spr_hunter_seeker/spr_hunter_seeker.yy",},"LayerId":{"name":"2a763509-012c-4dc4-a9ac-18cb09435b7a","path":"sprites/spr_hunter_seeker/spr_hunter_seeker.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_hunter_seeker","path":"sprites/spr_hunter_seeker/spr_hunter_seeker.yy",},"resourceVersion":"1.0","name":"a00831a2-02e5-46ae-97be-0e01ace571ce","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"a00831a2-02e5-46ae-97be-0e01ace571ce","path":"sprites/spr_player_ship_dart/spr_player_ship_dart.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"a00831a2-02e5-46ae-97be-0e01ace571ce","path":"sprites/spr_player_ship_dart/spr_player_ship_dart.yy",},"LayerId":{"name":"2a763509-012c-4dc4-a9ac-18cb09435b7a","path":"sprites/spr_player_ship_dart/spr_player_ship_dart.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_player_ship_dart","path":"sprites/spr_player_ship_dart/spr_player_ship_dart.yy",},"resourceVersion":"1.0","name":"a00831a2-02e5-46ae-97be-0e01ace571ce","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_hunter_seeker","path":"sprites/spr_hunter_seeker/spr_hunter_seeker.yy",},
+    "spriteId": {"name":"spr_player_ship_dart","path":"sprites/spr_player_ship_dart/spr_player_ship_dart.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"d674fac6-eb8a-4f43-b54f-b06a41438968","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a00831a2-02e5-46ae-97be-0e01ace571ce","path":"sprites/spr_hunter_seeker/spr_hunter_seeker.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d674fac6-eb8a-4f43-b54f-b06a41438968","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a00831a2-02e5-46ae-97be-0e01ace571ce","path":"sprites/spr_player_ship_dart/spr_player_ship_dart.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 48,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_hunter_seeker","path":"sprites/spr_hunter_seeker/spr_hunter_seeker.yy",},
+    "parent": {"name":"spr_player_ship_dart","path":"sprites/spr_player_ship_dart/spr_player_ship_dart.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_hunter_seeker",
+    "name": "spr_player_ship_dart",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -69,11 +69,11 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Sprites/Enemies.yy",
+    "name": "Ships",
+    "path": "folders/Sprites/Player/Ships.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_hunter_seeker",
+  "name": "spr_player_ship_dart",
   "tags": [],
   "resourceType": "GMSprite",
 }

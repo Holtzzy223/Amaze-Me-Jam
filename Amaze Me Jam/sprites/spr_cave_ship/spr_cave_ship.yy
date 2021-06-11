@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Player",
-    "path": "folders/Sprites/Player.yy",
+    "name": "Ships",
+    "path": "folders/Sprites/Player/Ships.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_cave_ship",
