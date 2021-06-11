@@ -23,4 +23,4 @@ if(global.camera_shake<0)
 
 //culling
 cull_out_of_view(inst_lay_id,view_camera[0],cull_pad,1.33)
-value = wave(0.1,3,3,1);
+value = wave(0.1,1.25,30,10);

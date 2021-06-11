@@ -26,8 +26,11 @@ if(!dead)
 				//effect_create_below(ef_spark, x-lengthdir_x(sprite_width/2,image_angle), y-lengthdir_y(sprite_height/2,image_angle), 0, c_yellow);
 			}
 		}
+
 			
 	}
+	
+
 
 	
 	if(keyboard_check(vk_space))
@@ -36,14 +39,14 @@ if(!dead)
 		bullet_timer++
 		if(obj_player.speed >=1)
 		{
-			bullet_speed =15+obj_player.speed;		
+			bullet_speed =18+obj_player.speed;		
 		}
 		else
 		{
-			bullet_speed = 15;
+			bullet_speed = 18;
 		}
 		//spawn inital bullet
-		if(bullet_timer >=25)
+		if(bullet_timer >=fire_thresh)
 		{
 			bullet_timer = 0;
 

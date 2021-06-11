@@ -25,7 +25,7 @@ with(manager_factions)
 
     {
 
-        d = d/800*75;
+        d = d/1200*90;
 
         a = point_direction(radarX,radarY,x,y)
 		if(faction ==FACTION.ENEMY)

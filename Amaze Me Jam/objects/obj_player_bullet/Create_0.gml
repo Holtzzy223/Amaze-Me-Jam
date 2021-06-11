@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 image_angle = obj_player.image_angle;
+
 //_uniUV         = shader_get_uniform(shdrRainbow, "u_uv");
 //_uniTime       = shader_get_uniform(shdrRainbow, "u_time");
 //_uniSpeed      = shader_get_uniform(shdrRainbow, "u_speed");
@@ -16,6 +17,6 @@ image_angle = obj_player.image_angle;
 //_brightness = 1;
 //_mix = 0.5;
 bloom_handler = shader_get_uniform(sh_bloom,"intensity");
-value =0;
+value =2;
 enemy_damage = 3;
 player_damage = 2;
