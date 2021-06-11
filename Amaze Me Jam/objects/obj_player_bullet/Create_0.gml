@@ -17,4 +17,5 @@ image_angle = obj_player.image_angle;
 //_mix = 0.5;
 bloom_handler = shader_get_uniform(sh_bloom,"intensity");
 value =0;
-damage = 2;
+enemy_damage = 3;
+player_damage = 2;

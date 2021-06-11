@@ -14,7 +14,7 @@
 //	}
 //
 //}
-function cull_out_of_view(layer_id,_camera,padding)
+function cull_out_of_view(layer_id,_camera,padding,rect_scale)
 {
 	instance_deactivate_layer(layer_id);
 	var cam, cleft,ctop,camw,camh;
@@ -24,5 +24,5 @@ function cull_out_of_view(layer_id,_camera,padding)
 	ctop = camera_get_view_y(cam);
 	camh = camera_get_view_height(cam);
 	camw = camera_get_view_width(cam);
-	instance_activate_region(cleft-padding,ctop-padding,camw+padding,camh+padding,true);
+	instance_activate_region(cleft-padding,ctop-(padding*rect_scale),camw+padding,camh+(padding*rect_scale),true);
 }

@@ -14,6 +14,10 @@ bullet_speed = 12;
 flash = false;
 input_magnitude = 65;
 thrust_counter = 0;
+bullet_timer = 15;
+max_energy = 100;
+energy = max_energy;
+laser_firing = false;
 //Shader Stuffz
 
 

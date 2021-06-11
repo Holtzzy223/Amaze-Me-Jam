@@ -2,15 +2,15 @@
 // You can write your code in this editor
 if(!dead)
 {
-	if(keyboard_check(vk_left))
+	if(keyboard_check(vk_left)||keyboard_check(ord("A")))
 	{
 		image_angle =lerp(image_angle,image_angle+input_magnitude,0.1);;
 	}
-	if(keyboard_check(vk_right))
+	if(keyboard_check(vk_right))||keyboard_check(ord("D"))
 	{
 		image_angle=lerp(image_angle,image_angle-input_magnitude,0.1);;
 	}
-	if(keyboard_check(vk_up))
+	if(keyboard_check(vk_up))||keyboard_check(ord("W"))
 	{
 		var thrust = 0.3;
 		speed = clamp(speed,0,17);
@@ -30,8 +30,10 @@ if(!dead)
 	}
 
 	
-	if(keyboard_check_pressed(vk_space))
+	if(keyboard_check(vk_space))
 	{
+		
+		bullet_timer++
 		if(obj_player.speed >=1)
 		{
 			bullet_speed =15+obj_player.speed;		
@@ -40,12 +42,25 @@ if(!dead)
 		{
 			bullet_speed = 15;
 		}
-		spawn_projectile(obj_player_bullet,image_angle,bullet_speed,faction,snd_pewpew);
-		
+		//spawn inital bullet
+		if(bullet_timer >=15)
+		{
+			bullet_timer = 0;
+
+			spawn_projectile(obj_player_bullet,image_angle,bullet_speed,faction,snd_pewpew);
+		}
 		
 	}
+	if(keyboard_check_released(vk_space))
+	{
+		bullet_timer = 15;
+	}
 	//LASERS
-	
+	if(!laser_firing&&energy<max_energy)
+	{
+		energy+=0.25;
+	}
+	energy = clamp(energy,0,max_energy);
 	if(flash)
 	{
 		image_blend = c_white;
