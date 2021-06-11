@@ -21,11 +21,11 @@ with(manager_factions)
 
     d = point_distance(radarX,radarY,x,y);
 
-    if(d <= 2500)  // This is the distance to check for
+    if(d <= 2400)  // This is the distance to check for
 
     {
 
-        d = d/1000*75;
+        d = d/800*75;
 
         a = point_direction(radarX,radarY,x,y)
 		if(faction ==FACTION.ENEMY)

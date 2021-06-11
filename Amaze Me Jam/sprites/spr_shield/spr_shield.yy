@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Shields",
-    "path": "folders/Sprites/Shields.yy",
+    "path": "folders/Sprites/Player/Shields.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_shield",

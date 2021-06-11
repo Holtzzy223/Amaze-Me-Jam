@@ -4,6 +4,7 @@ parallax_layer_far =  layer_get_id("Parallax_far");
 parallax_layer_mid =  layer_get_id("Parallax_mid");
 parallax_layer_close =  layer_get_id("Parallax_close");
 parallax_layer_overlay =  layer_get_id("Parallax_overlay");
+parallax_layer_overlay_back =  layer_get_id("Parallax_overlay_back");
 application_surface_enable(false);
 view_surf = -1;
 //Shaderz
