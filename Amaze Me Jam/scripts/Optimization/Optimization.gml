@@ -26,3 +26,17 @@ function cull_out_of_view(layer_id,_camera,padding,rect_scale)
 	camw = camera_get_view_width(cam);
 	instance_activate_region(cleft-padding,ctop-(padding*rect_scale),camw+padding,camh+(padding*rect_scale),true);
 }
+
+function draw_set_text(argument0, argument1, argument2, argument3) 
+{
+
+	// Allows one line setup of major text drawing vars.
+	// Requiring all four prevents silly coders from forgetting one
+	// And therefore creating a dumb dependency on other event calls.
+	// (Then wondering why their text changes later in development.)
+
+	draw_set_colour(argument0);
+	draw_set_font(argument1);
+	draw_set_halign(argument2);
+	draw_set_valign(argument3);
+}

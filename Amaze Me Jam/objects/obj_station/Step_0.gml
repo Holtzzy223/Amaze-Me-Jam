@@ -8,7 +8,8 @@ if instance_exists(target)
 {
 	if(target_in_range(target,range))
 	{
-		target.speed -=0.5;
+		target.speed -=2;
 		clamp(target.speed,0,17);
 	}
 }
+

@@ -14,3 +14,11 @@ enum FACTION
 	ENEMY,
 	NEUTRAL
 }
+
+enum MISSION
+{
+	TUTORIAL,
+	ESCORT,
+	KILL,
+	FETCH
+}
