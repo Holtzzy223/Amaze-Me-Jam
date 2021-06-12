@@ -33,6 +33,8 @@ function draw_set_text(color, font, halign, valign)
 //SAVE/LOAD
 function save_game(save_file)
 {
+	//clear old file
+	if(file_exists(save_file)) file_delete(save_file);
 	//save data array
 	
 	var _save_data = array_create(0);
