@@ -8,6 +8,7 @@
     {"id":{"name":"manager_faction_enemy","path":"objects/manager_faction_enemy/manager_faction_enemy.yy",},"order":4,},
     {"id":{"name":"spr_raider_exhaust","path":"sprites/spr_raider_exhaust/spr_raider_exhaust.yy",},"order":1,},
     {"id":{"name":"spr_player_ship_dart","path":"sprites/spr_player_ship_dart/spr_player_ship_dart.yy",},"order":1,},
+    {"id":{"name":"obj_panel","path":"objects/obj_panel/obj_panel.yy",},"order":2,},
     {"id":{"name":"obj_world_text","path":"objects/obj_world_text/obj_world_text.yy",},"order":1,},
     {"id":{"name":"spr_grapple_line","path":"sprites/spr_grapple_line/spr_grapple_line.yy",},"order":1,},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},"order":0,},
