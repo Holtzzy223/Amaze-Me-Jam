@@ -9,7 +9,7 @@ event_inherited();
 shield = noone;
 invincible = false;
 dead = false;
-max_hp = 10
+max_hp = 10;
 hp = max_hp;
 max_speed = 12;
 bullet_speed = 12;

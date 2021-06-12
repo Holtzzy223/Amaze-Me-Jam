@@ -18,3 +18,5 @@ inst_lay_id = layer_get_id("Instances");
 cull_pad = 1024;
 //shake
 global.camera_shake = 0;
+//faction
+faction = undefined;

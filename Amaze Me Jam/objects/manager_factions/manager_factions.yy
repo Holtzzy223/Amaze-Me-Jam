@@ -4,7 +4,10 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "manager_save_data",
+    "path": "objects/manager_save_data/manager_save_data.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -23,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Game",
-    "path": "folders/Objects/Game.yy",
+    "name": "Managers",
+    "path": "folders/Objects/Game/Managers.yy",
   },
   "resourceVersion": "1.0",
   "name": "manager_factions",

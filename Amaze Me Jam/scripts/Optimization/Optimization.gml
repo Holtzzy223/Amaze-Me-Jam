@@ -1,19 +1,9 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-//function cull_inactive_instances(_object,_padding)
-//{	
-//	with(_object)
-//	{
-//		var _hpad = _padding;
-//		var _vpad = _padding;
-//		var _bounds_left = x - sprite_xoffset - _hpad;
-//		var _bounds_top = y - sprite_yoffset - _vpad;
-//		var _bounds_right = _bounds_left + sprite_width +(_hpad*2);
-//		var _bounds_bottom = _bounds_top + sprite_height +(_vpad*2);
-//		var cull = !((_bounds_left<view)&&()&&()&&())
-//	}
-//
-//}
+//macros
+#macro SAVEFILE "Data.SSMB"
+
+
 function cull_out_of_view(layer_id,_camera,padding,rect_scale)
 {
 	instance_deactivate_layer(layer_id);
@@ -27,7 +17,7 @@ function cull_out_of_view(layer_id,_camera,padding,rect_scale)
 	instance_activate_region(cleft-padding,ctop-(padding*rect_scale),camw+padding,camh+(padding*rect_scale),true);
 }
 
-function draw_set_text(argument0, argument1, argument2, argument3) 
+function draw_set_text(color, font, halign, valign) 
 {
 
 	// Allows one line setup of major text drawing vars.
@@ -35,8 +25,120 @@ function draw_set_text(argument0, argument1, argument2, argument3)
 	// And therefore creating a dumb dependency on other event calls.
 	// (Then wondering why their text changes later in development.)
 
-	draw_set_colour(argument0);
-	draw_set_font(argument1);
-	draw_set_halign(argument2);
-	draw_set_valign(argument3);
+	draw_set_colour(color);
+	draw_set_font(font);
+	draw_set_halign(halign);
+	draw_set_valign(valign);
+}
+//SAVE/LOAD
+function save_game(save_file)
+{
+	//save data array
+	
+	var _save_data = array_create(0);
+	
+	//create a save struct per instance
+	with(manager_save_data)
+	{
+		if (id.faction!=undefined)
+		{
+			var _save_entity = 
+			{
+				obj : object_get_name(object_index),
+				x : x,
+				y : y,
+				image_index : image_index,
+				image_blend :image_blend,
+				image_angle : image_angle,
+				layer : layer,
+				depth : depth,
+				speed : speed,
+				direction : direction,
+				hp:hp,
+				faction : faction,
+				max_hp:max_hp,
+				max_speed : max_speed,
+				energy: energy,
+				max_energy: max_energy
+				
+			}
+		}else
+		{
+			var _save_entity = 
+			{
+				obj : object_get_name(object_index),
+				x : x,
+				y : y,
+				image_index : image_index,
+				image_blend :image_blend,
+				image_angle : image_angle,
+				layer : layer,
+				depth : depth
+			}
+		}
+		array_push(_save_data,_save_entity);
+	}
+	
+	//stringify data
+	var _string = json_stringify(_save_data);
+	var _buffer = buffer_create(string_byte_length(_string)+1,buffer_fixed,1);
+	buffer_write(_buffer,buffer_string,_string);
+	buffer_save(_buffer,save_file);
+	buffer_delete(_buffer);
+	show_debug_message("SAVED THIS FOR YAH! "+ _string);
+	
+	
+}
+
+function load_game(save_file)
+{
+	if(file_exists(save_file))
+	{
+		var _buffer = buffer_load(save_file);
+		var _string = buffer_read(_buffer,buffer_string);
+		buffer_delete(_buffer);
+		var _load_data = json_parse(_string);
+		
+		while(array_length(_load_data) > 0)
+		{
+			var _load_entity = array_pop(_load_data);
+			var _entity_index = asset_get_index(_load_entity.obj);
+			with(instance_create_layer(0,0,layer,_entity_index))
+			{
+				if(_entity_index.faction != undefined)
+				{
+					x = _load_entity.x;
+					y = _load_entity.y;
+					image_blend = _load_entity.image_blend;
+					image_index = _load_entity.image_index;
+					image_angle = _load_entity.image_angle;
+					layer = _load_entity.layer;
+					depth = _load_entity.depth;
+					speed = _load_entity.speed;
+					max_hp = _load_entity.max_hp;
+					hp = _load_entity.hp;
+					faction = _load_entity.faction;
+					max_speed = _load_entity.max_speed;
+					energy = _load_entity.energy;
+					max_energy = _load_entity.max_energy;
+					 
+					 
+					 
+				}
+				else
+				{
+					 x = _load_entity.x;
+					 y = _load_entity.y;
+					 image_blend = _load_entity.image_blend;
+					 image_index = _load_entity.image_index;
+					 image_angle = _load_entity.image_angle;
+					 layer = _load_entity.layer;
+					 depth = _load_entity.depth;
+				}
+			}
+		}
+		show_debug_message("LOADED THIS FOR YAH! " +_string);
+		
+	}
+	
 }

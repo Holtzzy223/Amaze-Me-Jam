@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+event_inherited();
 faction= FACTION.ENEMY;
 image_blend =  c_red;
 rotation_dir= choose(-1,1);

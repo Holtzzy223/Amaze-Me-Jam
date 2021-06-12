@@ -16,6 +16,7 @@ invincible = false;
 flash = false;
 damage = 1;
 thrust_counter = 0;
+
 function damage_enemy(_damage)
 {
 	if(!invincible)

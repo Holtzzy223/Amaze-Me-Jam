@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 // Inherit the parent event
-event_inherited();
+faction = undefined;
 
 image_speed = 0;
 sprite_index = choose(spr_asteroid_large,spr_asteroid_med,spr_asteroid_small,spr_asteroid_tiny);
