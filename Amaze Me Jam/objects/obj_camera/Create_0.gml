@@ -20,3 +20,4 @@ cull_pad = 1024;
 global.camera_shake = 0;
 //faction
 faction = undefined;
+target = obj_player;

@@ -2,8 +2,10 @@
 // You can write your code in this editor
 
 //Camera
+
 global.cam_x = 0;
 global.cam_y = 0;
+
 target = obj_player;
 global.camera_width = 640*3;
 global.camera_height = 360*3;

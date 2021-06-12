@@ -89,6 +89,7 @@ function save_game(save_file)
 						max_energy: max_energy
 						
 					}
+					break;
 			}
 		
 		}
@@ -169,6 +170,7 @@ function load_game(save_file)
 							max_speed = _load_entity.max_speed;
 							energy = _load_entity.energy;
 							max_energy = _load_entity.max_energy;
+						break;
 					}
 				}
 				else

@@ -1,5 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
+if(room = rm_menu)
+{
+	global.cam_x = display_get_gui_width()/2;
+	global.cam_y = display_get_gui_height()/2;
+}
 if(instance_exists(target))
 {
 	global.cam_x = target.x - (global.camera_width/2);
