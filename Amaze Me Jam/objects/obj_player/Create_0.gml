@@ -21,6 +21,7 @@ bullet_timer = fire_thresh;
 max_energy = 100;
 energy = max_energy;
 laser_firing = false;
+object_type = OBJ_TYPE.PLAYER;
 //Shader Stuffz
 
 

@@ -50,7 +50,7 @@ if(!dead)
 		{
 			bullet_timer = 0;
 
-			spawn_projectile(obj_player_bullet,image_angle,bullet_speed,faction,snd_pewpew);
+			spawn_projectile(obj_player_bullet,image_angle+random_range(-6,6),bullet_speed,faction,snd_pewpew);
 		}
 		
 	}

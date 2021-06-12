@@ -10,6 +10,14 @@ enum FACTION
 	NEUTRAL
 }
 
+enum OBJ_TYPE
+{
+	PLAYER,
+	NPC,
+	BOSS,
+	TRADER,
+}
+
 enum MISSION
 {
 	TUTORIAL,

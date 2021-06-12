@@ -25,7 +25,7 @@ function spawn_projectile(_projectile,_direction,_speed,_faction,_sound)
 	audio_sound_pitch(_sound,random_range(0.6,0.9));
 	audio_play_sound(_sound,1,false);
 	var _creator = id;
-	var inst = instance_create_layer(x+lengthdir_x(sprite_width/2,image_angle),y,"Bullets",_projectile);
+	var inst = instance_create_layer(x+lengthdir_x(sprite_width*0.4,image_angle),y+lengthdir_y(sprite_height,image_angle),"Bullets",_projectile);
 	
 		with(inst)
 		{

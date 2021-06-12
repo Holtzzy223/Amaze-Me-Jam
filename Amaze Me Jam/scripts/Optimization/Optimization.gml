@@ -40,30 +40,61 @@ function save_game(save_file)
 	//create a save struct per instance
 	with(manager_save_data)
 	{
+		//is object in a faction
 		if (id.faction!=undefined)
 		{
-			var _save_entity = 
+			//what kind of object
+			switch(id.object_type)
 			{
-				obj : object_get_name(object_index),
-				x : x,
-				y : y,
-				image_index : image_index,
-				image_blend :image_blend,
-				image_angle : image_angle,
-				layer : layer,
-				depth : depth,
-				speed : speed,
-				direction : direction,
-				hp:hp,
-				faction : faction,
-				max_hp:max_hp,
-				max_speed : max_speed,
-				energy: energy,
-				max_energy: max_energy
-				
+				case OBJ_TYPE.PLAYER :
+					var _save_entity = 
+					{
+						obj : object_get_name(object_index),
+						x : x,
+						y : y,
+						image_index : image_index,
+						image_blend :image_blend,
+						image_angle : image_angle,
+						layer : layer,
+						depth : depth,
+						speed : speed,
+						direction : direction,
+						hp:hp,
+						faction : faction,
+						max_hp:max_hp,
+						max_speed : max_speed,
+						energy: energy,
+						max_energy: max_energy
+						
+					}
+					break;
+				default:
+					var _save_entity = 
+					{
+						obj : object_get_name(object_index),
+						x : x,
+						y : y,
+						image_index : image_index,
+						image_blend :image_blend,
+						image_angle : image_angle,
+						layer : layer,
+						depth : depth,
+						speed : speed,
+						direction : direction,
+						hp:hp,
+						faction : faction,
+						max_hp:max_hp,
+						max_speed : max_speed,
+						energy: energy,
+						max_energy: max_energy
+						
+					}
 			}
-		}else
+		
+		}
+		else
 		{
+			//general object info
 			var _save_entity = 
 			{
 				obj : object_get_name(object_index),
@@ -107,21 +138,40 @@ function load_game(save_file)
 			{
 				if(_entity_index.faction != undefined)
 				{
-					x = _load_entity.x;
-					y = _load_entity.y;
-					image_blend = _load_entity.image_blend;
-					image_index = _load_entity.image_index;
-					image_angle = _load_entity.image_angle;
-					layer = _load_entity.layer;
-					depth = _load_entity.depth;
-					speed = _load_entity.speed;
-					max_hp = _load_entity.max_hp;
-					hp = _load_entity.hp;
-					faction = _load_entity.faction;
-					max_speed = _load_entity.max_speed;
-					energy = _load_entity.energy;
-					max_energy = _load_entity.max_energy;
-					 
+					switch(_entity_index.object_type)
+					{
+						case OBJ_TYPE.PLAYER:
+							x = _load_entity.x;
+							y = _load_entity.y;
+							image_blend = _load_entity.image_blend;
+							image_index = _load_entity.image_index;
+							image_angle = _load_entity.image_angle;
+							layer = _load_entity.layer;
+							depth = _load_entity.depth;
+							speed = _load_entity.speed;
+							max_hp = _load_entity.max_hp;
+							hp = _load_entity.hp;
+							faction = _load_entity.faction;
+							max_speed = _load_entity.max_speed;
+							energy = _load_entity.energy;
+							max_energy = _load_entity.max_energy;
+							break;
+						default:
+							x = _load_entity.x;
+							y = _load_entity.y;
+							image_blend = _load_entity.image_blend;
+							image_index = _load_entity.image_index;
+							image_angle = _load_entity.image_angle;
+							layer = _load_entity.layer;
+							depth = _load_entity.depth;
+							speed = _load_entity.speed;
+							max_hp = _load_entity.max_hp;
+							hp = _load_entity.hp;
+							faction = _load_entity.faction;
+							max_speed = _load_entity.max_speed;
+							energy = _load_entity.energy;
+							max_energy = _load_entity.max_energy;
+					}
 					 
 					 
 				}

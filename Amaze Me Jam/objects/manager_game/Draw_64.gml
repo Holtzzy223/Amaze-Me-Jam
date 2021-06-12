@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 //set up variables
-if(room!=rm_menu)
+if(room!=rm_menu && instance_exists(obj_player))
 {
 
 	var d,a,radarX,radarY;
