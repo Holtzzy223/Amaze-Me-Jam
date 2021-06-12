@@ -117,8 +117,6 @@ function save_game(save_file)
 	buffer_save(_buffer,save_file);
 	buffer_delete(_buffer);
 	show_debug_message("SAVED THIS FOR YAH! "+ _string);
-	
-	
 }
 
 function load_game(save_file)
@@ -172,8 +170,6 @@ function load_game(save_file)
 							energy = _load_entity.energy;
 							max_energy = _load_entity.max_energy;
 					}
-					 
-					 
 				}
 				else
 				{
@@ -188,7 +184,5 @@ function load_game(save_file)
 			}
 		}
 		show_debug_message("LOADED THIS FOR YAH! " +_string);
-		
 	}
-	
 }

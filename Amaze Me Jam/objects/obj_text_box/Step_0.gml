@@ -1,16 +1,23 @@
-/// @description Insert description here
-// You can write your code in this editor
-/// @desc Progress Text
-letters += spd;
-text_current = string_copy(text,1,floor(letters));
+/// @description 
+lerp_prog += (1-lerp_prog)/timing;
+text_prog += global.text_speed;
 
-draw_set_font(font);
-if (h == 0) h = string_height(text);
-w = string_width(text_current);
+x1 = lerp(x1,x1_target,lerp_prog);
+x2 = lerp(x2,x2_target,lerp_prog);
 
-//Destroy when done
-if (letters >= length) && (keyboard_check_pressed(vk_anykey))
+if(keyboard_check_pressed(vk_space))
 {
-	instance_destroy();
-	
+	var _message_length = string_length(display_text);
+	if(text_prog >= _message_length)
+	{
+		//destroy text box
+		instance_destroy(id);
+	}
+	else
+	{
+		if(text_prog > 2)
+		{
+			text_prog =_message_length;
+		}
+	}
 }

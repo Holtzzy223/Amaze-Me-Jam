@@ -2,7 +2,7 @@
 // You can write your code in this editor
 randomize();
 global.new_game = true;
-
+global.text_speed = 10;
 enum FACTION
 {
 	ALLY,
