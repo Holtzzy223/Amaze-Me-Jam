@@ -127,13 +127,13 @@ function load_game(save_file)
 				}
 				else
 				{
-					 x = _load_entity.x;
-					 y = _load_entity.y;
-					 image_blend = _load_entity.image_blend;
-					 image_index = _load_entity.image_index;
-					 image_angle = _load_entity.image_angle;
-					 layer = _load_entity.layer;
-					 depth = _load_entity.depth;
+					x = _load_entity.x;
+					y = _load_entity.y;
+					image_blend = _load_entity.image_blend;
+					image_index = _load_entity.image_index;
+					image_angle = _load_entity.image_angle;
+					layer = _load_entity.layer;
+					depth = _load_entity.depth;
 				}
 			}
 		}

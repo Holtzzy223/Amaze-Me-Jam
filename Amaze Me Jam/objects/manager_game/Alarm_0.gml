@@ -1,3 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-save_game(SAVEFILE);
+load_game(SAVEFILE);
