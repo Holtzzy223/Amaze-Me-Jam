@@ -1,8 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 var health_amt;
-health_amt = (hp / max_hp) * 100;
-draw_healthbar(1600, 32, 1900, 64, health_amt, c_black, c_red, c_lime, 0, true, true);
+health_amt = (hp / max_hp) * 100;draw_healthbar(1600, 32, 1900, 64, health_amt, c_black, c_red, c_lime, 0, true, true);
+player_hp_draw = lerp(player_hp_draw, hp, 0.1);
+
+
 
 var energy_amt;
 energy_amt = (energy / max_energy) * 100;

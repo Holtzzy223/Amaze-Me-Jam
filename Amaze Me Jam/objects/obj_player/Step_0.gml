@@ -4,11 +4,11 @@ if(!dead)
 {
 	if(keyboard_check(vk_left)||keyboard_check(ord("A")))
 	{
-		image_angle =lerp(image_angle,image_angle+input_magnitude,0.1);;
+		image_angle =lerp(image_angle,image_angle+input_magnitude,0.2);;
 	}
 	if(keyboard_check(vk_right))||keyboard_check(ord("D"))
 	{
-		image_angle=lerp(image_angle,image_angle-input_magnitude,0.1);;
+		image_angle=lerp(image_angle,image_angle-input_magnitude,0.2);;
 	}
 	if(keyboard_check(vk_up))||keyboard_check(ord("W"))
 	{
