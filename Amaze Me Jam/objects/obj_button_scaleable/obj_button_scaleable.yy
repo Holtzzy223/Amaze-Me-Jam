@@ -29,7 +29,11 @@
   "properties": [
     {"varType":2,"value":"Button","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"button_text","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":7,"value":"$FF422727","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"text_color","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":1,"value":"16","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"extra_height_on_hover","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":1,"value":"32","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"extra_height_on_hover","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":0,"value":"0.8","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"min_alpha","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":0,"value":"1","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"max_alpha","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":0,"value":"1.5","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"wave_dur","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":0,"value":"0.25","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"wave_offset","tags":[],"resourceType":"GMObjectProperty",},
   ],
   "overriddenProperties": [],
   "parent": {
@@ -37,7 +41,7 @@
     "path": "folders/Objects/Game/GUI/Buttons.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_button",
+  "name": "obj_button_scaleable",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_button",
-    "path": "objects/obj_button/obj_button.yy",
+    "name": "obj_button_scaleable",
+    "path": "objects/obj_button_scaleable/obj_button_scaleable.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -30,7 +30,7 @@
   ],
   "properties": [],
   "overriddenProperties": [
-    {"propertyId":{"name":"button_text","path":"objects/obj_button/obj_button.yy",},"objectId":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},"value":"Quit Game","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"button_text","path":"objects/obj_button_scaleable/obj_button_scaleable.yy",},"objectId":{"name":"obj_button_scaleable","path":"objects/obj_button_scaleable/obj_button_scaleable.yy",},"value":"Quit Game","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "Buttons",

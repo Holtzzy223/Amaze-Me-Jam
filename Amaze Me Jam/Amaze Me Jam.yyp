@@ -2,8 +2,9 @@
   "resources": [
     {"id":{"name":"spr_pirate_raider","path":"sprites/spr_pirate_raider/spr_pirate_raider.yy",},"order":3,},
     {"id":{"name":"spr_healthbar","path":"sprites/spr_healthbar/spr_healthbar.yy",},"order":6,},
-    {"id":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},"order":0,},
+    {"id":{"name":"obj_button_scaleable","path":"objects/obj_button_scaleable/obj_button_scaleable.yy",},"order":0,},
     {"id":{"name":"spr_radar","path":"sprites/spr_radar/spr_radar.yy",},"order":3,},
+    {"id":{"name":"snd_menu_select","path":"sounds/snd_menu_select/snd_menu_select.yy",},"order":2,},
     {"id":{"name":"manager_factions","path":"objects/manager_factions/manager_factions.yy",},"order":1,},
     {"id":{"name":"manager_faction_enemy","path":"objects/manager_faction_enemy/manager_faction_enemy.yy",},"order":4,},
     {"id":{"name":"spr_raider_exhaust","path":"sprites/spr_raider_exhaust/spr_raider_exhaust.yy",},"order":1,},
@@ -55,6 +56,7 @@
     {"id":{"name":"obj_station","path":"objects/obj_station/obj_station.yy",},"order":2,},
     {"id":{"name":"spr_asteroid_small","path":"sprites/spr_asteroid_small/spr_asteroid_small.yy",},"order":2,},
     {"id":{"name":"obj_button_new_game","path":"objects/obj_button_new_game/obj_button_new_game.yy",},"order":1,},
+    {"id":{"name":"snd_menu_pluck","path":"sounds/snd_menu_pluck/snd_menu_pluck.yy",},"order":3,},
     {"id":{"name":"par_enemy","path":"objects/par_enemy/par_enemy.yy",},"order":0,},
     {"id":{"name":"obj_debris","path":"objects/obj_debris/obj_debris.yy",},"order":0,},
     {"id":{"name":"manager_save_data","path":"objects/manager_save_data/manager_save_data.yy",},"order":5,},
