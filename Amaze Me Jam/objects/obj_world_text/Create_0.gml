@@ -9,3 +9,4 @@ w = 0;
 h = 0;
 border = 10;
 font = fnt_speech;
+_creator = noone;

@@ -1,6 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 /// @desc Progress Text
+if(_creator!=noone)
+{
+	x = _creator.x + 16;
+	y = _creator.y - 16;
+}
 letters += spd;
 text_current = string_copy(text,1,floor(letters));
 

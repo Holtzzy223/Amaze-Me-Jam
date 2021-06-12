@@ -6,6 +6,6 @@ with (instance_create_layer(x,y-64,layer,obj_world_text))
 	var posy = obj_player.y;
 	text  = string(posx)+string(posy);
 	length = string_length(text);
-	
+	_reator = id;
 	
 }

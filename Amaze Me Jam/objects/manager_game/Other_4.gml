@@ -18,11 +18,10 @@ if(room != rm_menu && !global.new_game)
 	instance_create_layer(0,0,"Instances_controllers",manager_Spawner);
 	instance_create_layer(0,0,"Instances_controllers",manager_particles);
 	//instance_create_layer(room_width/2,room_height/2,"Instances_controllers",obj_player);
-	if(!global.player_killed)
-	{
-		load_game(SAVEFILE);
-	}
+
+	load_game(SAVEFILE);
+	
 	alarm_set(1,300);
-	global.player_killed = false;
+	
 }
 
