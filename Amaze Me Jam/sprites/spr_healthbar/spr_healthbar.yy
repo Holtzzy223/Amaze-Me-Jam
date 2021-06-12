@@ -97,8 +97,8 @@
     "resourceType": "GMNineSliceData",
   },
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Misc",
+    "path": "folders/Sprites/Misc.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_healthbar",
