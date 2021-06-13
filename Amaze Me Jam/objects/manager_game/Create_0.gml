@@ -5,6 +5,10 @@ global.new_game = true;
 global.player_killed = false;
 global.game_pause = false;
 global.text_speed = 10;
+
+window_set_cursor(cr_none)
+
+cursor_sprite = spr_cursor;
 enum FACTION
 {
 	ALLY,

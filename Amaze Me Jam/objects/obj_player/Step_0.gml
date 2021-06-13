@@ -52,7 +52,7 @@ if(!global.game_pause)
 			{
 				bullet_timer = 0;
 	
-				spawn_projectile(obj_player_bullet,image_angle+random_range(-6,6),bullet_speed,faction,snd_pewpew);
+				spawn_projectile(obj_player_bullet,image_angle+random_range(-2,2),bullet_speed,faction,snd_pewpew);
 			}
 			
 		}
@@ -61,10 +61,6 @@ if(!global.game_pause)
 			bullet_timer = fire_thresh;
 		}
 		//LASERS
-		if(!laser_firing&&energy<max_energy)
-		{
-			energy+=0.25;
-		}
 		energy = clamp(energy,0,max_energy);
 		if(flash)
 		{

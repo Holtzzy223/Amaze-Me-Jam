@@ -21,7 +21,7 @@ if(!dead)
 	{
 			var range = 500;
 			laser_firing = true
-			energy-=0.65;
+			energy-=0.85;
 			if(energy > 0)
 			{
 				draw_circle_color(x,y,range,c_blue,c_red,true);

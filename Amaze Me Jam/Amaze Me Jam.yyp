@@ -35,6 +35,7 @@
     {"id":{"name":"obj_asteroid","path":"objects/obj_asteroid/obj_asteroid.yy",},"order":0,},
     {"id":{"name":"manager_faction_ally","path":"objects/manager_faction_ally/manager_faction_ally.yy",},"order":3,},
     {"id":{"name":"spr_mine_strip8","path":"sprites/spr_mine_strip8/spr_mine_strip8.yy",},"order":7,},
+    {"id":{"name":"obj_energy_up","path":"objects/obj_energy_up/obj_energy_up.yy",},"order":0,},
     {"id":{"name":"spr_radar_astroid","path":"sprites/spr_radar_astroid/spr_radar_astroid.yy",},"order":4,},
     {"id":{"name":"spr_debris_astroids","path":"sprites/spr_debris_astroids/spr_debris_astroids.yy",},"order":2,},
     {"id":{"name":"obj_button_quit_game","path":"objects/obj_button_quit_game/obj_button_quit_game.yy",},"order":3,},
@@ -73,6 +74,7 @@
     {"id":{"name":"spr_station","path":"sprites/spr_station/spr_station.yy",},"order":0,},
     {"id":{"name":"obj_button_resume_game","path":"objects/obj_button_resume_game/obj_button_resume_game.yy",},"order":4,},
     {"id":{"name":"spr_shield","path":"sprites/spr_shield/spr_shield.yy",},"order":0,},
+    {"id":{"name":"spr_cursor","path":"sprites/spr_cursor/spr_cursor.yy",},"order":8,},
     {"id":{"name":"Optimization","path":"scripts/Optimization/Optimization.yy",},"order":3,},
     {"id":{"name":"spr_cave_ship","path":"sprites/spr_cave_ship/spr_cave_ship.yy",},"order":2,},
     {"id":{"name":"sh_bloom","path":"shaders/sh_bloom/sh_bloom.yy",},"order":1,},
@@ -138,6 +140,7 @@
     {"folderPath":"folders/Objects/Game/GUI.yy","order":6,"resourceVersion":"1.0","name":"GUI","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sequences/GUI.yy","order":0,"resourceVersion":"1.0","name":"GUI","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Game/GUI/Buttons.yy","order":3,"resourceVersion":"1.0","name":"Buttons","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/Loot.yy","order":16,"resourceVersion":"1.0","name":"Loot","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
