@@ -1,3 +1,9 @@
 /// @description 
-game_set_speed(60,gamespeed_fps);
+
+with(manager_factions)
+{
+	speed = base_speed;
+	
+}
+global.game_pause = false;
 layer_sequence_destroy(manager_pause.sequence_element);

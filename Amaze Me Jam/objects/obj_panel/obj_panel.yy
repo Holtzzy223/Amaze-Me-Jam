@@ -27,7 +27,7 @@
     {"isDnD":false,"eventNum":4,"eventType":6,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [
-    {"varType":2,"value":"Panel","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"panel_text","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":2,"value":"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"panel_text","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":7,"value":"$FF422727","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"text_color","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":1,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"extra_height_on_hover","tags":[],"resourceType":"GMObjectProperty",},
   ],

@@ -4,7 +4,8 @@
 // Inherit the parent event
 event_inherited();
 
-speed = 5;
+base_speed = 5;
+speed = base_speed;
 direction =  random(360);
 
 image_angle = direction;

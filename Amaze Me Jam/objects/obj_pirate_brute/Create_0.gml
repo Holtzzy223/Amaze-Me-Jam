@@ -3,7 +3,7 @@
 
 // Inherit the parent event
 event_inherited();
-speed = 2;
+base_speed = 2;
 hp = 10;
 _target = obj_player;
 _chase_range = 1000;
