@@ -3,7 +3,7 @@
 randomize();
 global.new_game = true;
 global.player_killed = false;
-
+global.game_pause = false;
 global.text_speed = 10;
 enum FACTION
 {

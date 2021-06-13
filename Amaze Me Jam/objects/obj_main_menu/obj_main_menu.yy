@@ -23,8 +23,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "GUI",
-    "path": "folders/Objects/Game/GUI.yy",
+    "name": "Managers",
+    "path": "folders/Objects/Game/Managers.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_main_menu",

@@ -117,8 +117,8 @@
   "eventToFunction": {},
   "eventStubScript": null,
   "parent": {
-    "name": "Sequences",
-    "path": "folders/Sequences.yy",
+    "name": "GUI",
+    "path": "folders/Sequences/GUI.yy",
   },
   "resourceVersion": "1.3",
   "name": "seq_gui",
