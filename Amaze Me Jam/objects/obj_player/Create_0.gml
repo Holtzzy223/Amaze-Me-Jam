@@ -4,7 +4,8 @@
 // Inherit the parent event
 event_inherited();
 
-
+rotation_speed = 100; //The higher the values, the faster the rotation
+dir = 0; //Direction used only for rotation
 //player stuffs
 shield = noone;
 invincible = false;

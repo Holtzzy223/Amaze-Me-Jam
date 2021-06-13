@@ -25,8 +25,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Misc",
-    "path": "folders/Objects/Game/Misc.yy",
+    "name": "Dialogue",
+    "path": "folders/Objects/Game/Dialogue.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_text_box",

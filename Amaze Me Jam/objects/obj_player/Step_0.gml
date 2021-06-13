@@ -4,17 +4,21 @@ if(!global.game_pause)
 {
 	if(!dead)
 	{
-		if(keyboard_check(vk_left)||keyboard_check(ord("A")))
+		var thrust = 0.25;
+		dir = point_direction(x, y, window_view_mouse_get_x(0),window_view_mouse_get_y(0) );
+		image_angle += sin(degtorad(dir - image_angle)) * rotation_speed;
+
+		//if(keyboard_check(vk_left)||keyboard_check(ord("A")))
+		//{
+		//	motion_add(180,thrust);
+		//}
+		//if(keyboard_check(vk_right))||keyboard_check(ord("D"))
+		//{
+		//	motion_add(0,thrust);
+		//}
+		if(keyboard_check(vk_space))
 		{
-			image_angle =lerp(image_angle,image_angle+input_magnitude,0.2);;
-		}
-		if(keyboard_check(vk_right))||keyboard_check(ord("D"))
-		{
-			image_angle=lerp(image_angle,image_angle-input_magnitude,0.2);;
-		}
-		if(keyboard_check(vk_up))||keyboard_check(ord("W"))
-		{
-			var thrust = 0.25;
+			
 			speed = clamp(speed,0,max_speed);
 			motion_add(image_angle,thrust);
 			thrust_counter++;
@@ -33,9 +37,12 @@ if(!global.game_pause)
 		}
 		
 	
-	
-		
-		if(keyboard_check(vk_space))
+		if(mouse_check_button_pressed(mb_left))
+		{
+			bullet_timer = 0;
+			spawn_projectile(obj_player_bullet,image_angle+irandom_range(-1,1),bullet_speed,faction,snd_pewpew);
+		}
+		if(mouse_check_button(mb_left))
 		{
 			
 			bullet_timer++

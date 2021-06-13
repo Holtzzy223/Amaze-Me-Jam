@@ -17,7 +17,7 @@
 
 if(!dead)
 {
-	if(keyboard_check(ord("X")))
+	if(mouse_check_button(mb_right))
 	{
 			var range = 500;
 			laser_firing = true
