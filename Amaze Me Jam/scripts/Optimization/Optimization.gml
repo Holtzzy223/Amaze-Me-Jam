@@ -135,58 +135,61 @@ function load_game(save_file)
 		{
 			var _load_entity = array_pop(_load_data);
 			var _entity_index = asset_get_index(_load_entity.obj);
-			with(instance_create_layer(0,0,layer,_entity_index))
+			if(!instance_exists(_entity_index))
 			{
-				if(_entity_index.faction != undefined)
+				with(instance_create_layer(0,0,layer,_entity_index))
 				{
-					switch(_entity_index.object_type)
+					if(_entity_index.faction != undefined)
 					{
-						case OBJ_TYPE.PLAYER:
-							x = _load_entity.x;
-							y = _load_entity.y;
-							image_blend = _load_entity.image_blend;
-							image_index = _load_entity.image_index;
-							image_angle = _load_entity.image_angle;
-							layer = _load_entity.layer;
-							depth = _load_entity.depth;
-							speed = _load_entity.speed;
-							max_hp = _load_entity.max_hp;
-							hp = _load_entity.hp;
-							faction = _load_entity.faction;
-							max_speed = _load_entity.max_speed;
-							energy = _load_entity.energy;
-							max_energy = _load_entity.max_energy;
+						switch(_entity_index.object_type)
+						{
+							case OBJ_TYPE.PLAYER:
+								x = _load_entity.x;
+								y = _load_entity.y;
+								image_blend = _load_entity.image_blend;
+								image_index = _load_entity.image_index;
+								image_angle = _load_entity.image_angle;
+								layer = _load_entity.layer;
+								depth = _load_entity.depth;
+								speed = _load_entity.speed;
+								max_hp = _load_entity.max_hp;
+								hp = _load_entity.hp;
+								faction = _load_entity.faction;
+								max_speed = _load_entity.max_speed;
+								energy = _load_entity.energy;
+								max_energy = _load_entity.max_energy;
+								break;
+							default:
+								x = _load_entity.x;
+								y = _load_entity.y;
+								image_blend = _load_entity.image_blend;
+								image_index = _load_entity.image_index;
+								image_angle = _load_entity.image_angle;
+								layer = _load_entity.layer;
+								depth = _load_entity.depth;
+								speed = _load_entity.speed;
+								max_hp = _load_entity.max_hp;
+								hp = _load_entity.hp;
+								faction = _load_entity.faction;
+								max_speed = _load_entity.max_speed;
+								energy = _load_entity.energy;
+								max_energy = _load_entity.max_energy;
 							break;
-						default:
-							x = _load_entity.x;
-							y = _load_entity.y;
-							image_blend = _load_entity.image_blend;
-							image_index = _load_entity.image_index;
-							image_angle = _load_entity.image_angle;
-							layer = _load_entity.layer;
-							depth = _load_entity.depth;
-							speed = _load_entity.speed;
-							max_hp = _load_entity.max_hp;
-							hp = _load_entity.hp;
-							faction = _load_entity.faction;
-							max_speed = _load_entity.max_speed;
-							energy = _load_entity.energy;
-							max_energy = _load_entity.max_energy;
-						break;
+						}
+					}
+					else
+					{
+						x = _load_entity.x;
+						y = _load_entity.y;
+						image_blend = _load_entity.image_blend;
+						image_index = _load_entity.image_index;
+						image_angle = _load_entity.image_angle;
+						layer = _load_entity.layer;
+						depth = _load_entity.depth;
 					}
 				}
-				else
-				{
-					x = _load_entity.x;
-					y = _load_entity.y;
-					image_blend = _load_entity.image_blend;
-					image_index = _load_entity.image_index;
-					image_angle = _load_entity.image_angle;
-					layer = _load_entity.layer;
-					depth = _load_entity.depth;
-				}
 			}
+			show_debug_message("LOADED THIS FOR YAH! " +_string);
 		}
-		show_debug_message("LOADED THIS FOR YAH! " +_string);
 	}
 }
