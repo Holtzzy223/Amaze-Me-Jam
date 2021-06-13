@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_player_exhaust",
-    "path": "sprites/spr_player_exhaust/spr_player_exhaust.yy",
+    "name": "spr_grapple_head",
+    "path": "sprites/spr_grapple_head/spr_grapple_head.yy",
   },
   "solid": false,
   "visible": true,
@@ -25,9 +25,6 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -36,7 +33,7 @@
     "path": "folders/Objects/Loot.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_energy_up",
+  "name": "obj_health",
   "tags": [],
   "resourceType": "GMObject",
 }

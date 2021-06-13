@@ -7,10 +7,7 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "obj_loot",
-    "path": "objects/obj_loot/obj_loot.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -36,7 +33,7 @@
     "path": "folders/Objects/Loot.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_energy_up",
+  "name": "obj_loot",
   "tags": [],
   "resourceType": "GMObject",
 }

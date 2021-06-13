@@ -7,5 +7,5 @@ var _chance = irandom_range(0,10);
 if(_chance<=4)
 {
 	//drop energy
-	instance_create_layer(x,y,"Instances",obj_energy_up);
+	instance_create_layer(x,y,"Instances",choose(obj_health,obj_energy_up));
 }
