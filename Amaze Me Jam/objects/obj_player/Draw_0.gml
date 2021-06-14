@@ -19,12 +19,12 @@ if(!dead)
 {
 	if(mouse_check_button(mb_right))
 	{
-			var range = 500;
+			var range = point_distance(x, y, window_view_mouse_get_x(0),window_view_mouse_get_y(0));
 			laser_firing = true
 			energy-=0.85;
 			if(energy > 0)
 			{
-				draw_circle_color(x,y,range,c_blue,c_red,true);
+				//draw_circle_color(x,y,range,c_blue,c_red,true);
 				draw_set_alpha(wave(0.25,0.75,1,0.25));	
 				draw_line_width_color(x,y,x+lengthdir_x(range,image_angle),y+lengthdir_y(range,image_angle),10,wave(c_white,c_blue,1,0.25),wave(c_blue,c_white,1,0.25));
 				var _list = ds_list_create();
