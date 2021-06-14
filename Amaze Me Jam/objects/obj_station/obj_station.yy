@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_station",
-    "path": "sprites/spr_station/spr_station.yy",
+    "name": "spr_station_strip65",
+    "path": "sprites/spr_station_strip65/spr_station_strip65.yy",
   },
   "solid": false,
   "visible": true,

@@ -41,19 +41,20 @@ function mission()constructor
 	mission_accepted = false;
 	static display_mission = function()
 	{
-		if(!mission_accepted)
+		if(!self.mission_accepted)
 		{
 			var dialogue = instance_create_layer(0,0,"Instances_controllers",obj_text_box);
 			dialogue.display_text = self.intro;
+			self.accept_mission();
 		}
-		self.accept_mission();
+		
 	}
 	static accept_mission = function()
 	{
 		//set mission status as active
 		//activate the appropriate object...place mission objects on their own layer
 		//display the tracker
-		mission_accepted = true;
+		self.mission_accepted = true;
 		
 	};
 	static decline_mission = function()

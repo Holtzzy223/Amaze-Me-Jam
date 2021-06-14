@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"spr_pirate_raider","path":"sprites/spr_pirate_raider/spr_pirate_raider.yy",},"order":3,},
     {"id":{"name":"spr_energybar","path":"sprites/spr_energybar/spr_energybar.yy",},"order":6,},
+    {"id":{"name":"spr_station_strip65","path":"sprites/spr_station_strip65/spr_station_strip65.yy",},"order":12,},
     {"id":{"name":"obj_button_scaleable","path":"objects/obj_button_scaleable/obj_button_scaleable.yy",},"order":0,},
     {"id":{"name":"spr_radar","path":"sprites/spr_radar/spr_radar.yy",},"order":3,},
     {"id":{"name":"snd_menu_select","path":"sounds/snd_menu_select/snd_menu_select.yy",},"order":2,},
@@ -76,7 +77,6 @@
     {"id":{"name":"spr_satrfield3","path":"sprites/spr_satrfield3/spr_satrfield3.yy",},"order":1,},
     {"id":{"name":"obj_magnetic_mine","path":"objects/obj_magnetic_mine/obj_magnetic_mine.yy",},"order":5,},
     {"id":{"name":"obj_shield","path":"objects/obj_shield/obj_shield.yy",},"order":0,},
-    {"id":{"name":"spr_station","path":"sprites/spr_station/spr_station.yy",},"order":0,},
     {"id":{"name":"obj_button_resume_game","path":"objects/obj_button_resume_game/obj_button_resume_game.yy",},"order":4,},
     {"id":{"name":"spr_shield","path":"sprites/spr_shield/spr_shield.yy",},"order":0,},
     {"id":{"name":"spr_cursor","path":"sprites/spr_cursor/spr_cursor.yy",},"order":8,},
