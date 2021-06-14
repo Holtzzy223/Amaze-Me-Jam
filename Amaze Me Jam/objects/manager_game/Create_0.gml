@@ -4,7 +4,7 @@ randomize();
 global.new_game = true;
 global.player_killed = false;
 global.game_pause = false;
-global.text_speed = 10;
+global.text_speed = 1;
 
 window_set_cursor(cr_none)
 

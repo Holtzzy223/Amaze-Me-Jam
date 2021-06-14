@@ -30,7 +30,7 @@ function mission()constructor
 	intro = "Test Mission Text Testing MISSION TEXT";
 	title = "Mission Title";
 	tag_line = "Mission Tagline";
-	description = "Short Mission Description";
+	description = "Short Mission Description \n Lorem Ipsum Dolem ROLLEM Lorem Ipsum Dolem ROLLEM  \n Lorem Ipsum Dolem ROLLEM Lorem Ipsum Dolem ROLLEM \n Lorem Ipsum Dolem ROLLEM Lorem Ipsum Dolem ROLLEM ";
 	status = STATUS.IDLE;
 	type = -1;
 	reward = -1;
@@ -43,24 +43,27 @@ function mission()constructor
 	{
 		if(!self.mission_accepted)
 		{
-			var dialogue = instance_create_layer(0,0,"Instances_controllers",obj_text_box);
-			dialogue.display_text = self.intro;
+			create_text_box(self.intro,0);
+			create_text_box(self.title,0);
+			create_text_box(self.description,0);
 			self.accept_mission();
 		}
 		
-	}
+	};
 	static accept_mission = function()
 	{
 		//set mission status as active
 		//activate the appropriate object...place mission objects on their own layer
 		//display the tracker
 		self.mission_accepted = true;
+		self.status = STATUS.ACCEPTED;
 		
 	};
 	static decline_mission = function()
 	{
 		//close dialogue
 		//queue mission for later
+		self.status = STATUS.DECLINED;
 	};
 	static reward_player = function()
 	{

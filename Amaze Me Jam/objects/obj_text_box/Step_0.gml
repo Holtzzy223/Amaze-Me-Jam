@@ -12,6 +12,17 @@ if(keyboard_check_pressed(vk_space))
 	{
 		//destroy text box
 		instance_destroy(id);
+		if(instance_exists(obj_text_queued))
+		{
+			with(obj_text_queued) ticket --;
+		}
+		else
+		{
+			with(obj_player)
+			{
+				locked = previous_state;
+			}
+		}
 	}
 	else
 	{

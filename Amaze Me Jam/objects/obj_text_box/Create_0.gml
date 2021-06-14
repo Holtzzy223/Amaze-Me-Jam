@@ -13,7 +13,7 @@ x2_target = display_get_width();
 
 lerp_prog = 0;
 text_prog = 0;
-timing = 10;
-display_text = "I'm a PRETTY PRETTY BOY!"
+timing = 50;
+
 
 backer = 0;
