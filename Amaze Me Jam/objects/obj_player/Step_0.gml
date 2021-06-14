@@ -80,6 +80,6 @@ if(!global.game_pause)
 	}
 	
 	
-	value = wave(0,speed/6,3,0.25);
+	value = wave(0,speed/10,3,0.25);
 	//_time += speed / room_speed;
 }

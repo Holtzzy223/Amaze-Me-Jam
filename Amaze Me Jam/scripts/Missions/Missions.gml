@@ -27,6 +27,8 @@ function mission()constructor
 		RESOURCE,
 		CURRENCY
 	}
+	#region member variables
+	
 	intro = "Test Mission Text Testing MISSION TEXT";
 	title = "Mission Title";
 	tag_line = "Mission Tagline";
@@ -39,6 +41,8 @@ function mission()constructor
 	fetch_amount = 0;
 	fetch_targets = [];
 	mission_accepted = false;
+	
+	#endregion
 	static display_mission = function()
 	{
 		if(!self.mission_accepted)
@@ -46,6 +50,8 @@ function mission()constructor
 			create_text_box(self.intro,0);
 			create_text_box(self.title,0);
 			create_text_box(self.description,0);
+			//remove from here after we add in choice functionality
+		
 			self.accept_mission();
 		}
 		
