@@ -20,3 +20,4 @@ _mix = 0.65;
 
 target = obj_player;
 range = 125;
+new_mission = new mission();

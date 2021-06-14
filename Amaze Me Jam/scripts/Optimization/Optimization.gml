@@ -66,8 +66,8 @@ function save_game(save_file)
 						max_hp:max_hp,
 						max_speed : max_speed,
 						energy: energy,
-						max_energy: max_energy
-						
+						max_energy: max_energy,
+						current_mission : current_mission
 					}
 					break;
 				default:
@@ -158,6 +158,7 @@ function load_game(save_file)
 								max_speed = _load_entity.max_speed;
 								energy = _load_entity.energy;
 								max_energy = _load_entity.max_energy;
+								current_mission = _load_entity.current_mission;
 								break;
 							default:
 								x = _load_entity.x;

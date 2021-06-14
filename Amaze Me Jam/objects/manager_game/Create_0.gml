@@ -24,10 +24,3 @@ enum OBJ_TYPE
 	TRADER,
 }
 
-enum MISSION
-{
-	TUTORIAL,
-	ESCORT,
-	KILL,
-	FETCH
-}

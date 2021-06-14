@@ -8,8 +8,13 @@ if instance_exists(target)
 {
 	if(target_in_range(target,range))
 	{
-		target.speed -=2;
-		clamp(target.speed,0,17);
+			
+			target.current_mission = new_mission;
+			target.current_mission.display_mission();
+			if(instance_exists(obj_text_box))
+			{
+				
+			}
 	}
 }
 

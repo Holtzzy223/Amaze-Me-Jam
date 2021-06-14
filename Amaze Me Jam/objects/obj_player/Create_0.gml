@@ -23,6 +23,7 @@ max_energy = 100;
 energy = max_energy;
 laser_firing = false;
 object_type = OBJ_TYPE.PLAYER;
+current_mission = new mission();
 //Shader Stuffz
 //ui
 

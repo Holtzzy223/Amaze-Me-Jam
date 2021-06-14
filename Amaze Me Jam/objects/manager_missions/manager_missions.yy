@@ -1,16 +1,10 @@
 {
-  "spriteId": {
-    "name": "spr_grapple_head",
-    "path": "sprites/spr_grapple_head/spr_grapple_head.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "obj_loot",
-    "path": "objects/obj_loot/obj_loot.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -24,17 +18,16 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Loot",
-    "path": "folders/Objects/Loot.yy",
+    "name": "Managers",
+    "path": "folders/Objects/Game/Managers.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_health",
+  "name": "manager_missions",
   "tags": [],
   "resourceType": "GMObject",
 }
