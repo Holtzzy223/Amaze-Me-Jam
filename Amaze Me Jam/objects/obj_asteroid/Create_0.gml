@@ -1,8 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+event_inherited();
 // Inherit the parent event
-faction = undefined;
 
 image_speed = 0;
 sprite_index = choose(spr_asteroid_large,spr_asteroid_med,spr_asteroid_small,spr_asteroid_tiny);
@@ -51,10 +50,4 @@ function damage_enemy(_damage)
 
 		hp -=_damage;
 		
-		//Dead Check
-		if(hp <=0)
-		{
-		
-		
-		}
 }

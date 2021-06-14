@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "manager_save_data",
-    "path": "objects/manager_save_data/manager_save_data.yy",
+    "name": "manager_faction_neutral",
+    "path": "objects/manager_faction_neutral/manager_faction_neutral.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

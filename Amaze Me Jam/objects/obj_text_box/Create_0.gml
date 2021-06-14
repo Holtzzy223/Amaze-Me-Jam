@@ -15,5 +15,5 @@ lerp_prog = 0;
 text_prog = 0;
 timing = 50;
 
-
+obj_player.locked = true;
 backer = 0;

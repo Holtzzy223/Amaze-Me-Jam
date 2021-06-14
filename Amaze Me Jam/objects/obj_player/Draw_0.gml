@@ -33,9 +33,10 @@ if(!dead)
 				    {
 				    for (var i = 0; i < _num; ++i;)
 				        {
+							//add in particels on collision
 							if(_list[|i].faction!=faction)
 							{
-								_list[| i].damage_enemy(2);
+								_list[|i].damage_enemy(3);
 							}
 						}
 				    }

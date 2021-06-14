@@ -63,10 +63,6 @@ if(!global.game_pause)
 			}
 			
 		}
-		if(keyboard_check_released(vk_space))
-		{
-			bullet_timer = fire_thresh;
-		}
 		//LASERS
 		energy = clamp(energy,0,max_energy);
 		if(flash)
