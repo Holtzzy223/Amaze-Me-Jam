@@ -4,3 +4,5 @@
 	shader_set_uniform_f(bloom_handler,value);
 	draw_self();
 	shader_reset();
+	draw_circle(x,y,_range,true);
+	draw_circle(x,y,_range/4,true);

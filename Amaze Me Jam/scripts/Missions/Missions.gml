@@ -49,7 +49,9 @@ function mission()constructor
 	{
 			create_text_box(self._intro,0);
 			create_text_box(self._title,0);
+			create_text_box(self._tag_line,0);
 			create_text_box(self._description,0);
+		
 	};
 	static accept_mission = function()
 	{

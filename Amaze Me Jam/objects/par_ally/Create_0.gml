@@ -5,10 +5,11 @@
 event_inherited();
 //Follow
 
-target = noone;
-range = 500;
+_target = obj_player;
+_range = 600;
 
 
 //Bloom
-value = 0.0;
+value = 0.66;
 bloom_handler = shader_get_uniform(sh_bloom,"intensity");
+follow_active = false;
