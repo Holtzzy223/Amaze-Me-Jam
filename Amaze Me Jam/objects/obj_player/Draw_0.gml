@@ -66,7 +66,7 @@ if(dead||flash)
 	shader_reset();
 	draw_self();
 }
-if(current_mission != noone)
+if(current_mission != noone && current_mission._status == STATUS.ACTIVE)
 {
 	if(current_mission._type == TYPE.KILL)
 	{

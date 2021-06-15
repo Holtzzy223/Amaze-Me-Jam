@@ -71,7 +71,9 @@ function mission()constructor
 	};
 	static reward_player = function()
 	{
-	
+		//give reward
+		//save
+		save_game(SAVEFILE);
 	};
 	static punish_player = function()
 	{
@@ -85,6 +87,7 @@ function mission()constructor
 	};
 	static fail_mission = function()
 	{
+		self._status = STATUS.FAILED;
 		self.punish_player();
 	};
 	

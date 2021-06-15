@@ -76,14 +76,14 @@ function dialogue_responses()
 	{
 		case 0: break;//EXIT
 		//Dialogue Response Start
-		case 1: create_text_box("Test Response 1!",0) break;
+		case 1: create_text_box("Some Text!",0) break;
 		//branch example
-		case 2:	create_text_box("Test Question 1?",0,["3~Branch","4~Branch2","0~Branch Exit"]) break;
-		case 3:	create_text_box("Test Response 3!",0) break;
+		case 2:	create_text_box("Pick Me?",0,["3~Know any news?","4~Mission Test","0~Branch Exit"]) break;
+		case 3:	create_text_box("Nope!",0) break;
 		//Station example Misison
 		case 4:	
 		{
-			create_text_box("Test Response 4!",0) 
+			create_text_box("Mission Time!",0) 
 			obj_player.current_mission = obj_station.new_mission;
 			obj_player.current_mission.accept_mission();
 		}break;
