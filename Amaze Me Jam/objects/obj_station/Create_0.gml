@@ -8,3 +8,5 @@ image_speed =1;
 target = obj_player;
 range = 125;
 new_mission = new mission();
+new_mission._title = "Tutorial Test Mission";
+new_mission._tag_line = "THE TESTING OF TESTS";

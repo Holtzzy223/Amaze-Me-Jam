@@ -80,7 +80,13 @@ function dialogue_responses()
 		//branch example
 		case 2:	create_text_box("Test Question 1?",0,["3~Branch","4~Branch2","0~Branch Exit"]) break;
 		case 3:	create_text_box("Test Response 3!",0) break;
-		case 4:	create_text_box("Test Response 4!",0) break;
+		//Station example Misison
+		case 4:	
+		{
+			create_text_box("Test Response 4!",0) 
+			obj_player.current_mission = obj_station.new_mission;
+			obj_player.current_mission.accept_mission();
+		}break;
 	}
 	
 	
