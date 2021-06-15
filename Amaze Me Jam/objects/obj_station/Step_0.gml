@@ -7,12 +7,10 @@ if instance_exists(target)
 	if(target_in_range(target,range))
 	{
 			
-			target.current_mission = new_mission;
-			target.current_mission.display_mission();
-			if(instance_exists(obj_text_box))
-			{
-				obj_player.speed = 0;
-			}
+			script_execute_ext(entity_activate_func,entity_func_args);
+			//target.current_mission = new_mission;
+			//target.current_mission.display_mission();
+
 	}
 }
 

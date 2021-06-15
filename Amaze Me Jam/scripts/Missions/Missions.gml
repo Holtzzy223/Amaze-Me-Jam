@@ -47,6 +47,7 @@ function mission()constructor
 	{
 		if(!self.mission_accepted)
 		{
+			
 			create_text_box(self.intro,0);
 			create_text_box(self.title,0);
 			create_text_box(self.description,0);

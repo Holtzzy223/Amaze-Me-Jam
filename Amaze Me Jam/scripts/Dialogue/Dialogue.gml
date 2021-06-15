@@ -35,6 +35,23 @@ function create_text_box()
 		{
 			backer = 1;
 		}
+		if(argument_count>2)
+		{
+			//trim response markers
+			responses = argument[2];
+			for(var i = 0; i< array_length(responses);i++)
+			{
+					var _marker_position = string_pos("~",responses[i]);
+					response_scripts[i] = real(string_copy(response_scripts[i],1,_marker_position-1));
+					responses[i] = string_delete(responses[i],1,_marker_position);
+					
+			}
+		}
+		else
+		{
+			responses = [-1];
+			response_scripts = [-1];
+		}
 	}
 	
 	with(obj_player)
