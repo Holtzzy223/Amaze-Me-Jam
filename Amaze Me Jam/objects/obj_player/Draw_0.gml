@@ -33,7 +33,7 @@ if(!dead)
 				    {
 				    for (var i = 0; i < _num; ++i;)
 				        {
-							if (!variable_instance_exists(_list[|i],"faction"))
+							if (variable_instance_exists(_list[|i],"faction"))
 							{
 							//add in particels on collision
 								if(_list[|i].faction!=faction)
@@ -65,5 +65,8 @@ if(dead||flash)
 {
 	shader_reset();
 	draw_self();
-	
+}
+if(current_mission!=undefined&&current_mission._type == TYPE.KILL)
+{
+	draw_text(bbox_left-8,bbox_top-8,"mission Kills: " + string(global.mission_kills));
 }

@@ -5,7 +5,6 @@ function mission()constructor
 	enum STATUS
 	{
 		IDLE,
-		ACCEPTED,
 		DECLINED,
 		ACTIVE,
 		COMPLETE,
@@ -33,11 +32,14 @@ function mission()constructor
 	_title = "Mission Title";
 	_tag_line = "Mission Tagline";
 	_description = "Short Mission Description \n Lorem Ipsum Dolem ROLLEM Lorem Ipsum Dolem ROLLEM  \n Lorem Ipsum Dolem ROLLEM Lorem Ipsum Dolem ROLLEM \n Lorem Ipsum Dolem ROLLEM Lorem Ipsum Dolem ROLLEM ";
+	_complete_text = "Mission Complete";
+	_fail_text = "Mission Failed";
 	_status = STATUS.IDLE;
 	_type = -1;
 	_reward = -1;
 	_escort_target = noone;
 	_kill_target = noone;
+	_kill_amount = 0;
 	_fetch_amount = 0;
 	_fetch_targets = [];
 	_mission_accepted = false;
@@ -57,7 +59,7 @@ function mission()constructor
 		if(!_mission_accepted)
 		{
 			self._mission_accepted = true;
-			self._status = STATUS.ACCEPTED;
+			self._status = STATUS.ACTIVE;
 			self.display_mission();
 		}
 	};
@@ -77,11 +79,24 @@ function mission()constructor
 	};
 	static complete_mission = function()
 	{
+		self._status = STATUS.COMPLETE
+		create_text_box(self._complete_text,0);
 		self.reward_player();
 	};
 	static fail_mission = function()
 	{
 		self.punish_player();
 	};
+	
+
+}
+
+function mission_track_escort()
+{
+	
+}
+
+function mission_track_fetch()
+{
 
 }

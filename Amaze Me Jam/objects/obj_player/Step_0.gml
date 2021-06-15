@@ -7,7 +7,21 @@ if(!global.game_pause)
 		var thrust = 0.25;
 		dir = point_direction(x, y, window_view_mouse_get_x(0),window_view_mouse_get_y(0));
 		image_angle += sin(degtorad(dir - image_angle)) * rotation_speed;
-
+		
+		if(current_mission != undefined)
+		{
+			switch(current_mission._type)
+			{
+				case TYPE.TUTORIAL: break;
+				case TYPE.ESCORT: break;
+				case TYPE.FETCH: break;
+				case TYPE.KILL: 
+					
+				break;
+				case TYPE.EVENT: break;
+			}
+		}
+		
 		//if(keyboard_check(vk_left)||keyboard_check(ord("A")))
 		//{
 		//	motion_add(180,thrust);
