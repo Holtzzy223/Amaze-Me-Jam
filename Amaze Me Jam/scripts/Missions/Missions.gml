@@ -84,11 +84,12 @@ function mission()constructor
 	static complete_mission = function()
 	{
 		self._status = STATUS.COMPLETE
-		create_text_box(self._complete_text,0);
+		create_text_box(self._complete_text,1);
 		self.reward_player();
 	};
 	static fail_mission = function()
 	{
+		create_text_box(self._fail_text,2);
 		self._status = STATUS.FAILED;
 		self.punish_player();
 	};

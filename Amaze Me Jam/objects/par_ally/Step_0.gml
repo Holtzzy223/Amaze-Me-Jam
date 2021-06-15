@@ -1,5 +1,5 @@
 /// @description 
-var _pushspd = 32;
+var _pushspd = 8;
 var _col = instance_place(x,y,manager_faction_ally);
 if(_col)
 {
@@ -19,12 +19,12 @@ if(instance_exists(_target))
 		
 		if(point_distance(x,y,_target.x,_target.y)<_range/4)
 		{
-			speed -= 0.065;
-			speed = clamp(speed,5,10);
+			speed -= 0.5;
+			speed = clamp(speed,3,8);
 		}
 	}
 	else
 	{
-		alarm_set(1,2);
+		alarm_set(1,120);
 	}
 }
