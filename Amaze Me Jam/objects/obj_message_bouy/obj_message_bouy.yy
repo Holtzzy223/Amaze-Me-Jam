@@ -33,8 +33,8 @@
     {"propertyId":{"name":"dialogue_script","path":"objects/manager_factions/manager_factions.yy",},"objectId":{"name":"manager_factions","path":"objects/manager_factions/manager_factions.yy",},"value":"create_text_box","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
-    "name": "Misc",
-    "path": "folders/Objects/Game/Misc.yy",
+    "name": "Allies",
+    "path": "folders/Objects/Allies.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_message_bouy",

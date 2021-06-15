@@ -30,7 +30,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Upgrades",
-    "path": "folders/Objects/Upgrades.yy",
+    "path": "folders/Objects/Game/Misc/Upgrades.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_shield",

@@ -29,18 +29,18 @@ function mission()constructor
 	}
 	#region member variables
 	
-	intro = "Test Mission Text Testing MISSION TEXT";
-	title = "Mission Title";
-	tag_line = "Mission Tagline";
-	description = "Short Mission Description \n Lorem Ipsum Dolem ROLLEM Lorem Ipsum Dolem ROLLEM  \n Lorem Ipsum Dolem ROLLEM Lorem Ipsum Dolem ROLLEM \n Lorem Ipsum Dolem ROLLEM Lorem Ipsum Dolem ROLLEM ";
-	status = STATUS.IDLE;
-	type = -1;
-	reward = -1;
-	escort_target = noone;
-	kill_target = noone;
-	fetch_amount = 0;
-	fetch_targets = [];
-	mission_accepted = false;
+	_intro = "Test Mission Text Testing MISSION TEXT";
+	_title = "Mission Title";
+	_tag_line = "Mission Tagline";
+	_description = "Short Mission Description \n Lorem Ipsum Dolem ROLLEM Lorem Ipsum Dolem ROLLEM  \n Lorem Ipsum Dolem ROLLEM Lorem Ipsum Dolem ROLLEM \n Lorem Ipsum Dolem ROLLEM Lorem Ipsum Dolem ROLLEM ";
+	_status = STATUS.IDLE;
+	_type = -1;
+	_reward = -1;
+	_escort_target = noone;
+	_kill_target = noone;
+	_fetch_amount = 0;
+	_fetch_targets = [];
+	_mission_accepted = false;
 	
 	#endregion
 	static display_mission = function()
@@ -48,9 +48,9 @@ function mission()constructor
 		if(!self.mission_accepted)
 		{
 			
-			create_text_box(self.intro,0);
-			create_text_box(self.title,0);
-			create_text_box(self.description,0);
+			create_text_box(self._intro,0);
+			create_text_box(self._title,0);
+			create_text_box(self._description,0);
 			//remove from here after we add in choice functionality
 		
 			self.accept_mission();
@@ -62,15 +62,15 @@ function mission()constructor
 		//set mission status as active
 		//activate the appropriate object...place mission objects on their own layer
 		//display the tracker
-		self.mission_accepted = true;
-		self.status = STATUS.ACCEPTED;
+		self._mission_accepted = true;
+		self._status = STATUS.ACCEPTED;
 		
 	};
 	static decline_mission = function()
 	{
 		//close dialogue
 		//queue mission for later
-		self.status = STATUS.DECLINED;
+		self._status = STATUS.DECLINED;
 	};
 	static reward_player = function()
 	{

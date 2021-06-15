@@ -1,7 +1,11 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+
 function create_text_box()
 {
+	///@arg display_text
+	///@arg backer
+	///@arg [responses]
 	var _obj;
 	if(instance_exists(obj_text_box))
 	{
@@ -61,4 +65,22 @@ function create_text_box()
 			locked = true;
 		}
 	}
+}
+
+function dialogue_responses()
+{
+	///@arg response_index
+	
+	//Store all Responses here! i know right? 
+	switch(argument0)
+	{
+		case 0: break;
+		case 1: create_text_box("Test Response 1!",0) break;
+		//branch example
+		case 2:	create_text_box("Test Question 1?",0,["3~Branch","4~Branch2","0~Branch Exit"]) break;
+		case 3:	create_text_box("Test Response 3!",0) break;
+		case 4:	create_text_box("Test Response 4!",0) break;
+	}
+	
+	
 }
