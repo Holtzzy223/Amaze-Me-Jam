@@ -11,7 +11,7 @@ if(_chance<=4)
 }
 if(instance_exists(obj_player))
 {
-	if(obj_player.current_mission != undefined && obj_player.current_mission._status = STATUS.ACTIVE && obj_player.current_mission._type = TYPE.KILL)
+	if(obj_player.current_mission != noone && obj_player.current_mission._status = STATUS.ACTIVE && obj_player.current_mission._type = TYPE.KILL)
 	{
 		if(enemy_name == object_get_name(obj_player.current_mission._kill_target))
 		{

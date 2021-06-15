@@ -66,7 +66,10 @@ if(dead||flash)
 	shader_reset();
 	draw_self();
 }
-if(current_mission!=undefined&&current_mission._type == TYPE.KILL)
+if(current_mission != noone)
 {
-	draw_text(bbox_left-8,bbox_top-8,"mission Kills: " + string(global.mission_kills));
+	if(current_mission._type == TYPE.KILL)
+	{
+		draw_text(bbox_left-8,bbox_top-8,"mission Kills: " + string(global.mission_kills));
+	}
 }
