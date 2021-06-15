@@ -19,6 +19,13 @@ if(keyboard_check_pressed(vk_space))
 	var _message_length = string_length(display_text);
 	if(text_prog >= _message_length)
 	{
+		if(responses[0]!=-1)
+		{
+			with(_creator)
+			{
+					dialogue_responses(other.response_scripts[other.response_selected]);
+			}	
+		}
 		//destroy text box
 		instance_destroy(id);
 		if(instance_exists(obj_text_queued))

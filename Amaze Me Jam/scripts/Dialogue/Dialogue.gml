@@ -74,7 +74,8 @@ function dialogue_responses()
 	//Store all Responses here! i know right? 
 	switch(argument0)
 	{
-		case 0: break;
+		case 0: break;//EXIT
+		//Dialogue Response Start
 		case 1: create_text_box("Test Response 1!",0) break;
 		//branch example
 		case 2:	create_text_box("Test Question 1?",0,["3~Branch","4~Branch2","0~Branch Exit"]) break;

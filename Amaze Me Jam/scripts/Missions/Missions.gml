@@ -45,26 +45,21 @@ function mission()constructor
 	#endregion
 	static display_mission = function()
 	{
-		if(!self.mission_accepted)
-		{
-			
 			create_text_box(self._intro,0);
 			create_text_box(self._title,0);
 			create_text_box(self._description,0);
-			//remove from here after we add in choice functionality
-		
-			self.accept_mission();
-		}
-		
 	};
 	static accept_mission = function()
 	{
 		//set mission status as active
 		//activate the appropriate object...place mission objects on their own layer
 		//display the tracker
-		self._mission_accepted = true;
-		self._status = STATUS.ACCEPTED;
-		
+		if(!_mission_accepted)
+		{
+			self._mission_accepted = true;
+			self._status = STATUS.ACCEPTED;
+			self.display_mission();
+		}
 	};
 	static decline_mission = function()
 	{
