@@ -17,3 +17,7 @@ timing = 50;
 
 obj_player.locked = true;
 backer = 0;
+
+
+
+response_selected = 0;

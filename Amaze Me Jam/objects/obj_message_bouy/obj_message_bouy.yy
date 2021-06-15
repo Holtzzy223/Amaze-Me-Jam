@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "manager_faction_neutral",
-    "path": "objects/manager_faction_neutral/manager_faction_neutral.yy",
+    "name": "manager_faction_ally",
+    "path": "objects/manager_faction_ally/manager_faction_ally.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

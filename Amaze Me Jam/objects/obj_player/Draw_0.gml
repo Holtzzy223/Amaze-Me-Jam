@@ -33,10 +33,13 @@ if(!dead)
 				    {
 				    for (var i = 0; i < _num; ++i;)
 				        {
-							//add in particels on collision
-							if(_list[|i].faction!=faction)
+							if (!variable_instance_exists(_list[|i],"faction"))
 							{
-								_list[|i].damage_enemy(3);
+							//add in particels on collision
+								if(_list[|i].faction!=faction)
+								{
+									_list[|i].damage_enemy(3);
+								}
 							}
 						}
 				    }
