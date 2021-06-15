@@ -7,7 +7,10 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "manager_faction_neutral",
+    "path": "objects/manager_faction_neutral/manager_faction_neutral.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -25,7 +28,10 @@
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"dialogue_scripts_args","path":"objects/manager_factions/manager_factions.yy",},"objectId":{"name":"manager_factions","path":"objects/manager_factions/manager_factions.yy",},"value":"[\"testing testing NPC testing testing\",1,[\"1~testing testing response A\",\"2~testing testing response B\"]]","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"dialogue_script","path":"objects/manager_factions/manager_factions.yy",},"objectId":{"name":"manager_factions","path":"objects/manager_factions/manager_factions.yy",},"value":"create_text_box","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
   "parent": {
     "name": "Misc",
     "path": "folders/Objects/Game/Misc.yy",

@@ -7,9 +7,9 @@ if instance_exists(target)
 	if(target_in_range(target,range))
 	{
 			
-			script_execute_ext(entity_activate_func,entity_func_args);
-			//target.current_mission = new_mission;
-			//target.current_mission.display_mission();
+			//script_execute_ext(entity_activate_func,entity_func_args);
+			target.current_mission = new_mission;
+			target.current_mission.display_mission();
 
 	}
 }

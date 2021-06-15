@@ -10,7 +10,5 @@ hp = 0;
 max_hp = 0;
 base_speed = 0;
 
-//dialogue
-dialogue_script = -1;
-dialogue_scripts_args = [-1];
+
 
