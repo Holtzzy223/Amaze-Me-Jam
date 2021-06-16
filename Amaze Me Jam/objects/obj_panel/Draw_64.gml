@@ -1,4 +1,5 @@
-/// @description Draw Button
+/// @description Draw Panel
+
 draw_self();
 
 // Draw text
