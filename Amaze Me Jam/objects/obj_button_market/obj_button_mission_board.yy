@@ -25,15 +25,13 @@
   "physicsShapePoints": [],
   "eventList": [],
   "properties": [],
-  "overriddenProperties": [
-    {"propertyId":{"name":"button_text","path":"objects/obj_button_scaleable/obj_button_scaleable.yy",},"objectId":{"name":"obj_button_scaleable","path":"objects/obj_button_scaleable/obj_button_scaleable.yy",},"value":"Hangar","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-  ],
+  "overriddenProperties": [],
   "parent": {
     "name": "Station",
     "path": "folders/Objects/Game/GUI/Buttons/Station.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_button_hangar",
+  "name": "obj_button_mission_board",
   "tags": [],
   "resourceType": "GMObject",
 }
