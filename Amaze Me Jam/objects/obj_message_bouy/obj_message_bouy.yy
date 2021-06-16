@@ -26,10 +26,11 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":1,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [
-    {"propertyId":{"name":"dialogue_scripts_args","path":"objects/manager_factions/manager_factions.yy",},"objectId":{"name":"manager_factions","path":"objects/manager_factions/manager_factions.yy",},"value":"[\"testing testing NPC testing testing\",1,[\"1~testing testing response A\",\"2~testing testing response B\"]]","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"dialogue_scripts_args","path":"objects/manager_factions/manager_factions.yy",},"objectId":{"name":"manager_factions","path":"objects/manager_factions/manager_factions.yy",},"value":"[\"testing testing SECTOR BOUY testing testing\",1,]","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"dialogue_script","path":"objects/manager_factions/manager_factions.yy",},"objectId":{"name":"manager_factions","path":"objects/manager_factions/manager_factions.yy",},"value":"create_text_box","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {

@@ -6,6 +6,7 @@ image_blend = c_white
 image_speed =1;
 sequence_element = -1;
 target = obj_player;
+can_dock = true;
 range = 125;
 new_mission = new mission();
 new_mission._type = TYPE.KILL;

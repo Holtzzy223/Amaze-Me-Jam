@@ -11,16 +11,17 @@ if(instance_exists(_target))
 {
 	if(target_in_range(_target,_range))
 	{
-		speed = 10;
-		var _angle = point_direction(x,y,_target.x,_target.y);
+		speed =lerp(speed,_target.speed*0.85,0.1);
+		speed = clamp(speed, 0,10);
+		var _angle = point_direction(x,y,_target.xprevious,_target.yprevious);
 		_angle = image_angle  - angle_difference(image_angle,_angle);
 		image_angle = lerp(image_angle,_angle,0.1); 
 		direction = image_angle;
 		
 		if(point_distance(x,y,_target.x,_target.y)<_range/4)
 		{
-			speed -= 0.5;
-			speed = clamp(speed,3,8);
+			speed -= 1;
+			speed = clamp(speed,3,_target.speed*0.5);
 		}
 	}
 	else
