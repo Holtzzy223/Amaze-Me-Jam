@@ -21,13 +21,7 @@ function blueprint() : item() constructor
 	
 }
 
-function upgrade() : item() constructor
-{
-	hp_add = 0;
-	energy_add = 0;
-	base_speed_add = 0;
-	max_speed_add = 0;
-}
+
 
 function resource() : item() constructor
 {
