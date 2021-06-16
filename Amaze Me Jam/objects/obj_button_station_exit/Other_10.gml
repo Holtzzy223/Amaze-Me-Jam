@@ -6,4 +6,4 @@ with(manager_factions)
 	
 }
 global.game_pause = false;
-layer_sequence_destroy(manager_pause.sequence_element);
+layer_sequence_destroy(obj_station.sequence_element);
