@@ -1,5 +1,5 @@
 /// @description 
-if(global.game_pause)
+if(layer_sequence_exists("GUI", sequence_element))
 {
 	
 	draw_set_text(c_silver,fnt_pause,fa_center,fa_center)

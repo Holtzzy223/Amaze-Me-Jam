@@ -15,7 +15,7 @@
 
 //
 
-if(!dead)
+if(!dead && !global.game_pause)
 {
 	if(mouse_check_button(mb_right))
 	{

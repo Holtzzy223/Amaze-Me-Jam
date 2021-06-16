@@ -18,7 +18,7 @@ if(instance_exists(_target))
 		image_angle = lerp(image_angle,_angle,0.1); 
 		direction = image_angle;
 		
-		if(point_distance(x,y,_target.x,_target.y)<_range/4)
+		if(point_distance(x,y,_target.x,_target.y)<_range/4&&!_col)
 		{
 			speed -= 1;
 			speed = clamp(speed,3,_target.speed*0.5);
