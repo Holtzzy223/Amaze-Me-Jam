@@ -33,8 +33,8 @@
     {"propertyId":{"name":"button_text","path":"objects/obj_button_scaleable/obj_button_scaleable.yy",},"objectId":{"name":"obj_button_scaleable","path":"objects/obj_button_scaleable/obj_button_scaleable.yy",},"value":"Resume Game","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
-    "name": "Buttons",
-    "path": "folders/Objects/Game/GUI/Buttons.yy",
+    "name": "pause",
+    "path": "folders/Objects/Game/GUI/Buttons/pause.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_button_resume_game",
