@@ -36,8 +36,14 @@ hp_gui_y = 32;
 value = 0.0;
 bloom_handler = shader_get_uniform(sh_bloom,"intensity");
 //Local funcs
-
-
+inventory = ds_list_create();
+bp = new ship_blueprint();
+bp.item_name ="Bluprint McBluprints";
+bp.bp_type = BP_TYPE.SHIP;
+bp.ship_max_speed = 20;
+bp.ship_health = 250;
+bp.ship_energy = 400;
+ds_list_add(inventory,bp,1);
 function damage_player(_damage)
 {
 	if(!invincible)
