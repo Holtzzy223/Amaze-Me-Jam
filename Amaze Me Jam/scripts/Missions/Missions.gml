@@ -48,8 +48,6 @@ function mission()constructor
 	static display_mission = function()
 	{
 			create_text_box(self._intro,0);
-			create_text_box(self._title,0);
-			create_text_box(self._tag_line,0);
 			create_text_box(self._description,0);
 		
 	};
