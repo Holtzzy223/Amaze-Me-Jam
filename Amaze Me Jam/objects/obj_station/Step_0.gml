@@ -15,6 +15,7 @@ if instance_exists(target)
 			{
 				speed = 0;
 			}
+			save_game(SAVEFILE);
 			global.game_pause = true;
 		}
 	}
