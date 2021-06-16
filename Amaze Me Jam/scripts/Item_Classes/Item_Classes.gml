@@ -25,5 +25,11 @@ function blueprint() : item() constructor
 
 function resource() : item() constructor
 {
+	enum RARITY
+	{
+		COMMON,
+		UNCOMMON,
+		RARE,
+	}
 	rarity = 0;
 }

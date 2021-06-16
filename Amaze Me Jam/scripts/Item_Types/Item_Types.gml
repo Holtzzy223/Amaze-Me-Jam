@@ -63,8 +63,10 @@ function upgrade() : item() constructor
 		obj_player.max_speed += self.max_speed_add;
 		
 	};
-
-	
 }
+
+#endregion
+
+#region Resources
 
 #endregion
