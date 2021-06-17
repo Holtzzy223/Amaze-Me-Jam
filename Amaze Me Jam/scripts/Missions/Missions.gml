@@ -22,9 +22,10 @@ function mission()constructor
 	
 	enum REWARD
 	{
-		BLUEPRINT,
-		RESOURCE,
-		CURRENCY
+		SHIP,
+		UPGRADE,
+		WEAPON,
+		ORE
 	}
 	#region member variables
 	
@@ -37,6 +38,11 @@ function mission()constructor
 	_status = STATUS.IDLE;
 	_type = -1;
 	_reward = -1;
+	_reward_text = "";
+	_ore_reward  = 0;
+	_ship_reward = noone;
+	_weapon_reward = noone;
+	_upgrade_reward = noone;
 	_escort_target = noone;
 	_kill_target = noone;
 	_kill_amount = 0;
@@ -72,6 +78,29 @@ function mission()constructor
 	static reward_player = function()
 	{
 		//give reward
+		switch(_reward)
+		{
+			case REWARD.ORE:
+				repeat(_ore_reward)
+				{
+					var child = instance_create_layer(obj_player.x+irandom_range(-15,15),obj_player.y+160+irandom_range(-5,5),"Instances",obj_ore);
+					child.image_blend = choose(c_purple,c_fuchsia,c_yellow);
+					global.camera_shake = 3;
+				}
+			break;
+				
+			case REWARD.SHIP:	break;
+			case REWARD.WEAPON:	break;
+			case REWARD.UPGRADE:	break;
+
+		}
+		//allways give ore
+		repeat(10)
+		{
+			var child = instance_create_layer(obj_player.x+irandom_range(-3,3),obj_player.y-32+irandom_range(-3,3),"Instances",obj_ore);
+			child.image_blend = choose(c_dkgray,c_silver);
+		}
+		//heal player
 		obj_player.hp = obj_player.max_hp;
 		obj_player.energy = obj_player.max_energy;
 		
