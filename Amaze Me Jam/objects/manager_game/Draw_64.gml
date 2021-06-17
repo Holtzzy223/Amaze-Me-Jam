@@ -22,12 +22,12 @@ if(room!=rm_menu && instance_exists(obj_player))
 	    //how far
 	
 	    d = point_distance(radarX,radarY,x,y);
-	
-	    if(d <= 2800)  // This is the distance to check for
+		
+	    if(d <= 1000)  // This is the distance to check for
 	
 	    {
 	
-	        d = d/1200*75;
+	        d = d/2400*360;
 	
 	        a = point_direction(radarX,radarY,x,y)
 			if(faction ==FACTION.ENEMY)
