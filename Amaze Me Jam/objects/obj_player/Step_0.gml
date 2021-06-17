@@ -2,7 +2,7 @@
 // You can write your code in this editor
 if(!global.game_pause)
 {
-	if(!dead||!locked)
+	if(!dead&&!locked)
 	{
 		var thrust = 0.25;
 		dir = point_direction(x, y, window_view_mouse_get_x(0),window_view_mouse_get_y(0));

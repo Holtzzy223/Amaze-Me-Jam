@@ -10,7 +10,7 @@ var energy_amt;
 energy_amt = (energy / max_energy) * 100;
 draw_healthbar(1600, 64, 1900, 80, energy_amt, c_dkgrey, c_maroon, c_yellow, 0, true, true);
 
-
+draw_text(900,48,ore_amount);
 //station direction indicator
 
 

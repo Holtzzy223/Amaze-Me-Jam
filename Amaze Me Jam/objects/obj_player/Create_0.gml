@@ -29,6 +29,7 @@ current_mission = noone;
 current_ship = SHIP.STANDARD;
 current_upgrade = noone;
 ship_bp = -1;
+ore_amount = 0;
 //Shader Stuffz
 //ui
 

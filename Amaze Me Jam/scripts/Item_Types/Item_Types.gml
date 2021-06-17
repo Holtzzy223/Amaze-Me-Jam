@@ -21,6 +21,7 @@ function ship_blueprint() : blueprint() constructor
 		target.max_hp = self.ship_health;
 		target.hp = target.max_hp;
 		target.max_energy = self.ship_energy;
+		target.energy = target.max_energy;
 		target.ship_bp = self;
 	
 	}

@@ -5,6 +5,10 @@ move_wrap(true,true,sprite_width/2);
 _time += 1 / room_speed;
 if(hp <=0)
 {
+	repeat(irandom_range(3,10))
+	{
+		instance_create_layer(x,y,layer,obj_ore);
+	}
 	switch(sprite_index)
 	{
 		case spr_asteroid_large:
@@ -39,7 +43,7 @@ if(hp <=0)
 			part_particles_create(manager_particles.particle_system,x, y,manager_particles.particle_debris_astroid,3);
 		break;
 	}
-	
+
 }
 
 if(instance_place(x,y,obj_asteroid))
