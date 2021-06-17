@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_panel",
-    "path": "objects/obj_panel/obj_panel.yy",
+    "name": "obj_panel_ship_interactable",
+    "path": "objects/obj_panel_ship_interactable/obj_panel_ship_interactable.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -26,17 +26,15 @@
   "eventList": [
     {"isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":1,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":1,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "panels",
-    "path": "folders/Objects/Game/GUI/panels.yy",
+    "name": "Hangar",
+    "path": "folders/Objects/Game/GUI/panels/Hangar.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_panel_hangar_ship",
+  "name": "obj_panel_hangar_ship_def",
   "tags": [],
   "resourceType": "GMObject",
 }

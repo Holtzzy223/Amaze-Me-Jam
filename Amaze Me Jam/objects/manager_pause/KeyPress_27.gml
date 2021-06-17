@@ -1,5 +1,5 @@
 /// @description 
-if (!layer_sequence_exists("GUI", sequence_element)) 
+if (!layer_sequence_exists("GUI", sequence_element)&&!global.game_pause) 
 {
 	if(instance_exists(obj_player))
 	{
