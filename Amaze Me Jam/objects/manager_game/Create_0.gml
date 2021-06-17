@@ -25,3 +25,10 @@ enum OBJ_TYPE
 	TRADER,
 }
 
+enum SHIP
+{
+	STANDARD,
+	DART,
+	BOMBER
+}
+

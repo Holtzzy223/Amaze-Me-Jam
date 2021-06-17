@@ -27,5 +27,5 @@ if(global.camera_shake<0)
 }
 
 //culling
-cull_out_of_view(inst_lay_id,view_camera[0],cull_pad,1.25)
+cull_out_of_view(inst_lay_id,view_camera[0],cull_pad,1.5)
 value = wave(0.2,1.5,90,15);

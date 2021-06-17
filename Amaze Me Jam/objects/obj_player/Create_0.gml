@@ -26,6 +26,9 @@ energy = max_energy;
 laser_firing = false;
 object_type = OBJ_TYPE.PLAYER;
 current_mission = noone;
+current_ship = SHIP.STANDARD;
+current_upgrade = noone;
+inventory = array_create();
 //Shader Stuffz
 //ui
 
