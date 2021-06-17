@@ -72,6 +72,9 @@ function mission()constructor
 	static reward_player = function()
 	{
 		//give reward
+		obj_player.hp = obj_player.max_hp;
+		obj_player.energy = obj_player.max_energy;
+		
 		//save
 		save_game(SAVEFILE);
 	};

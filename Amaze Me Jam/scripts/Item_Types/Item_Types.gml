@@ -5,10 +5,15 @@ function ship_blueprint() : blueprint() constructor
 {
 	type  = BP_TYPE.SHIP
 	ship_type = "";
+	ship_tag = "";
+	ship_desc = "";
 	ship_speed = 0;
 	ship_health = 0;
 	ship_energy = 0;
+	ship_shield = 0;
 	ship_sprite = noone;
+	ship_primary_weapon = "";
+	ship_auxilliary_weapon = "";
 	static swap_ship = function(target)
 	{
 		target.sprite_index = self.ship_sprite;
@@ -16,6 +21,7 @@ function ship_blueprint() : blueprint() constructor
 		target.max_hp = self.ship_health;
 		target.hp = target.max_hp;
 		target.max_energy = self.ship_energy;
+		target.ship_bp = self;
 	
 	}
 }

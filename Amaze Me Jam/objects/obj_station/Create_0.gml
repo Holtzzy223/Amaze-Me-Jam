@@ -10,9 +10,10 @@ can_dock = true;
 range = 125;
 new_mission = new mission();
 new_mission._type = TYPE.KILL;
+new_mission._kill_amount = 3;
+new_mission._kill_target = obj_hunter_seeker;
 new_mission._intro = "A squadron of pirates has been\n plaguing this sector for two months \n please deal with these intelopers immediatley.."
 new_mission._title = "Hunting the Hunters";
 new_mission._tag_line = " A Game of Cat and Mouse...";
-new_mission._description = "Hunt down and DESTROY two \n Hunter Seeker Class pirate vessels. ";
-new_mission._kill_target = obj_hunter_seeker;
-new_mission._kill_amount = 2;
+new_mission._description = "Hunt down and DESTROY ("+string(new_mission._kill_amount)+") \n Hunter Seeker Class pirate vessels. ";
+
