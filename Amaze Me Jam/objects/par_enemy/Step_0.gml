@@ -2,6 +2,7 @@
 // You can write your code in this editor
 _time += 1 / room_speed;
 value = wave(0,1+_time,3,0.25);
+if(global.game_pause) exit;
 if(dead)
 {
 	global.camera_shake = 3;

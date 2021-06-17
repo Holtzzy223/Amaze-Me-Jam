@@ -3,7 +3,7 @@
 
 // Inherit the parent event
 event_inherited();
-if(instance_exists(_target))
+if(instance_exists(_target)&&!global.game_pause)
 	{
 		if(target_in_range(_target,_range))
 		{

@@ -23,7 +23,9 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":10,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [
     {"propertyId":{"name":"button_text","path":"objects/obj_button_scaleable/obj_button_scaleable.yy",},"objectId":{"name":"obj_button_scaleable","path":"objects/obj_button_scaleable/obj_button_scaleable.yy",},"value":"Hangar","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},

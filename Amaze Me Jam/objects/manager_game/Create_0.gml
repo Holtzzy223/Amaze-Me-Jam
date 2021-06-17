@@ -6,7 +6,7 @@ global.player_killed = false;
 global.game_pause = false;
 global.text_speed = 1;
 global.mission_kills = 0;
-
+global.inventory = ds_list_create();
 window_set_cursor(cr_none)
 
 cursor_sprite = spr_cursor;

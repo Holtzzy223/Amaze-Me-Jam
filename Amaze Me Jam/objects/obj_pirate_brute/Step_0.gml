@@ -4,7 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
-if(!dead)
+if(!dead&&!global.game_pause)
 {
 	if(instance_exists(_target))
 	{
