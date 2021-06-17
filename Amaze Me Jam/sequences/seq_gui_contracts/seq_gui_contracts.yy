@@ -111,8 +111,8 @@
   "eventToFunction": {},
   "eventStubScript": null,
   "parent": {
-    "name": "GUI",
-    "path": "folders/Sequences/GUI.yy",
+    "name": "missions",
+    "path": "folders/Sequences/GUI/Station/missions.yy",
   },
   "resourceVersion": "1.3",
   "name": "seq_gui_contracts",

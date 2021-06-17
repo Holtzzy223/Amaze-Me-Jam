@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Insert description here create text at player
 // You can write your code in this editor
 with (instance_create_layer(x,y-64,layer,obj_world_text))
 {

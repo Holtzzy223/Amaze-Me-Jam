@@ -201,8 +201,8 @@
   "eventToFunction": {},
   "eventStubScript": null,
   "parent": {
-    "name": "Station",
-    "path": "folders/Sequences/GUI/Station.yy",
+    "name": "GUI",
+    "path": "folders/Sequences/GUI.yy",
   },
   "resourceVersion": "1.3",
   "name": "seq_gui_hangar",

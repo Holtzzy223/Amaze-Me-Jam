@@ -71,15 +71,16 @@ function upgrade() : item() constructor
 		obj_player.max_energy += self.energy_add;
 		obj_player.energy = obj_player.max_energy;
 	};
-	static  add_speed_base = function()
-	{
-		obj_player.base_speed += self.base_speed_add;
-	};
+
 	static  add_speed_max = function()
 	{
 		obj_player.max_speed += self.max_speed_add;
 		
 	};
+	static add_shield = function()
+	{
+		
+	}
 }
 
 #endregion

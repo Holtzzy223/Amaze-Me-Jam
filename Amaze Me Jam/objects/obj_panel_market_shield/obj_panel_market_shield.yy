@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_button_scaleable",
-    "path": "objects/obj_button_scaleable/obj_button_scaleable.yy",
+    "name": "obj_panel_market_interactable",
+    "path": "objects/obj_panel_market_interactable/obj_panel_market_interactable.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -24,18 +24,17 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":10,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
-  "overriddenProperties": [
-    {"propertyId":{"name":"button_text","path":"objects/obj_button_scaleable/obj_button_scaleable.yy",},"objectId":{"name":"obj_button_scaleable","path":"objects/obj_button_scaleable/obj_button_scaleable.yy",},"value":"Market","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-  ],
+  "overriddenProperties": [],
   "parent": {
-    "name": "lobby",
-    "path": "folders/Objects/Game/GUI/Buttons/Station/lobby.yy",
+    "name": "Market",
+    "path": "folders/Objects/Game/GUI/panels/Market.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_button_market",
+  "name": "obj_panel_market_shield",
   "tags": [],
   "resourceType": "GMObject",
 }

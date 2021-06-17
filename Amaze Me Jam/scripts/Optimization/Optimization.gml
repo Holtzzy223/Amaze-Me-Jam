@@ -54,6 +54,7 @@ function save_game(save_file)
 						obj : object_get_name(object_index),
 						x : x,
 						y : y,
+						sprite_index :sprite_index,
 						image_index : image_index,
 						image_blend :image_blend,
 						image_angle : image_angle,
