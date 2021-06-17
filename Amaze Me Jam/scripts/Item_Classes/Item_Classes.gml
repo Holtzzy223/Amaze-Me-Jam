@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function item() constructor
 {
-	item_name = "";
+	name = "";
 	description = "";
 	value = 0;
 }
@@ -16,7 +16,7 @@ function blueprint() : item() constructor
 		HULL,
 		ENGINE
 	}
-	bp_type = -1;
+	type = -1;
 	
 	
 }

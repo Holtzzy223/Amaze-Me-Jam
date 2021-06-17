@@ -3,15 +3,16 @@
 
 function ship_blueprint() : blueprint() constructor
 {
-	bp_type  = BP_TYPE.SHIP
-	ship_max_speed = 0;
+	type  = BP_TYPE.SHIP
+	ship_type = "";
+	ship_speed = 0;
 	ship_health = 0;
 	ship_energy = 0;
 }
 
 function weapon_blueprint() : blueprint() constructor
 {
-	bp_type = BP_TYPE.WEAPON
+	type = BP_TYPE.WEAPON
 	weapon_damage = 0;
 	weapon_range = 0;
 	
@@ -19,13 +20,13 @@ function weapon_blueprint() : blueprint() constructor
 
 function hull_blueprint() : blueprint() constructor
 {
-	bp_type = BP_TYPE.HULL
+	type = BP_TYPE.HULL
 	hull_health = 0;
 }
 
 function engine_blueprint() : blueprint() constructor
 {
-	bp_type = BP_TYPE.ENGINE
+	type = BP_TYPE.ENGINE
 	engine_thrust = 0;
 	engine_base_speed = 0;
 	engine_max_speed = 0;

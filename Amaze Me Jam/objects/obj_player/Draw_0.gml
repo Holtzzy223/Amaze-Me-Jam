@@ -73,4 +73,3 @@ if(current_mission != noone && current_mission._status == STATUS.ACTIVE)
 		draw_text(bbox_left-8,bbox_top-8,"mission Kills: " + string(global.mission_kills));
 	}
 }
-draw_text(x,y,string(inventory[| 0]));
