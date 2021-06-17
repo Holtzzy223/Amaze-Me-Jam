@@ -7,7 +7,7 @@ if(draw)
 	draw_set_text(text_color,fnt_title,fa_center,fa_middle);
 	draw_text(x + sprite_width / 2, y + padding * 2, panel_title);
 	//image
-	draw_sprite(obj_player.sprite_index,0,x + sprite_width/2, y + padding*4);
+	draw_sprite(ship_sprite,0,x + sprite_width/2, y + padding*4);
 	//flavor
 	draw_set_text(c_silver,fnt_desc,fa_center,fa_middle);
 	draw_text(x + sprite_width / 2, y + padding * 6, panel_tag);

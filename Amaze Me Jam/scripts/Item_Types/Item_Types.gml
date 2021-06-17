@@ -8,6 +8,16 @@ function ship_blueprint() : blueprint() constructor
 	ship_speed = 0;
 	ship_health = 0;
 	ship_energy = 0;
+	ship_sprite = noone;
+	static swap_ship = function(target)
+	{
+		target.sprite_index = self.ship_sprite;
+		target.max_speed = self.ship_speed;
+		target.max_hp = self.ship_health;
+		target.hp = target.max_hp;
+		target.max_energy = self.ship_energy;
+	
+	}
 }
 
 function weapon_blueprint() : blueprint() constructor

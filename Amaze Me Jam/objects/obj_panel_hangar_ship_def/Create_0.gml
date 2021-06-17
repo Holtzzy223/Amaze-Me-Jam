@@ -11,3 +11,4 @@ ship_speed  = "Max Speed: "+string(obj_player.max_speed)+" AU/H";
 ship_shield = "Shields: 100";
 ship_primary_weapon = "Main Weapon: Ballistic Cannon";
 ship_auxilliary_weapon = "Aux Weapon: Photon Wave Beam";
+ship_sprite = obj_player.sprite_index;

@@ -4,7 +4,7 @@ draw_self();
 // Draw text
 if(draw)
 {
-	draw_set_text(text_color,fnt_title,fa_center,fa_middle);
+	draw_set_text(text_color,title_font,fa_center,fa_middle);
 	draw_text(x + sprite_width / 2, y + padding, panel_title);
 	draw_set_text(c_silver,fnt_desc,fa_center,fa_middle);
 	draw_text(x + sprite_width / 2, y + padding * 3, panel_tag);
