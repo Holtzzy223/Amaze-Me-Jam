@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_ore",
+    "path": "sprites/spr_ore/spr_ore.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

@@ -3,17 +3,27 @@
 // Inherit the parent event
 event_inherited();
 
-image_index = irandom_range(0,3);
-switch(image_index)
+image_blend = choose(c_dkgray,c_silver,c_yellow,c_purple,c_fuchsia)
+switch(image_blend)
 {
-	//gold
-	case 0: break;
-	//silver
-	case 1: break;
-	//copper
-	case 2: break;
 	//iron
-	case 3: break;
-	//platinum
-	case 4: break;
+	case c_dkgray:
+		value = 50; 
+	break;
+	//silver
+	case c_silver: 
+		value = 100;
+	break;
+	//gold
+	case c_yellow: 
+		value = 250;
+	break;
+	//iridium
+	case c_purple: 
+		value = 500;
+	break;
+	//tritium
+	case c_fuchsia: 
+		value = 1000;
+	break;
 }

@@ -69,6 +69,7 @@
     {"id":{"name":"fnt_desc_mid","path":"fonts/fnt_desc_mid/fnt_desc_mid.yy",},"order":9,},
     {"id":{"name":"fnt_desc","path":"fonts/fnt_desc/fnt_desc.yy",},"order":6,},
     {"id":{"name":"spr__field_filter_purple","path":"sprites/spr__field_filter_purple/spr__field_filter_purple.yy",},"order":0,},
+    {"id":{"name":"spr_ore","path":"sprites/spr_ore/spr_ore.yy",},"order":14,},
     {"id":{"name":"seq_gui_mission_desc","path":"sequences/seq_gui_mission_desc/seq_gui_mission_desc.yy",},"order":5,},
     {"id":{"name":"oMenu","path":"objects/oMenu/oMenu.yy",},"order":0,},
     {"id":{"name":"obj_pirate_brute","path":"objects/obj_pirate_brute/obj_pirate_brute.yy",},"order":3,},
