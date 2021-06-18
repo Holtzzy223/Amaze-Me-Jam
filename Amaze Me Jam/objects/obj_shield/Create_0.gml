@@ -15,4 +15,5 @@ _section = 0.25;
 _saturation = 0.7;
 _brightness = 0.6;
 _mix = 0.7;
+obj_player.has_shield = true;
 obj_player.invincible = true;

@@ -66,6 +66,13 @@ if(!global.game_pause)
 		}
 		//LASERS
 		energy = clamp(energy,0,max_energy);
+		//shields
+		shield = clamp(shield,0,max_shield);
+		if(shield<=0)
+		{
+			instance_destroy(obj_shield);
+			invincible = false;
+		}
 		if(flash)
 		{
 			image_blend = c_white;

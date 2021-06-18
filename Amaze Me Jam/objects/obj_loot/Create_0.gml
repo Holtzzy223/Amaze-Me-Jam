@@ -1,5 +1,5 @@
 /// @description
-image_blend = c_fuchsia
+image_blend = c_white
 alarm_set(0,30);
 target = obj_player;
 _part_type = manager_particles.particle_exhaust_player;

@@ -257,8 +257,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Amaze Me Jam",
-    "path": "Amaze Me Jam.yyp",
+    "name": "Enemies",
+    "path": "folders/Sprites/Enemies.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_pirate_mobile_base",
