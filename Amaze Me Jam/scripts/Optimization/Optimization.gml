@@ -70,7 +70,9 @@ function save_game(save_file)
 						max_energy: max_energy,
 						current_mission : current_mission,
 						current_ship	: current_ship,
-						current_upgrade	: current_upgrade
+						current_upgrade	: current_upgrade,
+						shield : shield,
+						max_shield : max_shield,
 					}
 					break;
 				default:
@@ -92,8 +94,7 @@ function save_game(save_file)
 						max_speed : max_speed,
 						energy: energy,
 						max_energy: max_energy,
-						shield : shield,
-						max_shield : max_shield,
+
 						
 					}
 					break;
