@@ -44,6 +44,7 @@ function mission()constructor
 	_weapon_reward = noone;
 	_upgrade_reward = noone;
 	_escort_target = noone;
+	_escort_name = "";
 	_kill_target = noone;
 	_kill_amount = 0;
 	_fetch_amount = 0;

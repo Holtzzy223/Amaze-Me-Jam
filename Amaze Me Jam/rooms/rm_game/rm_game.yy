@@ -25,6 +25,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_pirate_mobile_base","path":"objects/obj_pirate_mobile_base/obj_pirate_mobile_base.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":31328.0,"y":3232.0,"resourceVersion":"1.0","name":"inst_6D570479","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_pirate_mobile_base","path":"objects/obj_pirate_mobile_base/obj_pirate_mobile_base.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":4832.0,"y":15936.0,"resourceVersion":"1.0","name":"inst_12994B8A","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_pirate_station","path":"objects/obj_pirate_station/obj_pirate_station.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":13824.0,"y":14400.0,"resourceVersion":"1.0","name":"inst_1CEF2877","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_ally_dart","path":"objects/obj_ally_dart/obj_ally_dart.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":4608.0,"y":6624.0,"resourceVersion":"1.0","name":"inst_3746AB07","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances_controllers","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_magnetic_mine","path":"objects/obj_magnetic_mine/obj_magnetic_mine.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":7296.0,"y":23200.0,"resourceVersion":"1.0","name":"inst_3AC1A528","tags":[],"resourceType":"GMRInstance",},
@@ -232,6 +233,7 @@
     {"name":"inst_6D570479","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_12994B8A","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_1CEF2877","path":"rooms/rm_game/rm_game.yy",},
+    {"name":"inst_3746AB07","path":"rooms/rm_game/rm_game.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

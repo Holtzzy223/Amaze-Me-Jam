@@ -17,7 +17,7 @@ if(instance_exists(_target))
 		_angle = image_angle  - angle_difference(image_angle,_angle);
 		image_angle = lerp(image_angle,_angle,0.1); 
 		direction = image_angle;
-		
+		_target.path_target = obj_station;
 		if(point_distance(x,y,_target.x,_target.y)<_range/4&&!_col)
 		{
 			speed -= 1;
@@ -26,6 +26,7 @@ if(instance_exists(_target))
 	}
 	else
 	{
+		_target.path_target = obj_ally_dart;
 		alarm_set(1,120);
 	}
 }
