@@ -2,6 +2,7 @@
 
 // Inherit the parent event
 event_inherited();
-
-base_speed = 3;
+hp = 50;
+base_speed = 1;
 speed = base_speed;
+alarm_set(1,90)

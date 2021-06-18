@@ -1,9 +1,9 @@
-/// @description Insert description here
+/// @description spawn brute
 // You can write your code in this editor
 var spawn = choose(true, false)
 if(spawn == true)
 {
-	enemy_spawn_count = random_range(1,3);
+	enemy_spawn_count = irandom_range(1,3);
 	var child = obj_pirate_brute;
 	if(instance_number(child) < 6)
 	{

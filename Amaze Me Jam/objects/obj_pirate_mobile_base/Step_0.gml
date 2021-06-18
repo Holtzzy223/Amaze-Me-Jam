@@ -1,9 +1,9 @@
 /// @description 
-_time += 1 / room_speed;
-value = wave(0,1+_time,3,0.25);
+_time += 0.5 / room_speed;
+value = wave(0,0.25+_time,2,0.25);
 speed = clamp(speed,0,base_speed);
 if(global.game_pause) exit;
-image_angle +=5;
+image_angle +=0.5;
 if(dead)
 {
 	global.camera_shake = 3;
