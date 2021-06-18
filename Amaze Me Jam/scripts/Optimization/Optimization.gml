@@ -54,9 +54,9 @@ function save_game(save_file)
 						obj : object_get_name(object_index),
 						x : x,
 						y : y,
-						sprite_index :sprite_index,
+						sprite_index : sprite_index,
 						image_index : image_index,
-						image_blend :image_blend,
+						image_blend : image_blend,
 						image_angle : image_angle,
 						layer : layer,
 						depth : depth,
@@ -91,7 +91,9 @@ function save_game(save_file)
 						max_hp:max_hp,
 						max_speed : max_speed,
 						energy: energy,
-						max_energy: max_energy
+						max_energy: max_energy,
+						shield : shield,
+						max_shield : max_shield,
 						
 					}
 					break;
@@ -149,6 +151,7 @@ function load_game(save_file)
 							case OBJ_TYPE.PLAYER:
 								x = _load_entity.x;
 								y = _load_entity.y;
+								sprite_index = _load_entity.sprite_index;
 								image_blend = _load_entity.image_blend;
 								image_index = _load_entity.image_index;
 								image_angle = _load_entity.image_angle;
@@ -164,6 +167,8 @@ function load_game(save_file)
 								current_mission = _load_entity.current_mission;
 								current_ship = _load_entity.current_ship;
 								current_upgrade = _load_entity.current_upgrade;
+								shield = _load_entity.shield;
+								max_shield = _load_entity.max_shield;
 								break;
 							default:
 								x = _load_entity.x;
