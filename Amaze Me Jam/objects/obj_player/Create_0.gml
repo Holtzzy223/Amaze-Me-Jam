@@ -4,6 +4,7 @@
 // Inherit the parent event
 event_inherited();
 path = path_add();
+path_target = obj_station;
 alarm_set(3,60);
 track_station = false;
 rotation_speed = 100; //The higher the values, the faster the rotation

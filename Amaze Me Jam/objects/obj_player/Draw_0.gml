@@ -87,8 +87,23 @@ if (flash > 0)
 }
 if(current_mission != noone && current_mission._status == STATUS.ACTIVE)
 {
-	if(current_mission._type == TYPE.KILL)
+	switch(current_mission._type)
 	{
-		draw_text(bbox_left-8,bbox_top-8,"mission Kills: " + string(global.mission_kills));
+		case TYPE.KILL:
+		draw_text
+		(
+			bbox_left-8,bbox_top-8,"mission Kills: " +
+			string(global.mission_kills)
+		);
+		break;
+		case TYPE.ESCORT:
+			path_target = current_mission._escort_target;
+		break;
+		
 	}
+	
+}
+else
+{
+	path_target = obj_station;
 }

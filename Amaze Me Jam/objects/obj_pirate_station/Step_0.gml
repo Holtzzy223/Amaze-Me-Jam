@@ -2,7 +2,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 _time += 0.5 / room_speed;
-value = wave(0,0.5+_time,2,0.25);
+value = wave(0,0.5+_time,10,3);
 if(global.game_pause) exit;
 image_angle +=image_rot;
 if(dead)

@@ -20,8 +20,6 @@ draw_set_text(c_yellow,fnt_title_mid,fa_left,fa_middle);
 draw_text(1600,124,"Ore: "+string(ore_amount)+" kT");
 //station direction indicator
 
-var a = point_direction(x,y,obj_station.x,obj_station.y);
-var d= point_distance(x,y,obj_station.x,obj_station.y)/20;
 
 
 

@@ -7,4 +7,4 @@ if(instance_number(par_enemy)<20)
 	}
 }
 
-alarm_set(1,600)
+alarm_set(1,irandom_range(600,900));

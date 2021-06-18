@@ -1,6 +1,6 @@
 /// @description 
 _time += 0.5 / room_speed;
-value = wave(0,0.25+_time,2,0.25);
+value = wave(0,0.25+_time,6,1);
 speed = clamp(speed,0,base_speed);
 if(global.game_pause) exit;
 image_angle +=0.5;
