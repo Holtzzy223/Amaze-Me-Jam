@@ -64,6 +64,7 @@ function mission()constructor
 		//display the tracker
 		if(!_mission_accepted)
 		{
+			save_game(SAVEFILE);
 			self._mission_accepted = true;
 			self._status = STATUS.ACTIVE;
 			self.display_mission();

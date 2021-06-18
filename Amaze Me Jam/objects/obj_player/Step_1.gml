@@ -5,7 +5,7 @@ if(has_shield)
 {
 	if(shield<max_shield)
 	{
-		shield+=0.001;
+		shield+=0.01;
 	}
 	shield = clamp(shield,0,max_shield);
 	if(shield==max_shield)
