@@ -11,7 +11,7 @@
 //shader_set_uniform_f(_uniMix, _mix);
 //draw_self();
 //shader_reset();
-if(!dead||!flash)
+if(!dead && !flash)
 {
 shader_set(sh_bloom);
 
@@ -21,10 +21,20 @@ shader_set_uniform_f(bloom_handler,value);
 //fauxton_sprite_set(x,y,depth,0,0,0,1,1,1,true);
 draw_self();
 shader_reset();
-}
-if(dead||flash)
+}else
+if(dead)
 {
 	shader_reset();
 	draw_self();
-	
+}else
+if(flash>0)
+{
+if (flash > 0)
+{
+	flash--;
+	shader_set(shWhite);
+	draw_self();
+	shader_reset();
+}
+
 }

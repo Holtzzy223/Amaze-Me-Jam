@@ -1,10 +1,10 @@
 /// @description 
-speed = 1;
+speed = 2;
 direction = random(360);
 // Inherit the parent event
 event_inherited();
 _part_type = manager_particles.particle_debris_astroid;
-image_blend = choose(c_dkgray,c_silver,c_yellow,c_purple,c_fuchsia)
+image_blend = choose(c_ltgray,c_silver,c_yellow,c_purple,c_fuchsia)
 _part_color = image_blend;
 switch(image_blend)
 {

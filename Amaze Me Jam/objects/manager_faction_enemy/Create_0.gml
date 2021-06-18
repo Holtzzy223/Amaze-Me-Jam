@@ -20,6 +20,7 @@ _saturation = 0.7;
 _brightness = 0.8;
 _mix = 0.65;
 
-
+flash =0;
+flash_time = 5;
 value = 0.0;
 bloom_handler = shader_get_uniform(sh_bloom,"intensity");

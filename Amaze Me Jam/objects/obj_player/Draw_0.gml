@@ -17,6 +17,16 @@
 
 if(!dead && !global.game_pause)
 {
+	if(track_station)
+	{
+		d= point_distance(x,y,obj_station.x,obj_station.y)/20;
+		if(d >= 30)
+		{
+			draw_set_alpha(wave(0.8,0.5,5,1));
+			draw_path(path, x, y, false);	
+			draw_set_alpha(1);
+		}
+	}
 	if(mouse_check_button(mb_right))
 	{
 			var range = point_distance(x, y, window_view_mouse_get_x(0),window_view_mouse_get_y(0));
@@ -54,17 +64,24 @@ if(!dead && !global.game_pause)
 		
 		draw_set_alpha(1);
 }
-if(!dead||!flash)
+if(!dead && !flash)
 {
 	shader_set(sh_bloom);
 	shader_set_uniform_f(bloom_handler,value);
 	draw_self();
 	shader_reset();
-}
-if(dead||flash)
+}else
+if(dead)
 {
 	shader_reset();
 	draw_self();
+}else
+if (flash > 0)
+{
+	flash--;
+	shader_set(shWhite);
+	draw_self();
+	shader_reset();
 }
 if(current_mission != noone && current_mission._status == STATUS.ACTIVE)
 {

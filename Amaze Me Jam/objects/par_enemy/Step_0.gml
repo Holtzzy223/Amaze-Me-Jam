@@ -6,14 +6,10 @@ if(global.game_pause) exit;
 if(dead)
 {
 	global.camera_shake = 3;
-	image_alpha -= 0.01;
+	image_alpha -= 0.1;
 	image_angle +=5;
 }
-if(flash)
-{
-	image_blend = c_white;
-	image_alpha = wave(0.25,1,0.5,.25);
-}
+
 if(image_alpha<=0)
 {
 	

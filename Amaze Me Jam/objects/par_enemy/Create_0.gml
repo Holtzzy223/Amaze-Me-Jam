@@ -23,7 +23,7 @@ function damage_enemy(_damage)
 	if(!invincible)
 	{
 		hp -=_damage;
-		
+		flash = flash_time;
 		//Dead Check
 		if(hp <=0)
 		{
@@ -35,7 +35,7 @@ function damage_enemy(_damage)
 		{
 			invincible = true;
 			//flash
-			flash = true;
+			flash = flash_time;
 			alarm_set(0,30);
 			//bounce
 			motion_set(-direction+random_range(-5,5),1);

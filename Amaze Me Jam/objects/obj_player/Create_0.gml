@@ -3,7 +3,9 @@
 
 // Inherit the parent event
 event_inherited();
-
+path = path_add();
+alarm_set(3,60);
+track_station = false;
 rotation_speed = 100; //The higher the values, the faster the rotation
 dir = 0; //Direction used only for rotation
 //player stuffs
@@ -44,7 +46,8 @@ value = 0.0;
 bloom_handler = shader_get_uniform(sh_bloom,"intensity");
 //Local funcs
 
-
+flash_time = 10;
+flash = 0
 function damage_player(_damage)
 {
 	if(!invincible)
@@ -65,7 +68,7 @@ function damage_player(_damage)
 			
 			//flash
 			global.camera_shake = 5;
-			flash = true;
+			flash = flash_time;
 			alarm_set(1,60)
 			//bounce
 			motion_set(-direction+random_range(-5,5),6);

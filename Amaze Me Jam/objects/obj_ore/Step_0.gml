@@ -12,7 +12,7 @@ image_xscale = wave(-1,1,2,0.5);
 
 image_alpha = wave(0.5,0.8,3,0.35);
 
-if(target_in_range(target,350))
+if(target_in_range(target,250))
 {
 	image_angle = angle_difference(image_angle,target.image_angle);
 	move_towards_point(target.x,target.y,10);

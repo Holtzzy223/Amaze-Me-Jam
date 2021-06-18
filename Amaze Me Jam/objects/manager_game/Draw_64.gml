@@ -13,7 +13,10 @@ if(room!=rm_menu && instance_exists(obj_player)&&!global.game_pause)
 	draw_set_alpha(0.6);
 	draw_circle_color(display_get_gui_width()/12,display_get_gui_height()/7,160,c_green,c_blue,false)
 	draw_set_alpha(1);
-	//draw the wall instance that are in range
+	//draw the station indicator
+
+
+	//draw the  instance that are in range
 	
 	with(manager_factions)
 	

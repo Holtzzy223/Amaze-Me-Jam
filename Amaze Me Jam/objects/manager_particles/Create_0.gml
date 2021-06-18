@@ -67,6 +67,7 @@ part_type_life(particle_debris_ship,120,600);
 #endregion
 
 #region Weapons
-
+//lasers
+//missiles
 
 #endregion
