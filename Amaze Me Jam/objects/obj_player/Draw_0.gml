@@ -22,8 +22,10 @@ if(!dead && !global.game_pause)
 		d= point_distance(x,y,obj_station.x,obj_station.y)/20;
 		if(d >= 30)
 		{
-			draw_set_alpha(wave(0.8,0.5,5,1));
-			draw_path(path, x, y, false);	
+			draw_set_alpha(wave(0.35,0,5,1));
+			draw_set_color(c_aqua);
+			draw_path(path, x, y, false);
+			draw_set_color(c_white);
 			draw_set_alpha(1);
 		}
 	}
