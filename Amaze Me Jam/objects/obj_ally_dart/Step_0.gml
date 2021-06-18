@@ -6,13 +6,14 @@ if(target_in_range(obj_station,_range))
 	{
 		if(obj_player.current_mission._type == TYPE.ESCORT && obj_player.current_mission._status = STATUS.ACTIVE)
 		{
+			
+			move_towards_point(obj_station.x,obj_station.y,8);
 			obj_player.current_mission.complete_mission();
-			speed = 0;
-			image_alpha -= 0.01;
 		}
+		
 	}
 }
-if(image_alpha<=0)
+if(place_meeting(x,y,obj_station))
 {
 	instance_destroy(id);
 }
