@@ -97,7 +97,7 @@ if(current_mission != noone && current_mission._status == STATUS.ACTIVE)
 		);
 		break;
 		case TYPE.ESCORT:
-			path_target = current_mission._escort_target;
+			
 		break;
 		
 	}

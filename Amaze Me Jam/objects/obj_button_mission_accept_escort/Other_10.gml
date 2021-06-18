@@ -7,6 +7,7 @@ with(obj_station)
 	alarm_set(1,600);
 	obj_player.current_mission = missions[1];
 	obj_player.current_mission.accept_mission();
+	obj_player.path_target = obj_player.current_mission._escort_target;
 }
 global.game_pause = false;
 with(manager_factions)
