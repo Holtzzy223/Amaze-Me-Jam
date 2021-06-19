@@ -115,6 +115,7 @@
     {"id":{"name":"spr_shield","path":"sprites/spr_shield/spr_shield.yy",},"order":0,},
     {"id":{"name":"fnt_stats","path":"fonts/fnt_stats/fnt_stats.yy",},"order":7,},
     {"id":{"name":"Item_Classes","path":"scripts/Item_Classes/Item_Classes.yy",},"order":6,},
+    {"id":{"name":"spr_darx_interceptor","path":"sprites/spr_darx_interceptor/spr_darx_interceptor.yy",},"order":14,},
     {"id":{"name":"seq_gui_station","path":"sequences/seq_gui_station/seq_gui_station.yy",},"order":0,},
     {"id":{"name":"spr_cursor","path":"sprites/spr_cursor/spr_cursor.yy",},"order":7,},
     {"id":{"name":"Optimization","path":"scripts/Optimization/Optimization.yy",},"order":3,},
