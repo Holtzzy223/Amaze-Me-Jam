@@ -72,6 +72,7 @@ function save_game(save_file)
 						current_upgrade	: current_upgrade,
 						ore_amount : ore_amount,
 						shield : shield,
+						has_shield :has_shield,
 						max_shield : max_shield,
 						allies_saved : allies_saved
 					}

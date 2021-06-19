@@ -11,7 +11,7 @@ rotation_speed = 100; //The higher the values, the faster the rotation
 dir = 0; //Direction used only for rotation
 //player stuffs
 previous_state = -1;
-shield = noone;
+shield = 0;
 invincible = false;
 dead = false;
 locked = false;

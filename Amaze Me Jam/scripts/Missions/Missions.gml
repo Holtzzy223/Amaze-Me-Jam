@@ -68,7 +68,7 @@ function mission()constructor
 			switch(self._type)
 			{
 				case TYPE.ESCORT:
-					spawn_object_at_camera_bounds(_escort_target,_fetch_amount,"Instances_controllers",14000);
+					spawn_object_at_camera_bounds(_escort_target,_fetch_amount,"Instances_controllers",13000);
 				break;
 			}
 			
@@ -191,22 +191,29 @@ function mission_escort() : mission() constructor
 	_reward = REWARD.ORE;
 	_reward_text = "Reward: New Ship Unlock Progress and \n a moderate deposit of ore"
 	_ore_reward = irandom_range(10,30);
-	_escort_target = choose(obj_ally_dart,obj_ally_bomber,obj_ally_interceptor);
+	_escort_target = choose(obj_ally_dart,obj_ally_bomber,obj_ally_interceptor,obj_ally_hammerhead,obj_ally_medusa,);
 		switch(_escort_target)
 	{
 		case obj_ally_dart:
-			_target_name = "Allied Republic Dart"
-			_target_sprite = spr_player_ship_dart
+			_target_name = "Republic Dart";
+			_target_sprite = spr_player_ship_dart;
 		break;
 		case obj_ally_bomber:
-			_target_name = "Allied Consensus Bomber"
-			_target_sprite = spr_ship_bomber
+			_target_name = "Consensus Bomber";
+			_target_sprite = spr_ship_bomber;
 		break;
 		case obj_ally_interceptor:
-			_target_name = "Allied Terran Interceptor "
+			_target_name = " Terran Interceptor";
 			_target_sprite = spr_darx_interceptor;
 		break;
-
+		case obj_ally_hammerhead:
+			_target_name = "Consesnus Hammerhead";
+			_target_sprite = spr_hammerhead_cruiser;
+		break;
+		case obj_ally_medusa:
+		_target_name = "Jovian Medusa Cruiser";
+		_target_sprite =spr_medusa;
+		break;
 	}
 	
 	_fetch_amount = 1
