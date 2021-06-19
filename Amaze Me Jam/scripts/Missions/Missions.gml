@@ -229,9 +229,11 @@ function mission_salvage() : mission() constructor
 	{
 		case obj_asteroid:
 			_target_name = "Astroids"
+			_target_sprite = spr_asteroid_med
 		break;
 		case obj_magnetic_mine:
 			_target_name = "Pirate Mag Mines"
+			_target_sprite = spr_mine_strip8;
 		break;
 	}
 	_intro = "This sector is starting to look like a garbabe heap! \n Please remove this trash from the immediate area"
