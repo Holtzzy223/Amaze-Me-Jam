@@ -10,7 +10,7 @@ if(room != rm_menu && global.new_game)
 	instance_create_layer(0,0,"Instances_controllers",manager_Spawner);
 	//instance_create_layer(room_width/2+(irandom_range(irandom_range(-14000,-10000),irandom_range(10000,14000))),room_height/2+(irandom_range(irandom_range(-14000,-10000),irandom_range(10000,14000))),"Instances_controllers",obj_player);
 	spawn_object_at_camera_bounds(obj_player,1,"Instances_controllers",17000)
-	alarm_set(1,10);
+
 	alarm_set(2,60);
 	global.new_game = false;
 }
@@ -22,10 +22,9 @@ if(room != rm_menu && !global.new_game)
 	if(file_exists(SAVEFILE))
 	{
 		load_game(SAVEFILE);
-	}else
+	}
+	else
 	{
-		//instance_create_layer(room_width/2+(irandom_range(irandom_range(-17000,-16000),irandom_range(16000,17000))),room_height/2+(irandom_range(irandom_range(-17000,-16000),irandom_range(16000,17000))),"Instances_controllers",obj_player);
-		
 		spawn_object_at_camera_bounds(obj_player,1,"Instances_controllers",17000)
 		//instance_create_layer(room_width/2,room_height/2,"Instances_controllers",obj_player);
 	}

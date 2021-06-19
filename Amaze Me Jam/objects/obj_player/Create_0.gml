@@ -34,7 +34,8 @@ current_upgrade = noone;
 ship_bp = -1;
 ore_amount = 0;
 has_shield = false;
-max_shield = 100;
+max_shield = 30;
+allies_saved = 0;
 shield = max_shield;
 //Shader Stuffz
 //ui

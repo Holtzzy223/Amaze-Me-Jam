@@ -8,4 +8,4 @@ if(instance_number(par_enemy)<15)
 	}
 }
 
-alarm_set(1,irandom_range(450,600));
+alarm_set(1,irandom_range(180,360));

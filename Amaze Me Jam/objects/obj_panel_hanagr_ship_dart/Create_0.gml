@@ -20,6 +20,13 @@ ship_speed  = "Max Speed: "+string(ship.ship_speed)+" AU/H";
 ship_shield = "Shields: 100";
 ship_primary_weapon = "Main Weapon: Ballistic Cannon";
 ship_auxilliary_weapon = "Aux Weapon: Photon Wave Beam";
-
-padding = 28;
-
+can_access = false;
+padding = 32;
+if(obj_player.allies_saved >= 3)
+{
+	can_access = true;
+	image_blend = c_white
+}else
+{
+	image_blend = c_dkgray;
+}

@@ -68,11 +68,11 @@ function save_game(save_file)
 						max_speed : max_speed,
 						energy: energy,
 						max_energy: max_energy,
-						current_mission : current_mission,
 						current_ship	: current_ship,
 						current_upgrade	: current_upgrade,
 						shield : shield,
 						max_shield : max_shield,
+						allies_saved :allies_saved
 					}
 					break;
 				default:
@@ -165,11 +165,11 @@ function load_game(save_file)
 								max_speed = _load_entity.max_speed;
 								energy = _load_entity.energy;
 								max_energy = _load_entity.max_energy;
-								current_mission = _load_entity.current_mission;
 								current_ship = _load_entity.current_ship;
 								current_upgrade = _load_entity.current_upgrade;
 								shield = _load_entity.shield;
 								max_shield = _load_entity.max_shield;
+								allies_saved = _load_entity.allies_saved;
 								break;
 							default:
 								x = _load_entity.x;

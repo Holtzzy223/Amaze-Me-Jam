@@ -29,7 +29,10 @@
     {"isDnD":false,"eventNum":10,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"desc_font","path":"objects/obj_panel_ship_interactable/obj_panel_ship_interactable.yy",},"objectId":{"name":"obj_panel_ship_interactable","path":"objects/obj_panel_ship_interactable/obj_panel_ship_interactable.yy",},"value":"fnt_desc_mid","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"stat_font","path":"objects/obj_panel_ship_interactable/obj_panel_ship_interactable.yy",},"objectId":{"name":"obj_panel_ship_interactable","path":"objects/obj_panel_ship_interactable/obj_panel_ship_interactable.yy",},"value":"fnt_stats_mid","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
   "parent": {
     "name": "Hangar",
     "path": "folders/Objects/Game/GUI/panels/Hangar.yy",

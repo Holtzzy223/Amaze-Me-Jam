@@ -16,8 +16,13 @@ text_prog = 0;
 timing = 50;
 
 obj_player.locked = true;
+obj_player.invincible = true;
 backer = 0;
 
 
 
 response_selected = 0;
+with(manager_factions)
+{
+	speed = 0;
+}
