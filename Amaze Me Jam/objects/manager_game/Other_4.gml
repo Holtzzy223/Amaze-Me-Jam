@@ -25,7 +25,7 @@ if(room != rm_menu && !global.new_game)
 	{
 		instance_create_layer(room_width/2,room_height/2,"Instances_controllers",obj_player);
 	}
-	alarm_set(1,300);
+	
 	
 }
 if(room != rm_menu)

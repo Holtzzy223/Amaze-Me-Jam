@@ -2,7 +2,7 @@
 // You can write your code in this editor
 part_particles_create(manager_particles.particle_system,x, y,manager_particles.particle_debris_ship,15);
 
-var _chance = irandom_range(0,9);
+var _chance = irandom_range(0,12);
 
 if(_chance<=5)
 {
@@ -12,12 +12,12 @@ if(_chance<=5)
 if(_chance>5 && _chance<=7)
 {
 	instance_create_layer(x,y,"Instances",obj_energy_up);
-	instance_create_layer(x+random_range(-8,8),y+random_range(-16,16),"Instances",obj_health);
+	instance_create_layer(x+irandom_range(-32,32),y+irandom_range(-32,32),"Instances",obj_shield_up);
 }
 if(_chance>7 &&_chance<=9)
 {
 	instance_create_layer(x,y,"Instances",obj_shield_up);
-	instance_create_layer(x+random_range(-8,8),y+random_range(-16,16),"Instances",obj_health);
+	instance_create_layer(x+irandom_range(-32,32),y+irandom_range(-32,32),"Instances",obj_health);
 }
 
 if(instance_exists(obj_player))

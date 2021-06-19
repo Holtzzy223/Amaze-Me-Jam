@@ -129,10 +129,6 @@ function mission()constructor
 
 }
 
-function mission_track_escort()
-{
-	
-}
 
 function mission_track_fetch()
 {

@@ -1,6 +1,6 @@
 /// @description 
 var _pushspd = 2;
-var _col = instance_place(x,y,par_enemy);
+var _col = instance_place(x,y,obj_loot);
 if(_col){
     var _dist = sign(x - _col.x) * _pushspd;
     if(!place_meeting(x + _dist, y, manager_faction_ally))

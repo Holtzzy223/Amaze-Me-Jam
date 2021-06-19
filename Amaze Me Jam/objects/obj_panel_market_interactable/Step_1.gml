@@ -12,12 +12,20 @@ if (position_meeting(_mouse_gui_x, _mouse_gui_y, id))
 		audio_play_sound(snd_menu_pluck,1,false);
 		sound_played = true
 	}
-	if(mouse_check_button_released(mb_left))
+
+	if(mouse_check_button_released(mb_left)&&obj_player.ore_amount >= upgrade_cost)
 	{
 		audio_sound_pitch(snd_menu_select,random_range(0.8,1.1))
 		audio_play_sound(snd_menu_select,1,false);
 		event_user(0);
 	}
+	else 
+	if(mouse_check_button_released(mb_left))
+	{
+		audio_sound_pitch(snd_menu_select,random_range(0.5,0.6));
+		audio_play_sound(snd_menu_select,1,false);
+	}
+	
 }
 else 
 {
