@@ -18,7 +18,6 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"manager_pause","path":"objects/manager_pause/manager_pause.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":5472.0,"y":6464.0,"resourceVersion":"1.0","name":"inst_5F865BC5","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2304.0,"y":2368.0,"resourceVersion":"1.0","name":"inst_1391A96F","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_station","path":"objects/obj_station/obj_station.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":18400.0,"y":18496.0,"resourceVersion":"1.0","name":"inst_6B58A6B2","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"obj_ally_dart","path":"objects/obj_ally_dart/obj_ally_dart.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":4608.0,"y":6624.0,"resourceVersion":"1.0","name":"inst_3746AB07","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances_controllers","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_magnetic_mine","path":"objects/obj_magnetic_mine/obj_magnetic_mine.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":7296.0,"y":23200.0,"resourceVersion":"1.0","name":"inst_3AC1A528","tags":[],"resourceType":"GMRInstance",},
@@ -232,7 +231,6 @@
     {"name":"inst_5F865BC5","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_1391A96F","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_6B58A6B2","path":"rooms/rm_game/rm_game.yy",},
-    {"name":"inst_3746AB07","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_5FCDC62A","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_126E1CAB","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_6220895C","path":"rooms/rm_game/rm_game.yy",},

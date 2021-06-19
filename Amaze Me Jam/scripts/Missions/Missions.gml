@@ -65,6 +65,12 @@ function mission()constructor
 		//display the tracker
 		if(!_mission_accepted)
 		{
+			switch(self._type)
+			{
+				case TYPE.ESCORT:
+					spawn_object_at_camera_bounds(_escort_target,_fetch_amount,"Instances_controllers",14000);
+				break;
+			}
 			save_game(SAVEFILE);
 			self._mission_accepted = true;
 			self._status = STATUS.ACTIVE;
@@ -85,7 +91,7 @@ function mission()constructor
 			case REWARD.ORE:
 				repeat(_ore_reward)
 				{
-					var child = instance_create_layer(obj_player.x+irandom_range(-15,15),obj_player.y+160+irandom_range(-5,5),"Instances",obj_ore);
+					var child = instance_create_layer(obj_player.x+irandom_range(-64,64),obj_player.y-160+irandom_range(-15,15),"Instances",obj_ore);
 					child.image_blend = choose(c_purple,c_fuchsia,c_yellow);
 					global.camera_shake = 3;
 				}
@@ -99,8 +105,8 @@ function mission()constructor
 		//allways give ore
 		repeat(10)
 		{
-			var child = instance_create_layer(obj_player.x+irandom_range(-3,3),obj_player.y-32+irandom_range(-3,3),"Instances",obj_ore);
-			child.image_blend = choose(c_dkgray,c_silver);
+			var child = instance_create_layer(obj_player.x+irandom_range(-32,32),obj_player.y-64+irandom_range(-15,15),"Instances",obj_ore);
+			child.image_blend = choose(c_fuchsia,c_silver);
 		}
 		//heal player
 		obj_player.hp = obj_player.max_hp;
