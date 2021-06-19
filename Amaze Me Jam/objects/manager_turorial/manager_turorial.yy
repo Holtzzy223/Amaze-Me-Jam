@@ -28,7 +28,7 @@
     "path": "folders/Objects/Game/Managers.yy",
   },
   "resourceVersion": "1.0",
-  "name": "manager_missions",
+  "name": "manager_turorial",
   "tags": [],
   "resourceType": "GMObject",
 }

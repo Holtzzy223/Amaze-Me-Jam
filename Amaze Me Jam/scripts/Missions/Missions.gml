@@ -88,13 +88,14 @@ function mission()constructor
 	};
 	static reward_player = function()
 	{
+		self._status = STATUS.IDLE;
 		//give reward
 		switch(_reward)
 		{
 			case REWARD.ORE:
 				repeat(_ore_reward)
 				{
-					var child = instance_create_layer(obj_player.x+irandom_range(-64,64),obj_player.y-160+irandom_range(-15,15),"Instances",obj_ore);
+					var child = instance_create_layer(obj_player.x+irandom_range(-64,64),obj_player.y-350+irandom_range(-15,15),"Instances",obj_ore);
 					child.image_blend = choose(c_purple,c_fuchsia,c_yellow);
 					global.camera_shake = 3;
 				}
@@ -108,12 +109,14 @@ function mission()constructor
 		//allways give ore
 		repeat(10)
 		{
-			var child = instance_create_layer(obj_player.x+irandom_range(-32,32),obj_player.y-64+irandom_range(-15,15),"Instances",obj_ore);
+			var child = instance_create_layer(obj_player.x+irandom_range(-32,32),obj_player.y-300+irandom_range(-15,15),"Instances",obj_ore);
 			child.image_blend = choose(c_fuchsia,c_silver);
 		}
 		//heal player
 		obj_player.hp = obj_player.max_hp;
 		obj_player.energy = obj_player.max_energy;
+		//end mission
+		obj_player.current_mission = noone;
 		
 		//save
 		save_game(SAVEFILE);
@@ -124,9 +127,13 @@ function mission()constructor
 	};
 	static complete_mission = function()
 	{
-		self._status = STATUS.COMPLETE
-		create_text_box(self._complete_text,1);
-		self.reward_player();
+		if(self._status!=STATUS.COMPLETE)
+		{
+			obj_player.speed = 0;
+			self._status = STATUS.COMPLETE
+			create_text_box(self._complete_text,1);
+			self.reward_player();
+		}
 	};
 	static fail_mission = function()
 	{

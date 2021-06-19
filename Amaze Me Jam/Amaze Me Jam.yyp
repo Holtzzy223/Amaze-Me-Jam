@@ -73,7 +73,7 @@
     {"id":{"name":"spr_asteroid_large","path":"sprites/spr_asteroid_large/spr_asteroid_large.yy",},"order":0,},
     {"id":{"name":"spr_grapple_head","path":"sprites/spr_grapple_head/spr_grapple_head.yy",},"order":1,},
     {"id":{"name":"seq_gui_contracts","path":"sequences/seq_gui_contracts/seq_gui_contracts.yy",},"order":0,},
-    {"id":{"name":"manager_missions","path":"objects/manager_missions/manager_missions.yy",},"order":8,},
+    {"id":{"name":"manager_turorial","path":"objects/manager_turorial/manager_turorial.yy",},"order":8,},
     {"id":{"name":"spr_hunter","path":"sprites/spr_hunter/spr_hunter.yy",},"order":5,},
     {"id":{"name":"obj_ally_dart","path":"objects/obj_ally_dart/obj_ally_dart.yy",},"order":7,},
     {"id":{"name":"fnt_title_mid","path":"fonts/fnt_title_mid/fnt_title_mid.yy",},"order":10,},
