@@ -22,19 +22,23 @@ if(!global.game_pause)
 	draw_text(1600,124,"Ore: "+string(ore_amount)+" kT");
 	if(current_mission != noone && current_mission._status == STATUS.ACTIVE)
 	{
-	switch(current_mission._type)
-	{
-		case TYPE.KILL:
-		draw_sprite(current_mission._target_sprite,0,display_get_gui_width()/2,128)
-		draw_text(display_get_gui_width()/2+64,156,": " + string(global.mission_kills)+"Destroyed");
-		break;
-		case TYPE.ESCORT:
-		draw_sprite(current_mission._target_sprite,0,display_get_gui_width()/2 ,156);
-		draw_text(display_get_gui_width()/2 + 64,156,"Locate and Escort");	
-		break;
-		
-	}
-	
+		draw_set_text(c_yellow,fnt_desc,fa_center,fa_middle)
+		switch(current_mission._type)
+		{
+			case TYPE.KILL:
+			
+			draw_text(display_get_gui_width()/2,88,string(global.mission_kills)+"	: Destroyed");
+			draw_sprite(current_mission._target_sprite,0,display_get_gui_width()/2,48)
+			
+			break;
+			case TYPE.ESCORT:
+			draw_text(display_get_gui_width()/2,32,"Locate and Escort");
+			draw_sprite(current_mission._target_sprite,0,display_get_gui_width()/2 ,64);
+				
+			break;
+			
+		}
+		draw_set_text(c_white,fnt_desc,fa_left,fa_top);
 	}
 	else
 	{
