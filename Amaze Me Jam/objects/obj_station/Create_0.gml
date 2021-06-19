@@ -12,11 +12,13 @@ range = 125;
 kill_mission = new mission_kill();
 //Escort
 escort_mission = new mission_escort();
-
+//fetch
+fetch_mission = new mission_salvage();
 
 
 missions = array_create();
 missions[0] = kill_mission;
 missions[1] = escort_mission;
+missions[2] = fetch_mission;
 
 alarm_set(2,7200);

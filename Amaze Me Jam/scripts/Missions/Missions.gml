@@ -71,10 +71,13 @@ function mission()constructor
 					spawn_object_at_camera_bounds(_escort_target,_fetch_amount,"Instances_controllers",14000);
 				break;
 			}
-			save_game(SAVEFILE);
+			
 			self._mission_accepted = true;
 			self._status = STATUS.ACTIVE;
+			obj_player._mission = self;
+			save_game(SAVEFILE);
 			self.display_mission();
+			
 		}
 	};
 	static decline_mission = function()
@@ -196,4 +199,28 @@ function mission_escort() : mission() constructor
 	_title = "A Friend In Need";
 	_tag_line = "On the road again...";
 	_description = "!!!!!URGENT!!!!!\n  Allied Ship in need of assistance...\n Please LOCATE and ESCORT(" +string(self._fetch_amount) + ")("+string(self._target_name)+") \n to home station... ";
+}
+
+function mission_salvage() : mission() constructor
+{
+	
+	_type = TYPE.KILL;
+	_reward = REWARD.ORE;
+	_reward_text = "Reward: A Metric Butt Tonne of ORE"
+	_ore_reward = 20;
+	_kill_amount = irandom_range(10,25);
+	_kill_target = choose(obj_asteroid,obj_magnetic_mine);
+	switch(_kill_target)
+	{
+		case obj_asteroid:
+			_target_name = "Astroids"
+		break;
+		case obj_magnetic_mine:
+			_target_name = "Pirate Mag Mines"
+		break;
+	}
+	_intro = "This sector is starting to look like a garbabe heap! \n Please remove this trash from the immediate area"
+	_title = "Garbage Disposal";
+	_tag_line = "it's a dirty job...";
+	_description = "Locate and remove ("+string(self._kill_amount)+") \n " + string(self._target_name) + " The sector thanks you for your service.";
 }

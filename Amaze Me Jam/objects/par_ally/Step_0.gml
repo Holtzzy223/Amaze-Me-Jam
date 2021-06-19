@@ -26,7 +26,7 @@ if(instance_exists(_target))
 	}
 	else
 	{
-		_target.path_target = obj_ally_dart;
+		_target.path_target = id;
 		alarm_set(1,120);
 	}
 }
