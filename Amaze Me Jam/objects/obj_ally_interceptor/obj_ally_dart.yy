@@ -1,15 +1,15 @@
 {
   "spriteId": {
-    "name": "spr_station_strip65",
-    "path": "sprites/spr_station_strip65/spr_station_strip65.yy",
+    "name": "spr_player_ship_dart",
+    "path": "sprites/spr_player_ship_dart/spr_player_ship_dart.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "manager_faction_ally",
-    "path": "objects/manager_faction_ally/manager_faction_ally.yy",
+    "name": "par_ally",
+    "path": "objects/par_ally/par_ally.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -25,10 +25,6 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":1,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":2,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -37,7 +33,7 @@
     "path": "folders/Objects/Allies.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_station",
+  "name": "obj_ally_dart",
   "tags": [],
   "resourceType": "GMObject",
 }

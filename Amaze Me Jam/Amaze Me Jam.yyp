@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"obj_ally_interceptor","path":"objects/obj_ally_interceptor/obj_ally_interceptor.yy",},"order":8,},
     {"id":{"name":"spr_pirate_raider","path":"sprites/spr_pirate_raider/spr_pirate_raider.yy",},"order":2,},
     {"id":{"name":"spr_energybar","path":"sprites/spr_energybar/spr_energybar.yy",},"order":5,},
     {"id":{"name":"spr_station_strip65","path":"sprites/spr_station_strip65/spr_station_strip65.yy",},"order":11,},
@@ -115,7 +116,7 @@
     {"id":{"name":"spr_shield","path":"sprites/spr_shield/spr_shield.yy",},"order":0,},
     {"id":{"name":"fnt_stats","path":"fonts/fnt_stats/fnt_stats.yy",},"order":7,},
     {"id":{"name":"Item_Classes","path":"scripts/Item_Classes/Item_Classes.yy",},"order":6,},
-    {"id":{"name":"spr_darx_interceptor","path":"sprites/spr_darx_interceptor/spr_darx_interceptor.yy",},"order":14,},
+    {"id":{"name":"spr_darx_interceptor","path":"sprites/spr_darx_interceptor/spr_darx_interceptor.yy",},"order":3,},
     {"id":{"name":"seq_gui_station","path":"sequences/seq_gui_station/seq_gui_station.yy",},"order":0,},
     {"id":{"name":"spr_cursor","path":"sprites/spr_cursor/spr_cursor.yy",},"order":7,},
     {"id":{"name":"Optimization","path":"scripts/Optimization/Optimization.yy",},"order":3,},
@@ -128,6 +129,7 @@
     {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},"order":1,},
     {"id":{"name":"spr_reticle","path":"sprites/spr_reticle/spr_reticle.yy",},"order":9,},
     {"id":{"name":"Battle","path":"scripts/Battle/Battle.yy",},"order":2,},
+    {"id":{"name":"obj_ally_bomber","path":"objects/obj_ally_bomber/obj_ally_bomber.yy",},"order":9,},
     {"id":{"name":"spr_station_indicator","path":"sprites/spr_station_indicator/spr_station_indicator.yy",},"order":6,},
     {"id":{"name":"spr_starfield2","path":"sprites/spr_starfield2/spr_starfield2.yy",},"order":3,},
     {"id":{"name":"spr_healthbar","path":"sprites/spr_healthbar/spr_healthbar.yy",},"order":10,},

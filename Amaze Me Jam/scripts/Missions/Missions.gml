@@ -44,7 +44,7 @@ function mission()constructor
 	_weapon_reward = noone;
 	_upgrade_reward = noone;
 	_escort_target = noone;
-	_escort_name = "";
+	_target_name = "";
 	_kill_target = noone;
 	_kill_amount = 0;
 	_fetch_amount = 0;
@@ -136,7 +136,64 @@ function mission()constructor
 }
 
 
-function mission_track_fetch()
+function mission_kill() : mission() constructor
 {
+	
+	_type = TYPE.KILL;
+	_reward = REWARD.ORE;
+	_reward_text = "Reward: A Metric Butt Tonne of ORE"
+	_ore_reward = 20;
+	_kill_amount = irandom_range(2,6);
+	_kill_target = choose(obj_pirate_raider,obj_pirate_brute,obj_hunter_seeker,obj_pirate_mobile_base,obj_pirate_station);
+	switch(_kill_target)
+	{
+		case obj_pirate_raider:
+			_target_name = "Raider"
+		break;
+		case obj_pirate_brute:
+			_target_name = "Brute"
+		break;
+		case obj_hunter_seeker:
+			_target_name = "Hunter Seeker"
+		break;
+		case obj_pirate_mobile_base:
+			_target_name = "Mobile Base Unit"
+		break;
+		case obj_pirate_station:
+			_target_name = "Pirate Station"
+		break;
+		
+	}
+	_intro = "A squadron of pirates has been\n plaguing this sector for two months \n please deal with these intelopers immediatley.."
+	_title = "A Pirates Life";
+	_tag_line = "dead men tell no tales...";
+	_description = "Hunt down and DESTROY ("+string(self._kill_amount)+") \n " + string(self._target_name) + " Class pirate vessels.";
+}
 
+function mission_escort() : mission() constructor
+{
+	_type = TYPE.ESCORT;
+	_reward = REWARD.ORE;
+	_reward_text = "Reward: New Ship Unlock Progress and \n a moderate deposit of ore"
+	_ore_reward = irandom_range(10,30);
+	_escort_target = choose(obj_ally_dart,obj_ally_bomber,obj_ally_interceptor);
+		switch(_escort_target)
+	{
+		case obj_ally_dart:
+			_target_name = "Allied Republic Dart"
+		break;
+		case obj_ally_bomber:
+			_target_name = "Allied Consensus Bomber"
+		break;
+		case obj_ally_interceptor:
+			_target_name = "Allied Terran Interceptor "
+		break;
+
+	}
+	
+	_fetch_amount = 1
+	_intro = "An allied ship is lost and damaged\n and needs to be escorted to the Station for repairs.."
+	_title = "A Friend In Need";
+	_tag_line = "On the road again...";
+	_description = "!!!!!URGENT!!!!!\n  Allied Ship in need of assistance...\n Please LOCATE and ESCORT(" +string(self._fetch_amount) + ")("+string(self._target_name)+") \n to home station... ";
 }

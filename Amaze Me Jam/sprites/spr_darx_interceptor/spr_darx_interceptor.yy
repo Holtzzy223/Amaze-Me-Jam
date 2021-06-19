@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Amaze Me Jam",
-    "path": "Amaze Me Jam.yyp",
+    "name": "Ships",
+    "path": "folders/Sprites/Player/Ships.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_darx_interceptor",
