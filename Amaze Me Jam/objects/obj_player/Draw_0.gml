@@ -85,25 +85,3 @@ if (flash > 0)
 	draw_self();
 	shader_reset();
 }
-if(current_mission != noone && current_mission._status == STATUS.ACTIVE)
-{
-	switch(current_mission._type)
-	{
-		case TYPE.KILL:
-		draw_text
-		(
-			bbox_left-8,bbox_top-8,"mission Kills: " +
-			string(global.mission_kills)
-		);
-		break;
-		case TYPE.ESCORT:
-			
-		break;
-		
-	}
-	
-}
-else
-{
-	path_target = obj_station;
-}

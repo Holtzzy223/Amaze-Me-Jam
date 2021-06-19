@@ -50,7 +50,7 @@ function mission()constructor
 	_fetch_amount = 0;
 	_fetch_targets = [];
 	_mission_accepted = false;
-	
+	_target_sprite = noone;
 	#endregion
 	static display_mission = function()
 	{
@@ -74,7 +74,7 @@ function mission()constructor
 			
 			self._mission_accepted = true;
 			self._status = STATUS.ACTIVE;
-			obj_player._mission = self;
+			obj_player.current_mission = self;
 			save_game(SAVEFILE);
 			self.display_mission();
 			
@@ -159,18 +159,23 @@ function mission_kill() : mission() constructor
 	{
 		case obj_pirate_raider:
 			_target_name = "Raider"
+			_target_sprite = spr_raider; 
 		break;
 		case obj_pirate_brute:
 			_target_name = "Brute"
+			_target_sprite = spr_pirate_brute20;
 		break;
 		case obj_hunter_seeker:
 			_target_name = "Hunter Seeker"
+			_target_sprite = spr_hunter
 		break;
 		case obj_pirate_mobile_base:
 			_target_name = "Mobile Base Unit"
+			_target_sprite = spr_pirate_mobile_base;
 		break;
 		case obj_pirate_station:
 			_target_name = "Pirate Station"
+			_target_sprite = spr_pirate_station
 		break;
 		
 	}
@@ -191,12 +196,15 @@ function mission_escort() : mission() constructor
 	{
 		case obj_ally_dart:
 			_target_name = "Allied Republic Dart"
+			_target_sprite = spr_player_ship_dart
 		break;
 		case obj_ally_bomber:
 			_target_name = "Allied Consensus Bomber"
+			_target_sprite = spr_ship_bomber
 		break;
 		case obj_ally_interceptor:
 			_target_name = "Allied Terran Interceptor "
+			_target_sprite = spr_darx_interceptor;
 		break;
 
 	}
