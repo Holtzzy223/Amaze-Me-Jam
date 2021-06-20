@@ -154,7 +154,7 @@ function mission_kill() : mission() constructor
 	_reward_text = "Reward: A Metric Butt Tonne of ORE"
 	_ore_reward = 20;
 	_kill_amount = irandom_range(2,6);
-	_kill_target = choose(obj_pirate_raider,obj_pirate_brute,obj_hunter_seeker,obj_pirate_mobile_base,obj_pirate_station);
+	_kill_target = choose(obj_pirate_raider,obj_pirate_brute,obj_hunter_seeker,obj_pirate_mobile_base,obj_pirate_station,obj_pirate_bee_cruiser);
 	switch(_kill_target)
 	{
 		case obj_pirate_raider:

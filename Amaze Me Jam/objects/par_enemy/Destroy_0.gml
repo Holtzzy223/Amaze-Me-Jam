@@ -35,3 +35,5 @@ if(instance_exists(obj_player))
 		}
 	}
 }
+audio_sound_pitch(snd_splodey2,random_range(0.8,1.1))
+audio_play_sound(snd_splodey2,1,false);

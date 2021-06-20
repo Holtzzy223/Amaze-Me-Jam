@@ -16,6 +16,13 @@ mission_tutorial._intro = "....Attn Allied Ship...\nYou've entered a pirate infe
 mission_tutorial._description = "Ship Systems Overview: \nPress 'T' to display tracker \nPress 'Space' to engage thrusters\n Left MB and Right MB to fire Cannons/Laser";
 mission_tutorial._complete_text = "Thank the gods youve made it...\n please dock at your conveinience.";
 cursor_sprite = spr_cursor;
+bgm_songs = array_create();
+bgm_songs[0] = snd_bgm1;
+bgm_songs[1] = snd_mus_solarwinds;
+bgm_songs[2] = snd_mus_gravity;
+bgm_songs[3] = snd_mus_meteorain;
+bgm_songs[4] = snd_mus_velocity;
+bgm_songs[5] = snd_mus_odinus;
 enum FACTION
 {
 	ALLY,

@@ -1,5 +1,5 @@
 /// @description 
 if(instance_exists(obj_player))
 {
-	obj_player.shield-=1;
+	obj_player.shield-=2;
 }

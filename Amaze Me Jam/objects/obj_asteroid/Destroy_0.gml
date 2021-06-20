@@ -14,3 +14,7 @@ if(instance_exists(obj_player))
 		}
 	}
 }
+if(!audio_is_playing(snd_slodey_1))
+{
+	audio_play_sound(snd_slodey_1,1,false);
+}

@@ -1,9 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 global.grid = mp_grid_create(0, 0, room_width / 32, room_height /32, 32, 32);
-if(!audio_is_playing(snd_bgm1))
+var song_choice = irandom(5)
+if(!audio_is_playing(bgm_songs[song_choice]))
 {
-	audio_play_sound(snd_bgm1,1,true);
+	audio_stop_all();
+	audio_play_sound(bgm_songs[song_choice],1,true);
 }
 if(room != rm_menu && global.new_game)
 {
