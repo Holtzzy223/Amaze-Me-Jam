@@ -104,8 +104,8 @@
   "gridY": 3,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"a174c852-8024-47ff-8278-b046381361d9","path":"sprites/spr_cave_ship/spr_cave_ship.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a174c852-8024-47ff-8278-b046381361d9","path":"sprites/spr_cave_ship/spr_cave_ship.yy",},"LayerId":{"name":"60707c7b-8a20-42a8-bf1e-2ae42f41557a","path":"sprites/spr_cave_ship/spr_cave_ship.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"a174c852-8024-47ff-8278-b046381361d9","path":"sprites/spr_cave_ship/spr_cave_ship.yy",},"LayerId":{"name":"8277a7a3-6b8b-479f-8d20-b7cfd04250d3","path":"sprites/spr_cave_ship/spr_cave_ship.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"a174c852-8024-47ff-8278-b046381361d9","path":"sprites/spr_cave_ship/spr_cave_ship.yy",},"LayerId":{"name":"60707c7b-8a20-42a8-bf1e-2ae42f41557a","path":"sprites/spr_cave_ship/spr_cave_ship.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_cave_ship","path":"sprites/spr_cave_ship/spr_cave_ship.yy",},"resourceVersion":"1.0","name":"a174c852-8024-47ff-8278-b046381361d9","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {

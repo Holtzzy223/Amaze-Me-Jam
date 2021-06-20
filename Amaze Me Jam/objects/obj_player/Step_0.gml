@@ -41,7 +41,7 @@ if(!global.game_pause)
 		if(mouse_check_button_pressed(mb_left))
 		{
 			bullet_timer = 0;
-			spawn_projectile(obj_player_bullet,image_angle+irandom_range(-1,1),bullet_speed,faction,snd_pewpew);
+			spawn_projectile(current_bullet,image_angle+irandom_range(-1,1),bullet_speed,faction,snd_pewpew);
 		}
 		if(mouse_check_button(mb_left))
 		{
@@ -60,7 +60,7 @@ if(!global.game_pause)
 			{
 				bullet_timer = 0;
 	
-				spawn_projectile(obj_player_bullet,image_angle+random_range(-2,2),bullet_speed,faction,snd_pewpew);
+				spawn_projectile(current_bullet,image_angle+random_range(-2,2),bullet_speed,faction,snd_pewpew);
 			}
 			
 		}

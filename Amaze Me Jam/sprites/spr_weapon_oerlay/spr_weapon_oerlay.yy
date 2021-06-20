@@ -105,11 +105,9 @@
   "frames": [
     {"compositeImage":{"FrameId":{"name":"87496aee-ac80-4c36-9006-4614368b677c","path":"sprites/spr_weapon_oerlay/spr_weapon_oerlay.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"87496aee-ac80-4c36-9006-4614368b677c","path":"sprites/spr_weapon_oerlay/spr_weapon_oerlay.yy",},"LayerId":{"name":"8277a7a3-6b8b-479f-8d20-b7cfd04250d3","path":"sprites/spr_weapon_oerlay/spr_weapon_oerlay.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"87496aee-ac80-4c36-9006-4614368b677c","path":"sprites/spr_weapon_oerlay/spr_weapon_oerlay.yy",},"LayerId":{"name":"60707c7b-8a20-42a8-bf1e-2ae42f41557a","path":"sprites/spr_weapon_oerlay/spr_weapon_oerlay.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_weapon_oerlay","path":"sprites/spr_weapon_oerlay/spr_weapon_oerlay.yy",},"resourceVersion":"1.0","name":"87496aee-ac80-4c36-9006-4614368b677c","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"95071246-df41-4e6b-a751-021d1b5d6ecd","path":"sprites/spr_weapon_oerlay/spr_weapon_oerlay.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"95071246-df41-4e6b-a751-021d1b5d6ecd","path":"sprites/spr_weapon_oerlay/spr_weapon_oerlay.yy",},"LayerId":{"name":"8277a7a3-6b8b-479f-8d20-b7cfd04250d3","path":"sprites/spr_weapon_oerlay/spr_weapon_oerlay.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"95071246-df41-4e6b-a751-021d1b5d6ecd","path":"sprites/spr_weapon_oerlay/spr_weapon_oerlay.yy",},"LayerId":{"name":"60707c7b-8a20-42a8-bf1e-2ae42f41557a","path":"sprites/spr_weapon_oerlay/spr_weapon_oerlay.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_weapon_oerlay","path":"sprites/spr_weapon_oerlay/spr_weapon_oerlay.yy",},"resourceVersion":"1.0","name":"95071246-df41-4e6b-a751-021d1b5d6ecd","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
