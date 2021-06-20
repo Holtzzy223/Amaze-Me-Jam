@@ -70,6 +70,7 @@ function save_game(save_file)
 						max_energy: max_energy,
 						current_ship	: current_ship,
 						current_upgrade	: current_upgrade,
+						current_bullet : current_bullet,
 						ore_amount : ore_amount,
 						shield : shield,
 						has_shield :has_shield,
@@ -169,6 +170,7 @@ function load_game(save_file)
 								max_energy = _load_entity.max_energy;
 								current_ship = _load_entity.current_ship;
 								current_upgrade = _load_entity.current_upgrade;
+								current_bullet = _load_entity.current_bullet;
 								shield = _load_entity.shield;
 								max_shield = _load_entity.max_shield;
 								allies_saved = _load_entity.allies_saved;
