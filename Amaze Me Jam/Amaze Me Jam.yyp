@@ -83,7 +83,7 @@
     {"id":{"name":"manager_pause","path":"objects/manager_pause/manager_pause.yy",},"order":5,},
     {"id":{"name":"fnt_buttons","path":"fonts/fnt_buttons/fnt_buttons.yy",},"order":2,},
     {"id":{"name":"spr_asteroid_med","path":"sprites/spr_asteroid_med/spr_asteroid_med.yy",},"order":1,},
-    {"id":{"name":"obj_button_previous","path":"objects/obj_button_previous/obj_button_previous.yy",},"order":2,},
+    {"id":{"name":"obj_button_station_main","path":"objects/obj_button_station_main/obj_button_station_main.yy",},"order":2,},
     {"id":{"name":"spr_asteroid_large","path":"sprites/spr_asteroid_large/spr_asteroid_large.yy",},"order":0,},
     {"id":{"name":"spr_weapon_oerlay","path":"sprites/spr_weapon_oerlay/spr_weapon_oerlay.yy",},"order":7,},
     {"id":{"name":"spr_grapple_head","path":"sprites/spr_grapple_head/spr_grapple_head.yy",},"order":1,},
