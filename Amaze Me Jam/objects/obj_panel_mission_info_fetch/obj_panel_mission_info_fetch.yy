@@ -31,8 +31,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "panels",
-    "path": "folders/Objects/Game/GUI/panels.yy",
+    "name": "Contracts",
+    "path": "folders/Objects/Game/GUI/panels/Contracts.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_panel_mission_info_fetch",
