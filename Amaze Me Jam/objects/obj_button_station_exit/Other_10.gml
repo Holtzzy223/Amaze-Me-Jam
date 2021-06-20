@@ -1,5 +1,5 @@
 /// @description 
-
+save_game(SAVEFILE);
 with(manager_factions)
 {
 	speed = base_speed;
