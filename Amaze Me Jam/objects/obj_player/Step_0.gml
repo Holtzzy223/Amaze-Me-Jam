@@ -7,16 +7,7 @@ if(!global.game_pause)
 		var thrust = 0.25;
 		dir = point_direction(x, y, window_view_mouse_get_x(0),window_view_mouse_get_y(0));
 		image_angle += sin(degtorad(dir - image_angle)) * rotation_speed;
-		
-		
-		//if(keyboard_check(vk_left)||keyboard_check(ord("A")))
-		//{
-		//	motion_add(180,thrust);
-		//}
-		//if(keyboard_check(vk_right))||keyboard_check(ord("D"))
-		//{
-		//	motion_add(0,thrust);
-		//}
+
 		if(keyboard_check(vk_space))
 		{
 			

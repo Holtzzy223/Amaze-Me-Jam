@@ -33,7 +33,23 @@ if(!dead && !global.game_pause)
 	{
 			var range = point_distance(x, y, window_view_mouse_get_x(0),window_view_mouse_get_y(0));
 			laser_firing = true
-			energy-=0.85;
+			//determine drain
+				switch(current_laser)
+				{
+					case LASER.STANDARD:
+						energy_drain = 0.85;
+					break;
+					case LASER.RUBY:
+						energy_drain = 1;
+					break;
+					case LASER.EMERALD:
+						energy_drain = 0.55;
+					break;
+					case LASER.OMEGA:
+						energy_drain = 1.5;
+					break;
+				}
+			energy-= energy_drain;
 			if(energy > 0)
 			{
 				audio_sound_pitch(snd_laser,irandom_range(1.2,1.0))
@@ -42,8 +58,79 @@ if(!dead && !global.game_pause)
 					audio_play_sound(snd_laser,1,false);
 				}
 				//draw_circle_color(x,y,range,c_blue,c_red,true);
-				draw_set_alpha(wave(0.25,0.75,1,0.25));	
-				draw_line_width_color(x,y,x+lengthdir_x(range,image_angle),y+lengthdir_y(range,image_angle),10,wave(c_white,c_blue,1,0.25),wave(c_blue,c_white,1,0.25));
+				switch(current_laser)
+				{
+					case LASER.STANDARD:
+						laser_damage = 3;
+						draw_set_alpha(wave(0.05,0.45,2,0.25));	
+						draw_line_width_color
+						(
+							x,y,x+lengthdir_x(range,image_angle),
+							y+lengthdir_y(range,image_angle),
+							10,
+							wave(c_white,c_blue,1,0.25),
+							wave(c_blue,c_white,1,0.25)
+						);
+						draw_set_alpha(1);
+					break;
+					case LASER.RUBY:
+						laser_damage = 5;
+						draw_set_alpha(wave(0.05,0.25,2,0.25));	
+						draw_line_width_color
+						(
+							x,y,x+lengthdir_x(range,image_angle),
+							y+lengthdir_y(range,image_angle),
+							20,
+							wave(c_red,c_maroon,1,0.25),
+							wave(c_maroon,c_red,1,0.25)
+						);
+						draw_set_alpha(1);
+						draw_set_alpha(wave(0.35,0.65,1,0.25));	
+						draw_line_width_color
+						(
+							x,y,x+lengthdir_x(range,image_angle),
+							y+lengthdir_y(range,image_angle),
+							10,
+							wave(c_red,c_maroon,1,0.25),
+							wave(c_maroon,c_red,1,0.25)
+						);
+						draw_set_alpha(1);
+					break;
+					case LASER.EMERALD:
+						laser_damage = 3;
+						draw_set_alpha(wave(0.05,0.35,1,0.25));	
+						draw_line_width_color
+						(
+							x,y,x+lengthdir_x(range,image_angle),
+							y+lengthdir_y(range,image_angle),
+							6,
+							wave(c_lime,c_green,1,0.25),
+							wave(c_green,c_lime,1,0.25)
+						);
+					break;
+					case LASER.OMEGA:
+						laser_damage = 7;
+						draw_set_alpha(wave(0.05,0.35,1,0.25));
+						draw_line_width_color
+						(
+							x,y,x+lengthdir_x(range,image_angle),
+							y+lengthdir_y(range,image_angle),
+							30,
+							wave(c_white,c_blue,1,0.25),
+							wave(c_blue,c_white,1,0.25)
+						);
+						draw_set_alpha(wave(0.35,0.65,2,0.25));	
+						draw_line_width_color
+						(
+							x,y,x+lengthdir_x(range,image_angle),
+							y+lengthdir_y(range,image_angle),
+							20,
+							wave(c_red,c_maroon,2,0.25),
+							wave(c_green,c_lime,1,0.25)
+						);
+						draw_set_alpha(1);
+					break;
+				}
 				var _list = ds_list_create();
 				var _num = collision_line_list(x , y, x+lengthdir_x(range,image_angle),y+lengthdir_y(range,image_angle), manager_factions, false, true, _list, false);
 				if (_num > 0)
@@ -55,7 +142,7 @@ if(!dead && !global.game_pause)
 							//add in particels on collision
 								if(_list[|i].faction!=faction)
 								{
-									_list[|i].damage_enemy(3);
+									_list[|i].damage_enemy(laser_damage);
 								}
 							}
 						}

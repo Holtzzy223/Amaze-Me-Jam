@@ -38,3 +38,10 @@ enum SHIP
 	BOMBER
 }
 
+enum LASER
+{
+	STANDARD,
+	RUBY,
+	EMERALD,
+	OMEGA
+}

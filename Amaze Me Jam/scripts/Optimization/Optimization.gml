@@ -68,8 +68,8 @@ function save_game(save_file)
 						max_speed : max_speed,
 						energy: energy,
 						max_energy: max_energy,
-						current_ship	: current_ship,
-						current_upgrade	: current_upgrade,
+						current_ship : current_ship,
+						current_laser : current_laser,
 						current_bullet : current_bullet,
 						ore_amount : ore_amount,
 						shield : shield,
@@ -169,7 +169,7 @@ function load_game(save_file)
 								energy = _load_entity.energy;
 								max_energy = _load_entity.max_energy;
 								current_ship = _load_entity.current_ship;
-								current_upgrade = _load_entity.current_upgrade;
+								current_laser = _load_entity.current_laser;
 								current_bullet = _load_entity.current_bullet;
 								shield = _load_entity.shield;
 								max_shield = _load_entity.max_shield;

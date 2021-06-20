@@ -20,7 +20,6 @@ hp = max_hp;
 max_speed = 12;
 bullet_speed = 12;
 flash = false;
-input_magnitude = 30;
 thrust_counter = 0;
 fire_thresh = 20;
 bullet_timer = fire_thresh;
@@ -30,7 +29,7 @@ laser_firing = false;
 object_type = OBJ_TYPE.PLAYER;
 current_mission = noone;
 current_ship = SHIP.STANDARD;
-current_upgrade = noone;
+current_laser = LASER.OMEGA;
 current_bullet = obj_player_bullet;
 ship_bp = -1;
 ore_amount = 0;
@@ -38,6 +37,8 @@ has_shield = false;
 max_shield = 30;
 allies_saved = 0;
 shield = max_shield;
+laser_damage = 2;
+energy_drain = 0.85
 //Shader Stuffz
 //ui
 
