@@ -30,6 +30,7 @@ if(instance_exists(_target))
 		alarm_set(1,120);
 	}
 }
+
 if(speed>0)
 {
 	thrust_counter++;

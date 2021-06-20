@@ -36,6 +36,11 @@ if(!dead && !global.game_pause)
 			energy-=0.85;
 			if(energy > 0)
 			{
+				audio_sound_pitch(snd_laser,irandom_range(0.9,1.1))
+				if(!audio_is_playing(snd_laser))
+				{
+					audio_play_sound(snd_laser,1,true);
+				}
 				//draw_circle_color(x,y,range,c_blue,c_red,true);
 				draw_set_alpha(wave(0.25,0.75,1,0.25));	
 				draw_line_width_color(x,y,x+lengthdir_x(range,image_angle),y+lengthdir_y(range,image_angle),10,wave(c_white,c_blue,1,0.25),wave(c_blue,c_white,1,0.25));

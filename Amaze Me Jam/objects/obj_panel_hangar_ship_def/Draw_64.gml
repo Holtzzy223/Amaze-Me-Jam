@@ -1,8 +1,13 @@
 /// @description 
 draw_self();
+
 // Draw text
 if(draw)
 {
+	if(!can_access)
+	{
+		draw_sprite(spr_lock,0,x+sprite_width/2,y+sprite_height/2);
+	}
 	//title
 	draw_set_text(text_color,title_font,fa_center,fa_middle);
 	draw_text(x + sprite_width / 2, y + padding , panel_title);
@@ -21,6 +26,8 @@ if(draw)
 	draw_text(x + sprite_width / 8, y + padding * 12, ship_shield);
 	draw_text(x + sprite_width / 8, y + padding * 13 , ship_primary_weapon);
 	draw_text(x + sprite_width / 8, y + padding * 14, ship_auxilliary_weapon);
+	draw_set_text(c_yellow,desc_font,fa_center,fa_middle);
+	draw_text(x + sprite_width / 8, y + padding * 15,"Allies Saved" + string(obj_player.allies_saved)+" / "+string(allies_needed));
 	
 	//reset
 	draw_set_text(c_white,fnt_text_box,fa_left,fa_top);
