@@ -94,6 +94,7 @@
     {"id":{"name":"spr_crecent_fighter","path":"sprites/spr_crecent_fighter/spr_crecent_fighter.yy",},"order":9,},
     {"id":{"name":"fnt_desc","path":"fonts/fnt_desc/fnt_desc.yy",},"order":6,},
     {"id":{"name":"spr__field_filter_purple","path":"sprites/spr__field_filter_purple/spr__field_filter_purple.yy",},"order":0,},
+    {"id":{"name":"obj_panel_market_homing_missiles","path":"objects/obj_panel_market_homing_missiles/obj_panel_market_homing_missiles.yy",},"order":3,},
     {"id":{"name":"spr_ore","path":"sprites/spr_ore/spr_ore.yy",},"order":14,},
     {"id":{"name":"obj_player_bullet_homing","path":"objects/obj_player_bullet_homing/obj_player_bullet_homing.yy",},"order":13,},
     {"id":{"name":"seq_gui_mission_desc","path":"sequences/seq_gui_mission_desc/seq_gui_mission_desc.yy",},"order":1,},
