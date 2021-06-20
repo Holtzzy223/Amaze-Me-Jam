@@ -2,7 +2,7 @@
 var _mouse_gui_x = device_mouse_x_to_gui(0);
 var _mouse_gui_y = device_mouse_y_to_gui(0);
 
-if (position_meeting(_mouse_gui_x, _mouse_gui_y, id)) 
+if (can_access && position_meeting(_mouse_gui_x, _mouse_gui_y, id)) 
 {
 	image_alpha = wave(1,0.7,3,1);
 	//image_yscale = lerp(image_yscale, init_scale_y + (extra_height_on_hover / sprite_get_height(sprite_index)), 0.1);
