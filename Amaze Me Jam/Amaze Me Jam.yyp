@@ -101,6 +101,7 @@
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"order":4,},
     {"id":{"name":"obj_health","path":"objects/obj_health/obj_health.yy",},"order":2,},
     {"id":{"name":"manager_faction_neutral","path":"objects/manager_faction_neutral/manager_faction_neutral.yy",},"order":2,},
+    {"id":{"name":"obj_player_missile_homing","path":"objects/obj_player_missile_homing/obj_player_missile_homing.yy",},"order":14,},
     {"id":{"name":"seq_gui_main","path":"sequences/seq_gui_main/seq_gui_main.yy",},"order":0,},
     {"id":{"name":"obj_panel_hanagr_ship_dart","path":"objects/obj_panel_hanagr_ship_dart/obj_panel_hanagr_ship_dart.yy",},"order":2,},
     {"id":{"name":"obj_hunter_seeker","path":"objects/obj_hunter_seeker/obj_hunter_seeker.yy",},"order":1,},
