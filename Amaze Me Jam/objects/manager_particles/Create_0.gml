@@ -70,12 +70,12 @@ part_type_life(particle_debris_ship,120,600);
 //lasers
 particle_laser_impact = part_type_create();
 part_type_shape(particle_laser_impact,pt_shape_pixel)
-part_type_size(particle_laser_impact,1,5,0.2,0);
+part_type_size(particle_laser_impact,1,3,0.1,0);
 part_type_orientation(particle_laser_impact,0,359,1,0,false);
 part_type_direction(particle_laser_impact,0,359,0,false);
 part_type_speed(particle_laser_impact,6,9,-0.05,0);
 part_type_alpha3(particle_laser_impact,0.7,0.5,0.1);
-part_type_life(particle_laser_impact,120,600);
+part_type_life(particle_laser_impact,10,20);
 //missiles
 
 #endregion

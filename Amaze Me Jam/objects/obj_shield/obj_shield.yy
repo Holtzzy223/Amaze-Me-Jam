@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_shield",
-    "path": "sprites/spr_shield/spr_shield.yy",
+    "name": "spr_laser_ruby_panel",
+    "path": "sprites/spr_laser_ruby_panel/spr_laser_ruby_panel.yy",
   },
   "solid": false,
   "visible": true,
