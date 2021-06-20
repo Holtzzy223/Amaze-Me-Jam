@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Neutral",
-    "path": "folders/Objects/Neutral.yy",
+    "name": "Managers",
+    "path": "folders/Objects/Game/Managers.yy",
   },
   "resourceVersion": "1.0",
   "name": "manager_Spawner",
