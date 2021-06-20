@@ -41,7 +41,7 @@
     "path": "folders/Objects/Game/GUI/panels/Hangar.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_panel_hanagr_ship_bomber",
+  "name": "obj_panel_hanagr_ship_hammerhead",
   "tags": [],
   "resourceType": "GMObject",
 }

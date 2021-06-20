@@ -7,7 +7,7 @@ function corvette_ship() : ship_blueprint() constructor
 	ship_desc = "Standard Corvette Class Ship \n Outfitted with standard cannons\n and a powerful beam wepaon.";
 	ship_speed = 12;
 	ship_health = 10;
-	ship_shield = 100;
+	ship_shield = 30;
 	ship_energy = 200;
 	ship_sprite = spr_cave_ship;
 	ship_primary_weapon = "Main Weapon: Ballistic Cannon";

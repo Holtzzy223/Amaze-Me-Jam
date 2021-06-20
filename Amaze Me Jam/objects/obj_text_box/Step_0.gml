@@ -14,7 +14,7 @@ var _min = 0;
 response_selected = clamp(response_selected,_min,_max);
 
 
-if(keyboard_check_pressed(vk_space))
+if(keyboard_check_pressed(vk_control))
 {
 	var _message_length = string_length(display_text);
 	if(text_prog >= _message_length)

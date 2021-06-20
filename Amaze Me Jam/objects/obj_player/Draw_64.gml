@@ -28,13 +28,11 @@ if(!global.game_pause)
 			case TYPE.KILL:
 			
 			draw_text(display_get_gui_width()/2,108,string(global.mission_kills)+" / "+ string(current_mission._kill_amount) +" : Destroyed");
-			draw_sprite(current_mission._target_sprite,0,display_get_gui_width()/2,48)
-			path_target = instance_nearest(x,y,current_mission._kill_target);
+			draw_sprite(current_mission._target_sprite,0,display_get_gui_width()/2,48);
 			break;
 			case TYPE.ESCORT:
 			draw_text(display_get_gui_width()/2,28,"Locate and Escort");
 			draw_sprite(current_mission._target_sprite,0,display_get_gui_width()/2 ,76);
-				
 			break;
 			
 		}

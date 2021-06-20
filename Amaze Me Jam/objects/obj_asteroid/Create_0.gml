@@ -42,7 +42,7 @@ _section = 0.25;
 _saturation = 0.9;
 _brightness = 0.8;
 _mix = 0.5;
-
+enemy_name = object_get_name(object_index);
 //lazy copy :(
 
 function damage_enemy(_damage)
