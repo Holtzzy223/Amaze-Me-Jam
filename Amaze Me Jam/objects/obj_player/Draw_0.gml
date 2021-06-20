@@ -62,6 +62,7 @@ if(!dead && !global.game_pause)
 				{
 					case LASER.STANDARD:
 						laser_damage = 3;
+						laser_color = image_blend;
 						draw_set_alpha(wave(0.05,0.45,2,0.25));	
 						draw_line_width_color
 						(
@@ -75,6 +76,7 @@ if(!dead && !global.game_pause)
 					break;
 					case LASER.RUBY:
 						laser_damage = 5;
+						laser_color = c_red;
 						draw_set_alpha(wave(0.05,0.25,2,0.25));	
 						draw_line_width_color
 						(
@@ -98,6 +100,7 @@ if(!dead && !global.game_pause)
 					break;
 					case LASER.EMERALD:
 						laser_damage = 3;
+						laser_color = c_lime;
 						draw_set_alpha(wave(0.05,0.35,1,0.25));	
 						draw_line_width_color
 						(
@@ -110,6 +113,7 @@ if(!dead && !global.game_pause)
 					break;
 					case LASER.OMEGA:
 						laser_damage = 7;
+						laser_color = c_orange;
 						draw_set_alpha(wave(0.05,0.35,1,0.25));
 						draw_line_width_color
 						(
@@ -137,6 +141,7 @@ if(!dead && !global.game_pause)
 				    {
 				    for (var i = 0; i < _num; ++i;)
 				        {
+							part_particles_create_color(manager_particles.particle_system,_list[|i].x,_list[|i].y,manager_particles.particle_laser_impact,laser_color,5);
 							if (variable_instance_exists(_list[|i],"faction"))
 							{
 							//add in particels on collision

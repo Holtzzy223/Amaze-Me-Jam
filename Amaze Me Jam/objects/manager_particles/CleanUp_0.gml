@@ -5,3 +5,4 @@ part_type_destroy(particle_exhaust_player);
 part_type_destroy(particle_exhaust_enemy_raider);
 part_type_destroy(particle_debris_astroid);
 part_type_destroy(particle_debris_ship);
+part_type_destroy(particle_laser_impact);

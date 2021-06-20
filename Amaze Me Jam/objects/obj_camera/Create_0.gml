@@ -9,7 +9,7 @@ application_surface_enable(false);
 view_surf = -1;
 //Shaderz
 
-show_debug_overlay(true);
+//show_debug_overlay(true);
 //Bloom
 value = 0.5;
 bloom_handler = shader_get_uniform(sh_bloom,"intensity");
