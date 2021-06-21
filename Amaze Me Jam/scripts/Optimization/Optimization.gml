@@ -171,6 +171,7 @@ function load_game(save_file)
 								current_ship = _load_entity.current_ship;
 								current_laser = _load_entity.current_laser;
 								current_bullet = _load_entity.current_bullet;
+								has_shield = _load_entity.has_shield;
 								shield = _load_entity.shield;
 								max_shield = _load_entity.max_shield;
 								allies_saved = _load_entity.allies_saved;

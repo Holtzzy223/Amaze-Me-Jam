@@ -16,6 +16,8 @@ if instance_exists(target)
 				speed = 0;
 			}
 			global.game_pause = true;
+			target.hp = target.max_hp;
+			target.energy = target.max_energy;
 		}
 	}
 }
