@@ -8,6 +8,7 @@ ship.ship_type = "Medusa Cruiser"
 ship.ship_speed = 15;
 ship.ship_health = 12;
 ship.ship_energy = 200;
+ship.ship_shield = 50;
 ship.ship_sprite = ship_sprite;
 ship.ship_tag = "serpents gaze";
 ship.ship_desc = "Medusa Cruiser \n Outfitted with standard cannons\n and a powerful beam weapon.";

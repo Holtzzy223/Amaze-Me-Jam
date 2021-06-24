@@ -10,7 +10,7 @@ function ship_blueprint() : blueprint() constructor
 	ship_speed = 0;
 	ship_health = 0;
 	ship_energy = 0;
-	ship_shield = 0;
+	ship_shield = 30;
 	ship_sprite = noone;
 	ship_primary_weapon = "";
 	ship_auxilliary_weapon = "";

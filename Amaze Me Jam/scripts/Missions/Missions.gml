@@ -1,5 +1,4 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+
 function mission()constructor
 {
 	enum STATUS
@@ -48,6 +47,7 @@ function mission()constructor
 	_kill_target = noone;
 	_kill_amount = 0;
 	_fetch_amount = 0;
+	_targets_fetched = 0;
 	_fetch_targets = [];
 	_mission_accepted = false;
 	_target_sprite = noone;
@@ -177,6 +177,10 @@ function mission_kill() : mission() constructor
 			_target_name = "Pirate Station"
 			_target_sprite = spr_pirate_station
 		break;
+			case obj_pirate_bee_cruiser:
+			_target_name = "Bee Cruiser"
+			_target_sprite = spr_Bee_Cruiser;
+		break;
 		
 	}
 	_intro = "A squadron of pirates has been\n plaguing this sector for two months \n please deal with these intelopers immediatley.."
@@ -192,7 +196,8 @@ function mission_escort() : mission() constructor
 	_reward_text = "Reward: New Ship Unlock Progress and \n a moderate deposit of ore"
 	_ore_reward = irandom_range(10,30);
 	_escort_target = choose(obj_ally_dart,obj_ally_bomber,obj_ally_interceptor,obj_ally_hammerhead,obj_ally_medusa,);
-		switch(_escort_target)
+	_fetch_amount = irandom_range(1,3);
+	switch(_escort_target)
 	{
 		case obj_ally_dart:
 			_target_name = "Republic Dart";
@@ -216,7 +221,7 @@ function mission_escort() : mission() constructor
 		break;
 	}
 	
-	_fetch_amount = 1
+	
 	_intro = "An allied ship is lost and damaged\n and needs to be escorted to the Station for repairs.."
 	_title = "A Friend In Need";
 	_tag_line = "On the road again...";

@@ -181,6 +181,7 @@
     {"id":{"name":"obj_button_mission_decline","path":"objects/obj_button_mission_decline/obj_button_mission_decline.yy",},"order":1,},
     {"id":{"name":"fnt_speech","path":"fonts/fnt_speech/fnt_speech.yy",},"order":0,},
     {"id":{"name":"spr_shield","path":"sprites/spr_shield/spr_shield.yy",},"order":2,},
+    {"id":{"name":"Object86","path":"objects/Object86/Object86.yy",},"order":17,},
     {"id":{"name":"seq_gui_mission_desc_fetch","path":"sequences/seq_gui_mission_desc_fetch/seq_gui_mission_desc_fetch.yy",},"order":3,},
     {"id":{"name":"obj_button_quit_to_menu","path":"objects/obj_button_quit_to_menu/obj_button_quit_to_menu.yy",},"order":0,},
     {"id":{"name":"snd_mus_solarwinds","path":"sounds/snd_mus_solarwinds/snd_mus_solarwinds.yy",},"order":5,},
