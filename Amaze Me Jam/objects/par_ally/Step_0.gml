@@ -7,7 +7,7 @@ if(_col)
     if(!place_meeting(x + _dist, y, par_enemy))
         x += _dist;
 }
-if(instance_exists(_target))
+if(instance_exists(_target)&&follow_active)
 {
 	if(target_in_range(_target,_range))
 	{

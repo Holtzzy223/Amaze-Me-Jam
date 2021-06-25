@@ -10,6 +10,7 @@ if(instance_exists(obj_player))
 	}
 	if(target_in_range(obj_station,_range))
 	{
+		follow_active = false;
 		move_towards_point(obj_station.x,obj_station.y,8);
 	}
 	if(place_meeting(x,y,obj_station))
