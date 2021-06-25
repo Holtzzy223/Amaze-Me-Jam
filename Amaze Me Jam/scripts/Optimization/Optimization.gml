@@ -36,6 +36,7 @@ function save_game(save_file)
 {
 	//clear old file
 	if(file_exists(save_file)) file_delete(save_file);
+	if(file_exists(MISSFILE)) file_delete(MISSFILE);
 	//save data array
 	
 	var _save_data = array_create(0);
@@ -78,7 +79,10 @@ function save_game(save_file)
 						max_shield : max_shield,
 						allies_saved : allies_saved
 					}
-					var _mission_data = current_mission;
+					if(current_mission!=undefined)
+					{
+						var _mission_data = current_mission;
+					}
 					break;
 				default:
 					var _save_entity = 
@@ -126,15 +130,22 @@ function save_game(save_file)
 	
 	//stringify data
 	var _string = json_stringify(_save_data);
-	var _mission_string = json_stringify(_mission_data);
+	var _mission_string = "";
 	var _buffer = buffer_create(string_byte_length(_string)+1,buffer_fixed,1);
-	var _mission_buffer = buffer_create(string_byte_length(_mission_string)+1,buffer_fixed,1);
+	var _mission_buffer = undefined;
 	buffer_write(_buffer,buffer_string,_string);
-	buffer_write(_mission_buffer,buffer_string,_mission_string);
+	
 	buffer_save(_buffer,save_file);
-	buffer_save(_mission_buffer,MISSFILE);
+	if(obj_player.current_mission!=undefined)
+	{
+		_mission_string = json_stringify(_mission_data);
+		_mission_buffer = buffer_create(string_byte_length(_mission_string)+1,buffer_fixed,1);
+		buffer_write(_mission_buffer,buffer_string,_mission_string);
+		buffer_save(_mission_buffer,MISSFILE);
+		buffer_delete(_mission_buffer);
+	}
 	buffer_delete(_buffer);
-	buffer_delete(_mission_buffer);
+	
 	show_debug_message("SAVED THIS FOR YAH! "+ _string);
 }
 
@@ -143,13 +154,21 @@ function load_game(save_file)
 	if(file_exists(save_file))
 	{
 		var _buffer = buffer_load(save_file);
-		var _mission_buffer = buffer_load(MISSFILE);
+		var _mission_string = "";
+		var _mission_data = undefined;
+		if(file_exists(MISSFILE))
+		{
+			var _mission_buffer = buffer_load(MISSFILE);
+			_mission_string = buffer_read(_mission_buffer,buffer_string);
+			buffer_delete(_mission_buffer);
+			_mission_data = json_parse(_mission_string);
+		}
 		var _string = buffer_read(_buffer,buffer_string);
-		var _mission_string = buffer_read(_mission_buffer,buffer_string);
+		
 		buffer_delete(_buffer);
-		buffer_delete(_mission_buffer);
+		
 		var _load_data = json_parse(_string);
-		var _mission_data = json_parse(_mission_string);
+		
 		while(array_length(_load_data) > 0)
 		{
 			var _load_entity = array_pop(_load_data);
@@ -181,16 +200,19 @@ function load_game(save_file)
 								current_ship = _load_entity.current_ship;
 								current_laser = _load_entity.current_laser;
 								current_bullet = _load_entity.current_bullet;
-								current_mission = new mission();
-								var _arr_string = "";
-								var _load_array = variable_struct_get_names(_mission_data);
-								var _mission_array = variable_struct_get_names(current_mission);
-								show_debug_message("Variables for Mission: " + string(_load_array));
-								for (var i = 0; i < array_length(_load_array); i++;)
+								if(file_exists(MISSFILE))
 								{
-								    _arr_string = _load_array[i] + ":" + string(variable_struct_get(_mission_data, _load_array[i]));
-								    show_debug_message(_arr_string)
-									variable_struct_set(current_mission,_mission_array[i],variable_struct_get(_mission_data, _load_array[i])) 
+									current_mission = new mission();
+									var _arr_string = "";
+									var _load_array = variable_struct_get_names(_mission_data);
+									var _mission_array = variable_struct_get_names(current_mission);
+									show_debug_message("Variables for Mission: " + string(_load_array));
+									for (var i = 0; i < array_length(_load_array); i++;)
+									{
+									    _arr_string = _load_array[i] + ":" + string(variable_struct_get(_mission_data, _load_array[i]));
+									    show_debug_message(_arr_string);
+										variable_struct_set(current_mission,_mission_array[i],variable_struct_get(_mission_data, _load_array[i])) ;
+									}
 								}
 								has_shield = _load_entity.has_shield;
 								shield = _load_entity.shield;

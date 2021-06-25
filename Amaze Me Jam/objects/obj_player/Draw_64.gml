@@ -26,13 +26,16 @@ if(!global.game_pause)
 		switch(current_mission._type)
 		{
 			case TYPE.KILL:
-			
-			draw_text(display_get_gui_width()/2,108,string(global.mission_kills)+" / "+ string(current_mission._kill_amount) +" : Destroyed");
 			draw_sprite(current_mission._target_sprite,0,display_get_gui_width()/2,48);
+			draw_text(display_get_gui_width()/2,108,string(global.mission_kills)+" / "+ string(current_mission._kill_amount) +" : Destroyed");
 			break;
 			case TYPE.ESCORT:
 			draw_text(display_get_gui_width()/2,28,"Locate and Escort");
 			draw_sprite(current_mission._target_sprite,0,display_get_gui_width()/2 ,76);
+			break;
+			case TYPE.TUTORIAL:
+			draw_sprite_ext(spr_station_strip65,0,display_get_gui_width()/2,76,0.75,0.75,0,c_white,wave(0.5,0.8,7,1));
+			draw_text(display_get_gui_width()/2,28,"Locate Alpha Station");
 			break;
 			
 		}
