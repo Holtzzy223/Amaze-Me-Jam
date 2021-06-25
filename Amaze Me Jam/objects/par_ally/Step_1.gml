@@ -1,7 +1,7 @@
 /// @description 
 if(instance_exists(obj_player))
 {
-	if(obj_player.current_mission!=noone)
+	if(obj_player.current_mission!=undefined)
 	{
 		if(obj_player.current_mission._type!=TYPE.ESCORT)
 		{
@@ -14,7 +14,7 @@ if(instance_exists(obj_player))
 	}
 	if(place_meeting(x,y,obj_station))
 	{
-		if(obj_player.current_mission!=noone)
+		if(obj_player.current_mission!=undefined)
 		{
 			
 			obj_player.current_mission._targets_fetched++;

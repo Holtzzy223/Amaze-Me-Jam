@@ -116,7 +116,7 @@ function mission()constructor
 		obj_player.hp = obj_player.max_hp;
 		obj_player.energy = obj_player.max_energy;
 		//end mission
-		obj_player.current_mission = noone;
+		obj_player.current_mission = undefined;
 		
 		//save
 		save_game(SAVEFILE);

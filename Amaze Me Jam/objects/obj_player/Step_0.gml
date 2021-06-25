@@ -82,7 +82,7 @@ if(!global.game_pause)
 	value = wave(0,speed/10,3,0.25);
 	//_time += speed / room_speed;
 }
-if(current_mission!=noone)
+if(current_mission!=undefined)
 {
 	if(current_mission._type = TYPE.TUTORIAL)
 	{

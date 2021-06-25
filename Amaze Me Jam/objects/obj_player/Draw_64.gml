@@ -20,7 +20,7 @@ if(!global.game_pause)
 	}
 	draw_set_text(c_yellow,fnt_title_mid,fa_left,fa_middle);
 	draw_text(1600,124,"Ore: "+string(ore_amount)+" kT");
-	if(current_mission != noone && current_mission._status == STATUS.ACTIVE)
+	if(current_mission != undefined && current_mission._status == STATUS.ACTIVE)
 	{
 		draw_set_text(c_yellow,fnt_desc,fa_center,fa_middle)
 		switch(current_mission._type)
