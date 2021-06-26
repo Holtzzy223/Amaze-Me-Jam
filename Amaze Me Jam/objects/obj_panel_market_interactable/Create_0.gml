@@ -5,6 +5,7 @@ event_inherited();
 padding = 48;
 can_buy = true;
 draw = false;
+acquired = false;
 panel_title = "Market Panel Test"
 panel_tag = "Upgrade flavor text here";
 panel_desc = "Upgrades are good!! \n Upgrades are fun!! \n Without UPGRADES your game will be DONE!!";

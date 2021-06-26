@@ -76,6 +76,7 @@
     {"id":{"name":"spr_pirate_mobile_base","path":"sprites/spr_pirate_mobile_base/spr_pirate_mobile_base.yy",},"order":8,},
     {"id":{"name":"Item_Types","path":"scripts/Item_Types/Item_Types.yy",},"order":7,},
     {"id":{"name":"obj_asteroid","path":"objects/obj_asteroid/obj_asteroid.yy",},"order":0,},
+    {"id":{"name":"spr_acquired","path":"sprites/spr_acquired/spr_acquired.yy",},"order":4,},
     {"id":{"name":"manager_faction_ally","path":"objects/manager_faction_ally/manager_faction_ally.yy",},"order":3,},
     {"id":{"name":"spr_mine_strip8","path":"sprites/spr_mine_strip8/spr_mine_strip8.yy",},"order":6,},
     {"id":{"name":"obj_energy_up","path":"objects/obj_energy_up/obj_energy_up.yy",},"order":0,},
