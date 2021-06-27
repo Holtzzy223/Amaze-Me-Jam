@@ -4,19 +4,21 @@ function spawn_object_at_camera_bounds(object_to_spawn,spawn_count,_layer,pad)
 {
 	var xx,yy;
 	
-	
-	repeat(spawn_count)
+	if(spawn_count >= 1)
 	{
-		xx = random_range(0,room_width);
-		yy = random_range(0,room_height);
-		while(point_in_rectangle(xx,yy,global.cam_x-pad,global.cam_y-pad,
-								global.cam_x+global.camera_width+pad,
-								global.cam_y+global.camera_height+pad))
+		repeat(spawn_count)
 		{
 			xx = random_range(0,room_width);
 			yy = random_range(0,room_height);
+			while(point_in_rectangle(xx,yy,global.cam_x-pad,global.cam_y-pad,
+									global.cam_x+global.camera_width+pad,
+									global.cam_y+global.camera_height+pad))
+			{
+				xx = random_range(0,room_width);
+				yy = random_range(0,room_height);
+			}
+			instance_create_layer(xx,yy,_layer,object_to_spawn);
 		}
-		instance_create_layer(xx,yy,_layer,object_to_spawn);
 	}
 }
 

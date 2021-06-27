@@ -7,6 +7,7 @@ path = path_add();
 path_target = obj_station;
 alarm_set(3,60);
 track_station = false;
+targets_fetched = 0;
 rotation_speed = 100; //The higher the values, the faster the rotation
 dir = 0; //Direction used only for rotation
 //player stuffs

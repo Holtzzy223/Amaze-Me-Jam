@@ -130,6 +130,7 @@ function mission()constructor
 		if(self._status!=STATUS.COMPLETE)
 		{
 			obj_player.speed = 0;
+			obj_player.targets_fetched = 0;
 			self._status = STATUS.COMPLETE
 			create_text_box(self._complete_text,1);
 			self.reward_player();

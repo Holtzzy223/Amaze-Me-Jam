@@ -1,13 +1,8 @@
 /// @description 
+move_wrap(true,true,sprite_width/2);
 if(instance_exists(obj_player))
 {
-	if(obj_player.current_mission!=undefined)
-	{
-		if(obj_player.current_mission._type!=TYPE.ESCORT)
-		{
-			instance_destroy(id);
-		}
-	}
+
 	if(target_in_range(obj_station,_range))
 	{
 		follow_active = false;
@@ -18,9 +13,9 @@ if(instance_exists(obj_player))
 		if(obj_player.current_mission!=undefined)
 		{
 			
-			obj_player.current_mission._targets_fetched++;
+			obj_player.targets_fetched++;
 			obj_player.allies_saved++;
-			if(obj_player.current_mission._targets_fetched>=obj_player.current_mission._fetch_amount)
+			if(obj_player.targets_fetched >= obj_player.current_mission._fetch_amount)
 			{
 				obj_player.current_mission.complete_mission();
 			}
